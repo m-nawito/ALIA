@@ -1,0 +1,16 @@
+{
+  "echo": "38bd0fddd65d",
+  "circuit": {
+    "name": "5t-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "150u", "L": "1u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["out", "inn", "ntail", "0"], "params": {"W": "150u", "L": "1u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n1", "vdd", "vdd"], "params": {"W": "30u", "L": "2u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "30u", "L": "2u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "22u", "L": "2u"}}
+    ]
+  },
+  "vbias": 1.0,
+  "claim": null,
+  "rationale": "Target ~90uA tail (22u/2u, vbias 1.0V). Wide 150u/1u pair gives gm/Id~18, gm1~0.8mS, GBW~26MHz into 5pF. L=1u/2u lengths raise ro2||ro4 for ~44dB gain. Modest 30u/2u mirror keeps diode-node pole ~80MHz, so PM~80deg."
+}

@@ -1,0 +1,1321 @@
+{
+ "episode": "ep_p05",
+ "arm": "passfail",
+ "seeded": false,
+ "status": "passed",
+ "spec": {
+  "dc_gain_db": [
+   ">=",
+   40.0
+  ],
+  "phase_margin_deg": [
+   ">=",
+   60.0
+  ],
+  "gbw_hz": [
+   ">=",
+   20000000.0
+  ],
+  "itail_ua": [
+   "<=",
+   100.0
+  ]
+ },
+ "k_budget": 7,
+ "iters": [
+  {
+   "k": 0,
+   "model": "claude-fable-5",
+   "tokens": 24,
+   "t": "2026-07-31 12:11:24",
+   "echo_ok": true,
+   "circuit_emitted": {
+    "name": "5t-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "50u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "50u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "12u",
+       "L": "1u"
+      }
+     }
+    ]
+   },
+   "vbias": 1.0,
+   "rationale": "Tail ~90 uA: M5 12u/1u, vbias 1.0 V (Vov~0.3). Pair 50u/1u in moderate inversion gives gm~0.7-0.8 mS, so GBW>20 MHz into 5 pF; L=1u everywhere raises ro for ~42 dB gain. Mirror 40u/1u keeps diode-node pole near 150 MHz, preserving PM>60.",
+   "claim_stated": null,
+   "repair_actions": [],
+   "fatal": false,
+   "measured": {
+    "dc_gain_db": 48.356,
+    "f_3db_hz": 79432.8235,
+    "gbw_hz": 19888642.520297293,
+    "phase_margin_deg": 86.19,
+    "n_points": 301,
+    "itail_ua": 91.883
+   },
+   "sim_error": null,
+   "eval": {
+    "dc_gain_db": [
+     "PASS",
+     48.356,
+     40.0
+    ],
+    "phase_margin_deg": [
+     "PASS",
+     86.19,
+     60.0
+    ],
+    "gbw_hz": [
+     "FAIL",
+     19888642.520297293,
+     20000000.0
+    ],
+    "itail_ua": [
+     "PASS",
+     91.883,
+     100.0
+    ]
+   },
+   "eval_ok": false,
+   "circuit_repaired": {
+    "name": "5t-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "50u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "50u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "12u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "Vdd",
+      "kind": "vsource",
+      "nodes": [
+       "vdd",
+       "0"
+      ],
+      "params": {
+       "dc": 3.3
+      }
+     },
+     {
+      "id": "Vinp",
+      "kind": "vsource",
+      "nodes": [
+       "inp",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": 0.5
+      }
+     },
+     {
+      "id": "Vinn",
+      "kind": "vsource",
+      "nodes": [
+       "inn",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": -0.5
+      }
+     },
+     {
+      "id": "Vb",
+      "kind": "vsource",
+      "nodes": [
+       "nbias",
+       "0"
+      ],
+      "params": {
+       "dc": 1.0
+      }
+     },
+     {
+      "id": "CL",
+      "kind": "cap",
+      "nodes": [
+       "out",
+       "0"
+      ],
+      "params": {
+       "value": "5p"
+      }
+     }
+    ],
+    "params": {}
+   }
+  },
+  {
+   "k": 1,
+   "model": "claude-fable-5",
+   "tokens": 9454,
+   "t": "2026-07-31 14:58:12",
+   "echo_ok": true,
+   "circuit_emitted": {
+    "name": "5t-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "80u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "80u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "20u",
+       "L": "1u"
+      }
+     }
+    ]
+   },
+   "vbias": 1.0,
+   "rationale": "GBW = gm1/(2*pi*CL) was short. Widened M5 12u->20u to raise tail current ~1.7x, and M1/M2 50u->80u to hold gm/ID high, lifting gm1 past 628 uS for GBW > 20 MHz; itail stays under 100 uA; mirror pole stays far out, preserving PM.",
+   "claim_stated": {
+    "device": "M5",
+    "param": "W",
+    "new_value": "20u",
+    "metric": "gbw_hz",
+    "predicted": "increase"
+   },
+   "repair_actions": [],
+   "fatal": false,
+   "measured": {
+    "dc_gain_db": 48.459,
+    "f_3db_hz": 125892.541,
+    "gbw_hz": 32488073.25061914,
+    "phase_margin_deg": 84.71,
+    "n_points": 301,
+    "itail_ua": 153.228
+   },
+   "sim_error": null,
+   "eval": {
+    "dc_gain_db": [
+     "PASS",
+     48.459,
+     40.0
+    ],
+    "phase_margin_deg": [
+     "PASS",
+     84.71,
+     60.0
+    ],
+    "gbw_hz": [
+     "PASS",
+     32488073.25061914,
+     20000000.0
+    ],
+    "itail_ua": [
+     "FAIL",
+     153.228,
+     100.0
+    ]
+   },
+   "eval_ok": false,
+   "audit": {
+    "verdict": "confirmed",
+    "metric": "gbw_hz",
+    "before": 19888642.520297293,
+    "after": 27877983.270106785,
+    "predicted": "increase"
+   },
+   "circuit_repaired": {
+    "name": "5t-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "80u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "80u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "20u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "Vdd",
+      "kind": "vsource",
+      "nodes": [
+       "vdd",
+       "0"
+      ],
+      "params": {
+       "dc": 3.3
+      }
+     },
+     {
+      "id": "Vinp",
+      "kind": "vsource",
+      "nodes": [
+       "inp",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": 0.5
+      }
+     },
+     {
+      "id": "Vinn",
+      "kind": "vsource",
+      "nodes": [
+       "inn",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": -0.5
+      }
+     },
+     {
+      "id": "Vb",
+      "kind": "vsource",
+      "nodes": [
+       "nbias",
+       "0"
+      ],
+      "params": {
+       "dc": 1.0
+      }
+     },
+     {
+      "id": "CL",
+      "kind": "cap",
+      "nodes": [
+       "out",
+       "0"
+      ],
+      "params": {
+       "value": "5p"
+      }
+     }
+    ],
+    "params": {}
+   }
+  },
+  {
+   "k": 2,
+   "model": "claude-fable-5",
+   "tokens": 10160,
+   "t": "2026-07-31 15:05:41",
+   "echo_ok": true,
+   "circuit_emitted": {
+    "name": "5t-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "100u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "100u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "14u",
+       "L": "1u"
+      }
+     }
+    ]
+   },
+   "vbias": 1.0,
+   "rationale": "Iter1 overshot the current budget after widening M5. Shrink M5 20u->14u to cut tail current ~30%; widen M1/M2 to 100u so gm1 (GBW = gm1/2piCL) keeps most of iter1's GBW margin. Mirror pole stays far out, preserving phase margin.",
+   "claim_stated": {
+    "device": "M5",
+    "param": "W",
+    "new_value": "14u",
+    "metric": "itail_ua",
+    "predicted": "decrease"
+   },
+   "repair_actions": [],
+   "fatal": false,
+   "measured": {
+    "dc_gain_db": 48.801,
+    "f_3db_hz": 100000.0,
+    "gbw_hz": 26748188.9084151,
+    "phase_margin_deg": 84.65,
+    "n_points": 301,
+    "itail_ua": 107.312
+   },
+   "sim_error": null,
+   "eval": {
+    "dc_gain_db": [
+     "PASS",
+     48.801,
+     40.0
+    ],
+    "phase_margin_deg": [
+     "PASS",
+     84.65,
+     60.0
+    ],
+    "gbw_hz": [
+     "PASS",
+     26748188.9084151,
+     20000000.0
+    ],
+    "itail_ua": [
+     "FAIL",
+     107.312,
+     100.0
+    ]
+   },
+   "eval_ok": false,
+   "audit": {
+    "verdict": "confirmed",
+    "metric": "itail_ua",
+    "before": 153.228,
+    "after": 107.277,
+    "predicted": "decrease"
+   },
+   "circuit_repaired": {
+    "name": "5t-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "100u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "100u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "14u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "Vdd",
+      "kind": "vsource",
+      "nodes": [
+       "vdd",
+       "0"
+      ],
+      "params": {
+       "dc": 3.3
+      }
+     },
+     {
+      "id": "Vinp",
+      "kind": "vsource",
+      "nodes": [
+       "inp",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": 0.5
+      }
+     },
+     {
+      "id": "Vinn",
+      "kind": "vsource",
+      "nodes": [
+       "inn",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": -0.5
+      }
+     },
+     {
+      "id": "Vb",
+      "kind": "vsource",
+      "nodes": [
+       "nbias",
+       "0"
+      ],
+      "params": {
+       "dc": 1.0
+      }
+     },
+     {
+      "id": "CL",
+      "kind": "cap",
+      "nodes": [
+       "out",
+       "0"
+      ],
+      "params": {
+       "value": "5p"
+      }
+     }
+    ],
+    "params": {}
+   }
+  },
+  {
+   "k": 3,
+   "model": "claude-fable-5",
+   "tokens": 10864,
+   "t": "2026-07-31 15:13:20",
+   "parse_error": "Expecting ',' delimiter: line 1 column 982 (char 981)",
+   "fatal": true,
+   "echo_ok": false,
+   "circuit_emitted": null,
+   "vbias": null,
+   "repair_actions": [],
+   "eval": {},
+   "eval_ok": false
+  },
+  {
+   "k": 4,
+   "model": "claude-fable-5",
+   "tokens": 46860,
+   "t": "2026-08-02 15:22:55",
+   "echo_ok": true,
+   "circuit_emitted": {
+    "name": "5t-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "140u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "140u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "12u",
+       "L": "1u"
+      }
+     }
+    ]
+   },
+   "vbias": 1.0,
+   "rationale": "Return W5 to 12u, the only proven itail-passing operating point (iter0), cutting tail current under 100 uA. Widen M1/M2 to 140u so gm1 stays near iter2's GBW-passing level at the lower current. Mirror pole remains far above GBW, keeping phase margin.",
+   "claim_stated": {
+    "device": "M5",
+    "param": "W",
+    "new_value": "12u",
+    "metric": "itail_ua",
+    "predicted": "decrease"
+   },
+   "repair_actions": [],
+   "fatal": false,
+   "measured": {},
+   "sim_error": "Error on line:\n  m.xm1.m0 n1 inp ntail 0 nfet_03v3 w=    1.400000000000000e-04     l=    1.000000000000000e-06     as=    0.000000000000000e+00     ad=    0.000000000000000e+00     ps=    0.000000000000000e+00     pd=    0.000000000000000e+00     nrd=    0.000000000000000e+00     nrs=    0.000000000000000e+00     delvto=   -0.000000000000000e+00     mulu0=    1.000000000000000e+00     sa=    0.000000000000000e+00     sb=    0.000000000000000e+00     nf=    1.000000000000000e+00     sd=    0.000000000000000e+00     m=    1.000000000000000e+00   \ncould not find a valid modelname\n    Simulation interrupted due to error!\n\nNote: No \".plot\", \".print\", or \".fourier\" lines; no simulations run\n",
+   "eval": {},
+   "eval_ok": false,
+   "audit": {
+    "verdict": "unmeasurable",
+    "why": "no claim or no prior measurable design"
+   },
+   "circuit_repaired": {
+    "name": "5t-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "140u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "140u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "12u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "Vdd",
+      "kind": "vsource",
+      "nodes": [
+       "vdd",
+       "0"
+      ],
+      "params": {
+       "dc": 3.3
+      }
+     },
+     {
+      "id": "Vinp",
+      "kind": "vsource",
+      "nodes": [
+       "inp",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": 0.5
+      }
+     },
+     {
+      "id": "Vinn",
+      "kind": "vsource",
+      "nodes": [
+       "inn",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": -0.5
+      }
+     },
+     {
+      "id": "Vb",
+      "kind": "vsource",
+      "nodes": [
+       "nbias",
+       "0"
+      ],
+      "params": {
+       "dc": 1.0
+      }
+     },
+     {
+      "id": "CL",
+      "kind": "cap",
+      "nodes": [
+       "out",
+       "0"
+      ],
+      "params": {
+       "value": "5p"
+      }
+     }
+    ],
+    "params": {}
+   }
+  },
+  {
+   "k": 5,
+   "model": "claude-fable-5",
+   "tokens": 47978,
+   "t": "2026-08-02 15:43:50",
+   "echo_ok": true,
+   "circuit_emitted": {
+    "name": "5t-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "100u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "100u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "12u",
+       "L": "1u"
+      }
+     }
+    ]
+   },
+   "vbias": 1.0,
+   "rationale": "Iter-4's W=140u exceeded the nfet_03v3 bin range, crashing the netlist; revert pair to known-good 100u. Main change vs iter 2: shrink M5 14u to 12u, scaling tail current ~0.86x below 100 uA (iter 0 passed at 12u), while iter 2's GBW margin absorbs the cut.",
+   "claim_stated": {
+    "device": "M5",
+    "param": "W",
+    "new_value": "12u",
+    "metric": "itail_ua",
+    "predicted": "decrease"
+   },
+   "repair_actions": [],
+   "fatal": false,
+   "measured": {
+    "dc_gain_db": 48.837,
+    "f_3db_hz": 92611.8728,
+    "gbw_hz": 23831952.252307337,
+    "phase_margin_deg": 84.87,
+    "n_points": 301,
+    "itail_ua": 91.98
+   },
+   "sim_error": null,
+   "eval": {
+    "dc_gain_db": [
+     "PASS",
+     48.837,
+     40.0
+    ],
+    "phase_margin_deg": [
+     "PASS",
+     84.87,
+     60.0
+    ],
+    "gbw_hz": [
+     "PASS",
+     23831952.252307337,
+     20000000.0
+    ],
+    "itail_ua": [
+     "PASS",
+     91.98,
+     100.0
+    ]
+   },
+   "eval_ok": true,
+   "audit": {
+    "verdict": "unmeasurable",
+    "before": null,
+    "after": null
+   },
+   "circuit_repaired": {
+    "name": "5t-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "100u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "100u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "40u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "12u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "Vdd",
+      "kind": "vsource",
+      "nodes": [
+       "vdd",
+       "0"
+      ],
+      "params": {
+       "dc": 3.3
+      }
+     },
+     {
+      "id": "Vinp",
+      "kind": "vsource",
+      "nodes": [
+       "inp",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": 0.5
+      }
+     },
+     {
+      "id": "Vinn",
+      "kind": "vsource",
+      "nodes": [
+       "inn",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": -0.5
+      }
+     },
+     {
+      "id": "Vb",
+      "kind": "vsource",
+      "nodes": [
+       "nbias",
+       "0"
+      ],
+      "params": {
+       "dc": 1.0
+      }
+     },
+     {
+      "id": "CL",
+      "kind": "cap",
+      "nodes": [
+       "out",
+       "0"
+      ],
+      "params": {
+       "value": "5p"
+      }
+     }
+    ],
+    "params": {}
+   }
+  }
+ ],
+ "created": "2026-07-31 11:37:11"
+}

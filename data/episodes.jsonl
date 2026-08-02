@@ -1,0 +1,992 @@
+{"t": 1785450000.1737282, "ev": "init", "episode": "ep01", "seeded": false, "phase": "pilot"}
+{"t": 1785450000.1739335, "ev": "init", "episode": "ep02", "seeded": true, "phase": "pilot"}
+{"t": 1785450000.2260234, "ev": "packet", "episode": "ep01", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep01/turn0_prompt.txt", "resume": "fresh", "phase": "pilot"}
+{"t": 1785450243.3183427, "ev": "ingest", "episode": "ep01", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 38205, "model": "claude-fable-5", "phase": "pilot"}
+{"t": 1785450244.6923244, "ev": "packet", "episode": "ep01", "iter": 1, "sha": "9e8d9a8de098", "file": "/home/claude/icta2026/episodes/ep01/turn1_prompt.txt", "resume": "fresh", "phase": "pilot"}
+{"t": 1785450503.07825, "ev": "ingest", "episode": "ep01", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 36085, "model": "claude-fable-5", "phase": "pilot"}
+{"t": 1785450527.0502238, "ev": "packet", "episode": "ep02", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep02/turn0_prompt.txt", "resume": "fresh", "phase": "pilot"}
+{"t": 1785450668.0423408, "ev": "ingest", "episode": "ep02", "iter": 0, "echo_ok": true, "fatal": true, "eval_ok": false, "audit": null, "tokens": 30263, "model": "claude-fable-5", "phase": "pilot"}
+{"t": 1785450668.1069353, "ev": "packet", "episode": "ep02", "iter": 1, "sha": "742e5e2bf4dd", "file": "/home/claude/icta2026/episodes/ep02/turn1_prompt.txt", "resume": "fresh", "phase": "pilot"}
+{"t": 1785450668.1981897, "ev": "packet", "episode": "ep02", "iter": 1, "sha": "742e5e2bf4dd", "file": "/home/claude/icta2026/episodes/ep02/turn1_prompt.txt", "resume": "fresh", "phase": "pilot"}
+{"t": 1785450869.557389, "ev": "ingest", "episode": "ep02", "iter": 1, "parse_error": true, "phase": "pilot"}
+{"t": 1785450886.2007961, "ev": "packet", "episode": "ep02", "iter": 2, "sha": "327579d3815c", "file": "/home/claude/icta2026/episodes/ep02/turn2_prompt.txt", "resume": "fresh", "phase": "pilot"}
+{"t": 1785450929.319165, "ev": "packet", "episode": "ep02", "iter": 2, "sha": "71df3f1f0389", "file": "/home/claude/icta2026/episodes/ep02/turn2_prompt.txt", "resume": "fresh", "phase": "pilot"}
+{"t": 1785451143.0602703, "ev": "ingest", "episode": "ep02", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 34920, "model": "claude-fable-5", "phase": "pilot"}
+{"t": 1785451143.1191993, "ev": "packet", "episode": "ep02", "iter": 3, "sha": "35bda7d8ac3c", "file": "/home/claude/icta2026/episodes/ep02/turn3_prompt.txt", "resume": "fresh", "phase": "pilot"}
+{"t": 1785451426.372544, "ev": "ingest", "episode": "ep02", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 38717, "model": "claude-fable-5", "phase": "pilot"}
+{"t": 1785497831.0762863, "ev": "init", "episode": "ep_f01", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0771384, "ev": "init", "episode": "ep_f02", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0783706, "ev": "init", "episode": "ep_f03", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0791676, "ev": "init", "episode": "ep_f04", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.079605, "ev": "init", "episode": "ep_f05", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0804234, "ev": "init", "episode": "ep_f06", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0809245, "ev": "init", "episode": "ep_f07", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0812976, "ev": "init", "episode": "ep_f08", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0816588, "ev": "init", "episode": "ep_f09", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0825317, "ev": "init", "episode": "ep_f10", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.083001, "ev": "init", "episode": "ep_f11", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0833626, "ev": "init", "episode": "ep_f12", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0841396, "ev": "init", "episode": "ep_f13", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.084648, "ev": "init", "episode": "ep_f14", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0850227, "ev": "init", "episode": "ep_f15", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0856345, "ev": "init", "episode": "ep_f16", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.086447, "ev": "init", "episode": "ep_f17", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0869114, "ev": "init", "episode": "ep_f18", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0873857, "ev": "init", "episode": "ep_f19", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.0878475, "ev": "init", "episode": "ep_f20", "arm": "full", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.1527045, "ev": "init", "episode": "ep_fs01", "arm": "full", "seeded": true, "phase": "phase3"}
+{"t": 1785497831.153044, "ev": "init", "episode": "ep_fs02", "arm": "full", "seeded": true, "phase": "phase3"}
+{"t": 1785497831.1535392, "ev": "init", "episode": "ep_fs03", "arm": "full", "seeded": true, "phase": "phase3"}
+{"t": 1785497831.1545904, "ev": "init", "episode": "ep_fs04", "arm": "full", "seeded": true, "phase": "phase3"}
+{"t": 1785497831.155035, "ev": "init", "episode": "ep_fs05", "arm": "full", "seeded": true, "phase": "phase3"}
+{"t": 1785497831.2194624, "ev": "init", "episode": "ep_r01", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2199733, "ev": "init", "episode": "ep_r02", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2205381, "ev": "init", "episode": "ep_r03", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.220812, "ev": "init", "episode": "ep_r04", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2209709, "ev": "init", "episode": "ep_r05", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.221865, "ev": "init", "episode": "ep_r06", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2223842, "ev": "init", "episode": "ep_r07", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2228308, "ev": "init", "episode": "ep_r08", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2232542, "ev": "init", "episode": "ep_r09", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2235901, "ev": "init", "episode": "ep_r10", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2237885, "ev": "init", "episode": "ep_r11", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2241073, "ev": "init", "episode": "ep_r12", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2258353, "ev": "init", "episode": "ep_r13", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2263772, "ev": "init", "episode": "ep_r14", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2269082, "ev": "init", "episode": "ep_r15", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2271237, "ev": "init", "episode": "ep_r16", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2274914, "ev": "init", "episode": "ep_r17", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2285311, "ev": "init", "episode": "ep_r18", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.228894, "ev": "init", "episode": "ep_r19", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2297847, "ev": "init", "episode": "ep_r20", "arm": "norepair", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.2914453, "ev": "init", "episode": "ep_rs01", "arm": "norepair", "seeded": true, "phase": "phase3"}
+{"t": 1785497831.2920105, "ev": "init", "episode": "ep_rs02", "arm": "norepair", "seeded": true, "phase": "phase3"}
+{"t": 1785497831.2925944, "ev": "init", "episode": "ep_rs03", "arm": "norepair", "seeded": true, "phase": "phase3"}
+{"t": 1785497831.2930937, "ev": "init", "episode": "ep_rs04", "arm": "norepair", "seeded": true, "phase": "phase3"}
+{"t": 1785497831.2936096, "ev": "init", "episode": "ep_rs05", "arm": "norepair", "seeded": true, "phase": "phase3"}
+{"t": 1785497831.357685, "ev": "init", "episode": "ep_p01", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3585703, "ev": "init", "episode": "ep_p02", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.358987, "ev": "init", "episode": "ep_p03", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3594124, "ev": "init", "episode": "ep_p04", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3597324, "ev": "init", "episode": "ep_p05", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.359865, "ev": "init", "episode": "ep_p06", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.360221, "ev": "init", "episode": "ep_p07", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3608623, "ev": "init", "episode": "ep_p08", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3617733, "ev": "init", "episode": "ep_p09", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3623097, "ev": "init", "episode": "ep_p10", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3627722, "ev": "init", "episode": "ep_p11", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.363154, "ev": "init", "episode": "ep_p12", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.363605, "ev": "init", "episode": "ep_p13", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3640301, "ev": "init", "episode": "ep_p14", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3644795, "ev": "init", "episode": "ep_p15", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3671496, "ev": "init", "episode": "ep_p16", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3676646, "ev": "init", "episode": "ep_p17", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.368401, "ev": "init", "episode": "ep_p18", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.3694718, "ev": "init", "episode": "ep_p19", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.369821, "ev": "init", "episode": "ep_p20", "arm": "passfail", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.434616, "ev": "init", "episode": "ep_o01", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.435249, "ev": "init", "episode": "ep_o02", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4365351, "ev": "init", "episode": "ep_o03", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.437206, "ev": "init", "episode": "ep_o04", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4376042, "ev": "init", "episode": "ep_o05", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4378967, "ev": "init", "episode": "ep_o06", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4383907, "ev": "init", "episode": "ep_o07", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4388313, "ev": "init", "episode": "ep_o08", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4391296, "ev": "init", "episode": "ep_o09", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4397376, "ev": "init", "episode": "ep_o10", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.440256, "ev": "init", "episode": "ep_o11", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4405136, "ev": "init", "episode": "ep_o12", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4412324, "ev": "init", "episode": "ep_o13", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4416866, "ev": "init", "episode": "ep_o14", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.442157, "ev": "init", "episode": "ep_o15", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.442511, "ev": "init", "episode": "ep_o16", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4435098, "ev": "init", "episode": "ep_o17", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4439266, "ev": "init", "episode": "ep_o18", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4444048, "ev": "init", "episode": "ep_o19", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497831.4449928, "ev": "init", "episode": "ep_o20", "arm": "oneshot", "seeded": false, "phase": "phase3"}
+{"t": 1785497847.8891642, "ev": "packet", "episode": "ep_f01", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f01/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8894937, "ev": "packet", "episode": "ep_f02", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f02/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8899782, "ev": "packet", "episode": "ep_f03", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f03/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8901377, "ev": "packet", "episode": "ep_f04", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f04/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8905993, "ev": "packet", "episode": "ep_f05", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f05/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8907676, "ev": "packet", "episode": "ep_f06", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f06/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8909695, "ev": "packet", "episode": "ep_f07", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f07/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8912404, "ev": "packet", "episode": "ep_f08", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f08/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.891447, "ev": "packet", "episode": "ep_f09", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f09/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8915927, "ev": "packet", "episode": "ep_f10", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f10/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8917239, "ev": "packet", "episode": "ep_f11", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f11/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8918943, "ev": "packet", "episode": "ep_f12", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f12/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8922439, "ev": "packet", "episode": "ep_f13", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f13/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8925054, "ev": "packet", "episode": "ep_f14", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f14/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8927467, "ev": "packet", "episode": "ep_f15", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f15/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8929508, "ev": "packet", "episode": "ep_f16", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f16/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8933332, "ev": "packet", "episode": "ep_f17", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f17/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.893492, "ev": "packet", "episode": "ep_f18", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f18/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8937922, "ev": "packet", "episode": "ep_f19", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f19/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.894049, "ev": "packet", "episode": "ep_f20", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_f20/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8942301, "ev": "packet", "episode": "ep_fs01", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_fs01/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8944407, "ev": "packet", "episode": "ep_fs02", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_fs02/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8945975, "ev": "packet", "episode": "ep_fs03", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_fs03/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8948042, "ev": "packet", "episode": "ep_fs04", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_fs04/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8950675, "ev": "packet", "episode": "ep_fs05", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_fs05/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8953938, "ev": "packet", "episode": "ep_o01", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o01/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8956423, "ev": "packet", "episode": "ep_o02", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o02/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8958623, "ev": "packet", "episode": "ep_o03", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o03/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.896076, "ev": "packet", "episode": "ep_o04", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o04/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8963046, "ev": "packet", "episode": "ep_o05", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o05/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8967903, "ev": "packet", "episode": "ep_o06", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o06/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.896985, "ev": "packet", "episode": "ep_o07", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o07/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8971484, "ev": "packet", "episode": "ep_o08", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o08/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8974037, "ev": "packet", "episode": "ep_o09", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o09/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8976471, "ev": "packet", "episode": "ep_o10", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o10/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8979404, "ev": "packet", "episode": "ep_o11", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o11/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8981347, "ev": "packet", "episode": "ep_o12", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o12/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8983762, "ev": "packet", "episode": "ep_o13", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o13/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8985622, "ev": "packet", "episode": "ep_o14", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o14/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8987322, "ev": "packet", "episode": "ep_o15", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o15/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8988864, "ev": "packet", "episode": "ep_o16", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o16/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8990736, "ev": "packet", "episode": "ep_o17", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o17/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8993194, "ev": "packet", "episode": "ep_o18", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o18/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8995, "ev": "packet", "episode": "ep_o19", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o19/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.8998036, "ev": "packet", "episode": "ep_o20", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_o20/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9000268, "ev": "packet", "episode": "ep_p01", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p01/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9002514, "ev": "packet", "episode": "ep_p02", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p02/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9005568, "ev": "packet", "episode": "ep_p03", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p03/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9007754, "ev": "packet", "episode": "ep_p04", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p04/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9009697, "ev": "packet", "episode": "ep_p05", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p05/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9011612, "ev": "packet", "episode": "ep_p06", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p06/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9014084, "ev": "packet", "episode": "ep_p07", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p07/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9015844, "ev": "packet", "episode": "ep_p08", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p08/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9017625, "ev": "packet", "episode": "ep_p09", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p09/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9019787, "ev": "packet", "episode": "ep_p10", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p10/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9022133, "ev": "packet", "episode": "ep_p11", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p11/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9025013, "ev": "packet", "episode": "ep_p12", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p12/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.902689, "ev": "packet", "episode": "ep_p13", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p13/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9029891, "ev": "packet", "episode": "ep_p14", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p14/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9032192, "ev": "packet", "episode": "ep_p15", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p15/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9034054, "ev": "packet", "episode": "ep_p16", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p16/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9035869, "ev": "packet", "episode": "ep_p17", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p17/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9037223, "ev": "packet", "episode": "ep_p18", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p18/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9039698, "ev": "packet", "episode": "ep_p19", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p19/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9041116, "ev": "packet", "episode": "ep_p20", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_p20/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.90457, "ev": "packet", "episode": "ep_r01", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r01/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9048848, "ev": "packet", "episode": "ep_r02", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r02/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9051044, "ev": "packet", "episode": "ep_r03", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r03/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9053812, "ev": "packet", "episode": "ep_r04", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r04/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9055526, "ev": "packet", "episode": "ep_r05", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r05/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9056962, "ev": "packet", "episode": "ep_r06", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r06/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9058733, "ev": "packet", "episode": "ep_r07", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r07/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9062748, "ev": "packet", "episode": "ep_r08", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r08/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9064813, "ev": "packet", "episode": "ep_r09", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r09/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9066868, "ev": "packet", "episode": "ep_r10", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r10/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9068813, "ev": "packet", "episode": "ep_r11", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r11/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.907017, "ev": "packet", "episode": "ep_r12", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r12/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9073179, "ev": "packet", "episode": "ep_r13", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r13/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9074626, "ev": "packet", "episode": "ep_r14", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r14/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9075978, "ev": "packet", "episode": "ep_r15", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r15/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9077802, "ev": "packet", "episode": "ep_r16", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r16/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.907919, "ev": "packet", "episode": "ep_r17", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r17/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9081028, "ev": "packet", "episode": "ep_r18", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r18/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.908363, "ev": "packet", "episode": "ep_r19", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r19/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9085655, "ev": "packet", "episode": "ep_r20", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r20/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9087465, "ev": "packet", "episode": "ep_rs01", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs01/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.909151, "ev": "packet", "episode": "ep_rs02", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs02/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.9093463, "ev": "packet", "episode": "ep_rs03", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs03/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.909528, "ev": "packet", "episode": "ep_rs04", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs04/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785497847.909721, "ev": "packet", "episode": "ep_rs05", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs05/turn0_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785498260.9290667, "ev": "ingest", "episode": "ep_f01", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 30772, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498261.0338264, "ev": "ingest", "episode": "ep_f02", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 30820, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498261.135601, "ev": "ingest", "episode": "ep_f03", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 32600, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498261.235551, "ev": "ingest", "episode": "ep_f04", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 34512, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498261.332917, "ev": "ingest", "episode": "ep_f05", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 34651, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498261.4346552, "ev": "ingest", "episode": "ep_f06", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 37168, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498261.5409284, "ev": "ingest", "episode": "ep_f07", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 30169, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498261.639154, "ev": "ingest", "episode": "ep_f08", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 33560, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498615.5978005, "ev": "ingest", "episode": "ep_f09", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 30996, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498615.7168722, "ev": "ingest", "episode": "ep_f10", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 29839, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498615.83119, "ev": "ingest", "episode": "ep_f11", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 34843, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498615.9407494, "ev": "ingest", "episode": "ep_f12", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 34231, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498616.0553818, "ev": "ingest", "episode": "ep_f13", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 36125, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498616.1605635, "ev": "ingest", "episode": "ep_f14", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 33770, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498616.2853646, "ev": "ingest", "episode": "ep_f15", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 32985, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498616.4175005, "ev": "ingest", "episode": "ep_f16", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 34912, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498616.5304644, "ev": "ingest", "episode": "ep_f17", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 33371, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498616.6629314, "ev": "ingest", "episode": "ep_f18", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 31468, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498616.785608, "ev": "ingest", "episode": "ep_f19", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 31988, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785498616.89159, "ev": "ingest", "episode": "ep_f20", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 29661, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499008.1686974, "ev": "ingest", "episode": "ep_o01", "iter": 0, "parse_error": true, "phase": "phase3"}
+{"t": 1785499008.27744, "ev": "ingest", "episode": "ep_o02", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 28404, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499008.3831856, "ev": "ingest", "episode": "ep_o03", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 31157, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499008.4900455, "ev": "ingest", "episode": "ep_o04", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 34066, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499008.5939972, "ev": "ingest", "episode": "ep_o05", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 35682, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499008.6948729, "ev": "ingest", "episode": "ep_o06", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 30226, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499008.7496572, "ev": "ingest", "episode": "ep_o07", "iter": 0, "parse_error": true, "phase": "phase3"}
+{"t": 1785499008.8538916, "ev": "ingest", "episode": "ep_o08", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 33131, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499008.9701538, "ev": "ingest", "episode": "ep_o09", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 33960, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499009.0273585, "ev": "ingest", "episode": "ep_o10", "iter": 0, "parse_error": true, "phase": "phase3"}
+{"t": 1785499009.1428921, "ev": "ingest", "episode": "ep_o11", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 30823, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499009.2462468, "ev": "ingest", "episode": "ep_o12", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 31210, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499531.373525, "ev": "ingest", "episode": "ep_o13", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 30975, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499531.4759302, "ev": "ingest", "episode": "ep_o14", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 31937, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499531.6147385, "ev": "ingest", "episode": "ep_o15", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 30433, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499531.7461333, "ev": "ingest", "episode": "ep_o16", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 32004, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499531.803457, "ev": "ingest", "episode": "ep_o17", "iter": 0, "parse_error": true, "phase": "phase3"}
+{"t": 1785499531.9141083, "ev": "ingest", "episode": "ep_o18", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 31105, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499532.0265365, "ev": "ingest", "episode": "ep_o19", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 37459, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499532.1307716, "ev": "ingest", "episode": "ep_o20", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 30065, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499532.235417, "ev": "ingest", "episode": "ep_p01", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 36263, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499532.3482423, "ev": "ingest", "episode": "ep_p02", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 32943, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499532.4568439, "ev": "ingest", "episode": "ep_p03", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 42563, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499532.562894, "ev": "ingest", "episode": "ep_p04", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 34864, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499883.8569682, "ev": "ingest", "episode": "ep_fs01", "iter": 0, "echo_ok": true, "fatal": true, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499883.9287038, "ev": "ingest", "episode": "ep_fs02", "iter": 0, "echo_ok": true, "fatal": true, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499884.006823, "ev": "ingest", "episode": "ep_fs03", "iter": 0, "echo_ok": true, "fatal": true, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499884.0810344, "ev": "ingest", "episode": "ep_fs04", "iter": 0, "echo_ok": true, "fatal": true, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499884.1484187, "ev": "ingest", "episode": "ep_fs05", "iter": 0, "echo_ok": true, "fatal": true, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499884.2863646, "ev": "ingest", "episode": "ep_p05", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 24, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499884.41112, "ev": "ingest", "episode": "ep_p06", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499884.544967, "ev": "ingest", "episode": "ep_p07", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 24, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499884.6786358, "ev": "ingest", "episode": "ep_p08", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499884.8169417, "ev": "ingest", "episode": "ep_p09", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499884.9398038, "ev": "ingest", "episode": "ep_p10", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 44516, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785499885.061398, "ev": "ingest", "episode": "ep_p11", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 24, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500189.3252003, "ev": "ingest", "episode": "ep_p12", "iter": 0, "parse_error": true, "phase": "phase3"}
+{"t": 1785500189.4346092, "ev": "ingest", "episode": "ep_p13", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500189.633137, "ev": "ingest", "episode": "ep_p14", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500189.7464595, "ev": "ingest", "episode": "ep_p15", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 11122, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500189.8848865, "ev": "ingest", "episode": "ep_p16", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500189.9933352, "ev": "ingest", "episode": "ep_p17", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500190.1038656, "ev": "ingest", "episode": "ep_p18", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500190.2136922, "ev": "ingest", "episode": "ep_p19", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500190.4590676, "ev": "ingest", "episode": "ep_p20", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500190.568154, "ev": "ingest", "episode": "ep_r01", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500190.673122, "ev": "ingest", "episode": "ep_r02", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 24, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500190.801113, "ev": "ingest", "episode": "ep_r03", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 12, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500190.8692863, "ev": "packet", "episode": "ep_f01", "iter": 1, "sha": "15107cc52a9c", "file": "/home/claude/icta2026/episodes/ep_f01/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8697119, "ev": "packet", "episode": "ep_f02", "iter": 1, "sha": "f81f01cca758", "file": "/home/claude/icta2026/episodes/ep_f02/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.870016, "ev": "packet", "episode": "ep_f03", "iter": 1, "sha": "c29b1b395379", "file": "/home/claude/icta2026/episodes/ep_f03/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8703618, "ev": "packet", "episode": "ep_f04", "iter": 1, "sha": "ccc3ad28c341", "file": "/home/claude/icta2026/episodes/ep_f04/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8707027, "ev": "packet", "episode": "ep_f05", "iter": 1, "sha": "163eaf691efe", "file": "/home/claude/icta2026/episodes/ep_f05/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8710024, "ev": "packet", "episode": "ep_f06", "iter": 1, "sha": "e8f7cb63e8f9", "file": "/home/claude/icta2026/episodes/ep_f06/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8713675, "ev": "packet", "episode": "ep_f07", "iter": 1, "sha": "a5df3132e768", "file": "/home/claude/icta2026/episodes/ep_f07/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8716807, "ev": "packet", "episode": "ep_f08", "iter": 1, "sha": "3e3a2778cc4a", "file": "/home/claude/icta2026/episodes/ep_f08/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.871962, "ev": "packet", "episode": "ep_f09", "iter": 1, "sha": "18cf065f613e", "file": "/home/claude/icta2026/episodes/ep_f09/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8722494, "ev": "packet", "episode": "ep_f10", "iter": 1, "sha": "bd3dc3b690ec", "file": "/home/claude/icta2026/episodes/ep_f10/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8727992, "ev": "packet", "episode": "ep_f11", "iter": 1, "sha": "430daacb4a3e", "file": "/home/claude/icta2026/episodes/ep_f11/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.87302, "ev": "packet", "episode": "ep_f12", "iter": 1, "sha": "6d0fb46c60f7", "file": "/home/claude/icta2026/episodes/ep_f12/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8733225, "ev": "packet", "episode": "ep_f13", "iter": 1, "sha": "2c23e6dd9efd", "file": "/home/claude/icta2026/episodes/ep_f13/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8736055, "ev": "packet", "episode": "ep_f14", "iter": 1, "sha": "a8996a9b59c2", "file": "/home/claude/icta2026/episodes/ep_f14/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8739512, "ev": "packet", "episode": "ep_f15", "iter": 1, "sha": "95e99ecafbc2", "file": "/home/claude/icta2026/episodes/ep_f15/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.87444, "ev": "packet", "episode": "ep_f18", "iter": 1, "sha": "b8fa4eda5cb8", "file": "/home/claude/icta2026/episodes/ep_f18/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8747168, "ev": "packet", "episode": "ep_f19", "iter": 1, "sha": "9e052226fada", "file": "/home/claude/icta2026/episodes/ep_f19/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8749123, "ev": "packet", "episode": "ep_f20", "iter": 1, "sha": "eecf015b834d", "file": "/home/claude/icta2026/episodes/ep_f20/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8751795, "ev": "packet", "episode": "ep_fs01", "iter": 1, "sha": "f61fd5159e97", "file": "/home/claude/icta2026/episodes/ep_fs01/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8754573, "ev": "packet", "episode": "ep_fs02", "iter": 1, "sha": "6a32a1c1130a", "file": "/home/claude/icta2026/episodes/ep_fs02/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.875756, "ev": "packet", "episode": "ep_fs03", "iter": 1, "sha": "71a559aadfc0", "file": "/home/claude/icta2026/episodes/ep_fs03/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8760126, "ev": "packet", "episode": "ep_fs04", "iter": 1, "sha": "ec5c4a342c77", "file": "/home/claude/icta2026/episodes/ep_fs04/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.876416, "ev": "packet", "episode": "ep_fs05", "iter": 1, "sha": "2373ff11707e", "file": "/home/claude/icta2026/episodes/ep_fs05/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.876648, "ev": "packet", "episode": "ep_o01", "iter": 1, "sha": "2acb3df2f6b6", "file": "/home/claude/icta2026/episodes/ep_o01/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8774076, "ev": "packet", "episode": "ep_o07", "iter": 1, "sha": "d864a23c38d6", "file": "/home/claude/icta2026/episodes/ep_o07/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8777864, "ev": "packet", "episode": "ep_o10", "iter": 1, "sha": "2acb3df2f6b6", "file": "/home/claude/icta2026/episodes/ep_o10/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8783462, "ev": "packet", "episode": "ep_o17", "iter": 1, "sha": "9ccb42d8abba", "file": "/home/claude/icta2026/episodes/ep_o17/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8788385, "ev": "packet", "episode": "ep_p01", "iter": 1, "sha": "c3cca06ed47b", "file": "/home/claude/icta2026/episodes/ep_p01/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8791819, "ev": "packet", "episode": "ep_p02", "iter": 1, "sha": "d5383d5ff85f", "file": "/home/claude/icta2026/episodes/ep_p02/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.879447, "ev": "packet", "episode": "ep_p03", "iter": 1, "sha": "30458500cedc", "file": "/home/claude/icta2026/episodes/ep_p03/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8797045, "ev": "packet", "episode": "ep_p04", "iter": 1, "sha": "a58e5becef03", "file": "/home/claude/icta2026/episodes/ep_p04/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8799937, "ev": "packet", "episode": "ep_p05", "iter": 1, "sha": "8b09e3e0f3ae", "file": "/home/claude/icta2026/episodes/ep_p05/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8802543, "ev": "packet", "episode": "ep_p06", "iter": 1, "sha": "c1acd4859d3d", "file": "/home/claude/icta2026/episodes/ep_p06/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.880578, "ev": "packet", "episode": "ep_p07", "iter": 1, "sha": "0b5818d8a6fb", "file": "/home/claude/icta2026/episodes/ep_p07/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8808596, "ev": "packet", "episode": "ep_p08", "iter": 1, "sha": "83fec36ca336", "file": "/home/claude/icta2026/episodes/ep_p08/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8811731, "ev": "packet", "episode": "ep_p09", "iter": 1, "sha": "344246e91d2a", "file": "/home/claude/icta2026/episodes/ep_p09/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8814616, "ev": "packet", "episode": "ep_p10", "iter": 1, "sha": "fa931331e1e9", "file": "/home/claude/icta2026/episodes/ep_p10/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.881792, "ev": "packet", "episode": "ep_p11", "iter": 1, "sha": "b4efa986d7d3", "file": "/home/claude/icta2026/episodes/ep_p11/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8821957, "ev": "packet", "episode": "ep_p12", "iter": 1, "sha": "a53f4347482e", "file": "/home/claude/icta2026/episodes/ep_p12/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8824482, "ev": "packet", "episode": "ep_p13", "iter": 1, "sha": "f5a565a4de19", "file": "/home/claude/icta2026/episodes/ep_p13/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8827505, "ev": "packet", "episode": "ep_p14", "iter": 1, "sha": "f68b9d5a14c5", "file": "/home/claude/icta2026/episodes/ep_p14/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8830466, "ev": "packet", "episode": "ep_p15", "iter": 1, "sha": "2ab644f21841", "file": "/home/claude/icta2026/episodes/ep_p15/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.883366, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.883679, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8840537, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8843122, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8846529, "ev": "packet", "episode": "ep_r01", "iter": 1, "sha": "e804f9d92841", "file": "/home/claude/icta2026/episodes/ep_r01/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8849394, "ev": "packet", "episode": "ep_r02", "iter": 1, "sha": "3d14c9df247d", "file": "/home/claude/icta2026/episodes/ep_r02/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500190.8851209, "ev": "packet", "episode": "ep_r04", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r04/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8852413, "ev": "packet", "episode": "ep_r05", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r05/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8853571, "ev": "packet", "episode": "ep_r06", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r06/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8855765, "ev": "packet", "episode": "ep_r07", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r07/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.885707, "ev": "packet", "episode": "ep_r08", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r08/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8858244, "ev": "packet", "episode": "ep_r09", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r09/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8859298, "ev": "packet", "episode": "ep_r10", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r10/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8860993, "ev": "packet", "episode": "ep_r11", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r11/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8862607, "ev": "packet", "episode": "ep_r12", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r12/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8863688, "ev": "packet", "episode": "ep_r13", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r13/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8864734, "ev": "packet", "episode": "ep_r14", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r14/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.886656, "ev": "packet", "episode": "ep_r15", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r15/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.886764, "ev": "packet", "episode": "ep_r16", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r16/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.886867, "ev": "packet", "episode": "ep_r17", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r17/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8869693, "ev": "packet", "episode": "ep_r18", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r18/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.887073, "ev": "packet", "episode": "ep_r19", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r19/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8871844, "ev": "packet", "episode": "ep_r20", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r20/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.887326, "ev": "packet", "episode": "ep_rs01", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs01/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8874872, "ev": "packet", "episode": "ep_rs02", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs02/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8876595, "ev": "packet", "episode": "ep_rs03", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs03/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8877678, "ev": "packet", "episode": "ep_rs04", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs04/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500190.8878717, "ev": "packet", "episode": "ep_rs05", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs05/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500468.105741, "ev": "ingest", "episode": "ep_r04", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500468.2514367, "ev": "ingest", "episode": "ep_r05", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 24, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500468.3641136, "ev": "ingest", "episode": "ep_r06", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 24, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500468.4788997, "ev": "ingest", "episode": "ep_r07", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500468.5883992, "ev": "ingest", "episode": "ep_r08", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500468.69585, "ev": "ingest", "episode": "ep_r09", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500468.8085325, "ev": "ingest", "episode": "ep_r10", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 24, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500468.9158971, "ev": "ingest", "episode": "ep_r11", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500469.021363, "ev": "ingest", "episode": "ep_r12", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 11132, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500469.1281974, "ev": "ingest", "episode": "ep_r13", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500469.2370522, "ev": "ingest", "episode": "ep_r14", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500469.3648968, "ev": "ingest", "episode": "ep_r15", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500469.430871, "ev": "packet", "episode": "ep_f01", "iter": 1, "sha": "15107cc52a9c", "file": "/home/claude/icta2026/episodes/ep_f01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4311528, "ev": "packet", "episode": "ep_f02", "iter": 1, "sha": "f81f01cca758", "file": "/home/claude/icta2026/episodes/ep_f02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4314425, "ev": "packet", "episode": "ep_f03", "iter": 1, "sha": "c29b1b395379", "file": "/home/claude/icta2026/episodes/ep_f03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4316456, "ev": "packet", "episode": "ep_f04", "iter": 1, "sha": "ccc3ad28c341", "file": "/home/claude/icta2026/episodes/ep_f04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4318388, "ev": "packet", "episode": "ep_f05", "iter": 1, "sha": "163eaf691efe", "file": "/home/claude/icta2026/episodes/ep_f05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4320183, "ev": "packet", "episode": "ep_f06", "iter": 1, "sha": "e8f7cb63e8f9", "file": "/home/claude/icta2026/episodes/ep_f06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4323952, "ev": "packet", "episode": "ep_f07", "iter": 1, "sha": "a5df3132e768", "file": "/home/claude/icta2026/episodes/ep_f07/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.432632, "ev": "packet", "episode": "ep_f08", "iter": 1, "sha": "3e3a2778cc4a", "file": "/home/claude/icta2026/episodes/ep_f08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4328263, "ev": "packet", "episode": "ep_f09", "iter": 1, "sha": "18cf065f613e", "file": "/home/claude/icta2026/episodes/ep_f09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.433022, "ev": "packet", "episode": "ep_f10", "iter": 1, "sha": "bd3dc3b690ec", "file": "/home/claude/icta2026/episodes/ep_f10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4332576, "ev": "packet", "episode": "ep_f11", "iter": 1, "sha": "430daacb4a3e", "file": "/home/claude/icta2026/episodes/ep_f11/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4334488, "ev": "packet", "episode": "ep_f12", "iter": 1, "sha": "6d0fb46c60f7", "file": "/home/claude/icta2026/episodes/ep_f12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4336207, "ev": "packet", "episode": "ep_f13", "iter": 1, "sha": "2c23e6dd9efd", "file": "/home/claude/icta2026/episodes/ep_f13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4337897, "ev": "packet", "episode": "ep_f14", "iter": 1, "sha": "a8996a9b59c2", "file": "/home/claude/icta2026/episodes/ep_f14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4339714, "ev": "packet", "episode": "ep_f15", "iter": 1, "sha": "95e99ecafbc2", "file": "/home/claude/icta2026/episodes/ep_f15/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4343593, "ev": "packet", "episode": "ep_f18", "iter": 1, "sha": "b8fa4eda5cb8", "file": "/home/claude/icta2026/episodes/ep_f18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4345353, "ev": "packet", "episode": "ep_f19", "iter": 1, "sha": "9e052226fada", "file": "/home/claude/icta2026/episodes/ep_f19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4347696, "ev": "packet", "episode": "ep_f20", "iter": 1, "sha": "eecf015b834d", "file": "/home/claude/icta2026/episodes/ep_f20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4349637, "ev": "packet", "episode": "ep_fs01", "iter": 1, "sha": "f61fd5159e97", "file": "/home/claude/icta2026/episodes/ep_fs01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4352088, "ev": "packet", "episode": "ep_fs02", "iter": 1, "sha": "6a32a1c1130a", "file": "/home/claude/icta2026/episodes/ep_fs02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4353938, "ev": "packet", "episode": "ep_fs03", "iter": 1, "sha": "71a559aadfc0", "file": "/home/claude/icta2026/episodes/ep_fs03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.435569, "ev": "packet", "episode": "ep_fs04", "iter": 1, "sha": "ec5c4a342c77", "file": "/home/claude/icta2026/episodes/ep_fs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4357805, "ev": "packet", "episode": "ep_fs05", "iter": 1, "sha": "2373ff11707e", "file": "/home/claude/icta2026/episodes/ep_fs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4359176, "ev": "packet", "episode": "ep_o01", "iter": 1, "sha": "2acb3df2f6b6", "file": "/home/claude/icta2026/episodes/ep_o01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4364386, "ev": "packet", "episode": "ep_o07", "iter": 1, "sha": "d864a23c38d6", "file": "/home/claude/icta2026/episodes/ep_o07/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.436665, "ev": "packet", "episode": "ep_o10", "iter": 1, "sha": "2acb3df2f6b6", "file": "/home/claude/icta2026/episodes/ep_o10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4371493, "ev": "packet", "episode": "ep_o17", "iter": 1, "sha": "9ccb42d8abba", "file": "/home/claude/icta2026/episodes/ep_o17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4374595, "ev": "packet", "episode": "ep_p01", "iter": 1, "sha": "c3cca06ed47b", "file": "/home/claude/icta2026/episodes/ep_p01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4376376, "ev": "packet", "episode": "ep_p02", "iter": 1, "sha": "d5383d5ff85f", "file": "/home/claude/icta2026/episodes/ep_p02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4378123, "ev": "packet", "episode": "ep_p03", "iter": 1, "sha": "30458500cedc", "file": "/home/claude/icta2026/episodes/ep_p03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.438094, "ev": "packet", "episode": "ep_p04", "iter": 1, "sha": "a58e5becef03", "file": "/home/claude/icta2026/episodes/ep_p04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.438369, "ev": "packet", "episode": "ep_p05", "iter": 1, "sha": "8b09e3e0f3ae", "file": "/home/claude/icta2026/episodes/ep_p05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4385543, "ev": "packet", "episode": "ep_p06", "iter": 1, "sha": "c1acd4859d3d", "file": "/home/claude/icta2026/episodes/ep_p06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4387333, "ev": "packet", "episode": "ep_p07", "iter": 1, "sha": "0b5818d8a6fb", "file": "/home/claude/icta2026/episodes/ep_p07/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4389029, "ev": "packet", "episode": "ep_p08", "iter": 1, "sha": "83fec36ca336", "file": "/home/claude/icta2026/episodes/ep_p08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.439149, "ev": "packet", "episode": "ep_p09", "iter": 1, "sha": "344246e91d2a", "file": "/home/claude/icta2026/episodes/ep_p09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.439334, "ev": "packet", "episode": "ep_p10", "iter": 1, "sha": "fa931331e1e9", "file": "/home/claude/icta2026/episodes/ep_p10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4395068, "ev": "packet", "episode": "ep_p11", "iter": 1, "sha": "b4efa986d7d3", "file": "/home/claude/icta2026/episodes/ep_p11/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4396436, "ev": "packet", "episode": "ep_p12", "iter": 1, "sha": "a53f4347482e", "file": "/home/claude/icta2026/episodes/ep_p12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4398131, "ev": "packet", "episode": "ep_p13", "iter": 1, "sha": "f5a565a4de19", "file": "/home/claude/icta2026/episodes/ep_p13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4399858, "ev": "packet", "episode": "ep_p14", "iter": 1, "sha": "f68b9d5a14c5", "file": "/home/claude/icta2026/episodes/ep_p14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4402301, "ev": "packet", "episode": "ep_p15", "iter": 1, "sha": "2ab644f21841", "file": "/home/claude/icta2026/episodes/ep_p15/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4405541, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4407463, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4409525, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4412103, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4414182, "ev": "packet", "episode": "ep_r01", "iter": 1, "sha": "e804f9d92841", "file": "/home/claude/icta2026/episodes/ep_r01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4415953, "ev": "packet", "episode": "ep_r02", "iter": 1, "sha": "3d14c9df247d", "file": "/home/claude/icta2026/episodes/ep_r02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4419367, "ev": "packet", "episode": "ep_r04", "iter": 1, "sha": "ed09e84a5b57", "file": "/home/claude/icta2026/episodes/ep_r04/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500469.4422927, "ev": "packet", "episode": "ep_r05", "iter": 1, "sha": "4a79a0ee8a52", "file": "/home/claude/icta2026/episodes/ep_r05/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500469.4425547, "ev": "packet", "episode": "ep_r06", "iter": 1, "sha": "41e37797ef86", "file": "/home/claude/icta2026/episodes/ep_r06/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500469.442878, "ev": "packet", "episode": "ep_r08", "iter": 1, "sha": "c516e59dd2ab", "file": "/home/claude/icta2026/episodes/ep_r08/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500469.4431307, "ev": "packet", "episode": "ep_r09", "iter": 1, "sha": "92a7d211761c", "file": "/home/claude/icta2026/episodes/ep_r09/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500469.4433842, "ev": "packet", "episode": "ep_r10", "iter": 1, "sha": "467a24f5ca60", "file": "/home/claude/icta2026/episodes/ep_r10/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500469.4436738, "ev": "packet", "episode": "ep_r12", "iter": 1, "sha": "472436076eeb", "file": "/home/claude/icta2026/episodes/ep_r12/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500469.4439332, "ev": "packet", "episode": "ep_r13", "iter": 1, "sha": "42549c12fe20", "file": "/home/claude/icta2026/episodes/ep_r13/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500469.4445083, "ev": "packet", "episode": "ep_r14", "iter": 1, "sha": "a011e648f1ae", "file": "/home/claude/icta2026/episodes/ep_r14/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500469.4447117, "ev": "packet", "episode": "ep_r16", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r16/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.444823, "ev": "packet", "episode": "ep_r17", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r17/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.44493, "ev": "packet", "episode": "ep_r18", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r18/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4450352, "ev": "packet", "episode": "ep_r19", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r19/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4452138, "ev": "packet", "episode": "ep_r20", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_r20/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4453294, "ev": "packet", "episode": "ep_rs01", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs01/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4454346, "ev": "packet", "episode": "ep_rs02", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs02/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4455395, "ev": "packet", "episode": "ep_rs03", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs03/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.4456434, "ev": "packet", "episode": "ep_rs04", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs04/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500469.445747, "ev": "packet", "episode": "ep_rs05", "iter": 0, "sha": "38bd0fddd65d", "file": "/home/claude/icta2026/episodes/ep_rs05/turn0_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500805.4135728, "ev": "ingest", "episode": "ep_r16", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500805.5227282, "ev": "ingest", "episode": "ep_r17", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 24, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500805.6417427, "ev": "ingest", "episode": "ep_r18", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500805.747687, "ev": "ingest", "episode": "ep_r19", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500805.8606896, "ev": "ingest", "episode": "ep_r20", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 8955, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500805.9258528, "ev": "ingest", "episode": "ep_rs01", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 24, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500805.9855623, "ev": "ingest", "episode": "ep_rs02", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 11122, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500806.04479, "ev": "ingest", "episode": "ep_rs03", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500806.103493, "ev": "ingest", "episode": "ep_rs04", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500806.1631234, "ev": "ingest", "episode": "ep_rs05", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 14, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785500806.405077, "ev": "packet", "episode": "ep_f01", "iter": 1, "sha": "15107cc52a9c", "file": "/home/claude/icta2026/episodes/ep_f01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4054837, "ev": "packet", "episode": "ep_f02", "iter": 1, "sha": "f81f01cca758", "file": "/home/claude/icta2026/episodes/ep_f02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4057193, "ev": "packet", "episode": "ep_f03", "iter": 1, "sha": "c29b1b395379", "file": "/home/claude/icta2026/episodes/ep_f03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4059234, "ev": "packet", "episode": "ep_f04", "iter": 1, "sha": "ccc3ad28c341", "file": "/home/claude/icta2026/episodes/ep_f04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4061594, "ev": "packet", "episode": "ep_f05", "iter": 1, "sha": "163eaf691efe", "file": "/home/claude/icta2026/episodes/ep_f05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4063656, "ev": "packet", "episode": "ep_f06", "iter": 1, "sha": "e8f7cb63e8f9", "file": "/home/claude/icta2026/episodes/ep_f06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.406582, "ev": "packet", "episode": "ep_f07", "iter": 1, "sha": "a5df3132e768", "file": "/home/claude/icta2026/episodes/ep_f07/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.406785, "ev": "packet", "episode": "ep_f08", "iter": 1, "sha": "3e3a2778cc4a", "file": "/home/claude/icta2026/episodes/ep_f08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.406973, "ev": "packet", "episode": "ep_f09", "iter": 1, "sha": "18cf065f613e", "file": "/home/claude/icta2026/episodes/ep_f09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.407253, "ev": "packet", "episode": "ep_f10", "iter": 1, "sha": "bd3dc3b690ec", "file": "/home/claude/icta2026/episodes/ep_f10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4075718, "ev": "packet", "episode": "ep_f11", "iter": 1, "sha": "430daacb4a3e", "file": "/home/claude/icta2026/episodes/ep_f11/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.407898, "ev": "packet", "episode": "ep_f12", "iter": 1, "sha": "6d0fb46c60f7", "file": "/home/claude/icta2026/episodes/ep_f12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.408243, "ev": "packet", "episode": "ep_f13", "iter": 1, "sha": "2c23e6dd9efd", "file": "/home/claude/icta2026/episodes/ep_f13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.408555, "ev": "packet", "episode": "ep_f14", "iter": 1, "sha": "a8996a9b59c2", "file": "/home/claude/icta2026/episodes/ep_f14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4087448, "ev": "packet", "episode": "ep_f15", "iter": 1, "sha": "95e99ecafbc2", "file": "/home/claude/icta2026/episodes/ep_f15/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.409027, "ev": "packet", "episode": "ep_f18", "iter": 1, "sha": "b8fa4eda5cb8", "file": "/home/claude/icta2026/episodes/ep_f18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4092507, "ev": "packet", "episode": "ep_f19", "iter": 1, "sha": "9e052226fada", "file": "/home/claude/icta2026/episodes/ep_f19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4095438, "ev": "packet", "episode": "ep_f20", "iter": 1, "sha": "eecf015b834d", "file": "/home/claude/icta2026/episodes/ep_f20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4097624, "ev": "packet", "episode": "ep_fs01", "iter": 1, "sha": "f61fd5159e97", "file": "/home/claude/icta2026/episodes/ep_fs01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.409957, "ev": "packet", "episode": "ep_fs02", "iter": 1, "sha": "6a32a1c1130a", "file": "/home/claude/icta2026/episodes/ep_fs02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.41018, "ev": "packet", "episode": "ep_fs03", "iter": 1, "sha": "71a559aadfc0", "file": "/home/claude/icta2026/episodes/ep_fs03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4103668, "ev": "packet", "episode": "ep_fs04", "iter": 1, "sha": "ec5c4a342c77", "file": "/home/claude/icta2026/episodes/ep_fs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4105544, "ev": "packet", "episode": "ep_fs05", "iter": 1, "sha": "2373ff11707e", "file": "/home/claude/icta2026/episodes/ep_fs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4115922, "ev": "packet", "episode": "ep_p01", "iter": 1, "sha": "c3cca06ed47b", "file": "/home/claude/icta2026/episodes/ep_p01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4117782, "ev": "packet", "episode": "ep_p02", "iter": 1, "sha": "d5383d5ff85f", "file": "/home/claude/icta2026/episodes/ep_p02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4119968, "ev": "packet", "episode": "ep_p03", "iter": 1, "sha": "30458500cedc", "file": "/home/claude/icta2026/episodes/ep_p03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4122362, "ev": "packet", "episode": "ep_p04", "iter": 1, "sha": "a58e5becef03", "file": "/home/claude/icta2026/episodes/ep_p04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4125364, "ev": "packet", "episode": "ep_p05", "iter": 1, "sha": "8b09e3e0f3ae", "file": "/home/claude/icta2026/episodes/ep_p05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4127724, "ev": "packet", "episode": "ep_p06", "iter": 1, "sha": "c1acd4859d3d", "file": "/home/claude/icta2026/episodes/ep_p06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4129548, "ev": "packet", "episode": "ep_p07", "iter": 1, "sha": "0b5818d8a6fb", "file": "/home/claude/icta2026/episodes/ep_p07/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.41321, "ev": "packet", "episode": "ep_p08", "iter": 1, "sha": "83fec36ca336", "file": "/home/claude/icta2026/episodes/ep_p08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4134235, "ev": "packet", "episode": "ep_p09", "iter": 1, "sha": "344246e91d2a", "file": "/home/claude/icta2026/episodes/ep_p09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4136136, "ev": "packet", "episode": "ep_p10", "iter": 1, "sha": "fa931331e1e9", "file": "/home/claude/icta2026/episodes/ep_p10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4138024, "ev": "packet", "episode": "ep_p11", "iter": 1, "sha": "b4efa986d7d3", "file": "/home/claude/icta2026/episodes/ep_p11/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4139593, "ev": "packet", "episode": "ep_p12", "iter": 1, "sha": "a53f4347482e", "file": "/home/claude/icta2026/episodes/ep_p12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4141932, "ev": "packet", "episode": "ep_p13", "iter": 1, "sha": "f5a565a4de19", "file": "/home/claude/icta2026/episodes/ep_p13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4143798, "ev": "packet", "episode": "ep_p14", "iter": 1, "sha": "f68b9d5a14c5", "file": "/home/claude/icta2026/episodes/ep_p14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4146006, "ev": "packet", "episode": "ep_p15", "iter": 1, "sha": "2ab644f21841", "file": "/home/claude/icta2026/episodes/ep_p15/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4148235, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4151528, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.415488, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4157684, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.415948, "ev": "packet", "episode": "ep_r01", "iter": 1, "sha": "e804f9d92841", "file": "/home/claude/icta2026/episodes/ep_r01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4161716, "ev": "packet", "episode": "ep_r02", "iter": 1, "sha": "3d14c9df247d", "file": "/home/claude/icta2026/episodes/ep_r02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4164543, "ev": "packet", "episode": "ep_r04", "iter": 1, "sha": "ed09e84a5b57", "file": "/home/claude/icta2026/episodes/ep_r04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.416665, "ev": "packet", "episode": "ep_r05", "iter": 1, "sha": "4a79a0ee8a52", "file": "/home/claude/icta2026/episodes/ep_r05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4168394, "ev": "packet", "episode": "ep_r06", "iter": 1, "sha": "41e37797ef86", "file": "/home/claude/icta2026/episodes/ep_r06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4170573, "ev": "packet", "episode": "ep_r08", "iter": 1, "sha": "c516e59dd2ab", "file": "/home/claude/icta2026/episodes/ep_r08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4172785, "ev": "packet", "episode": "ep_r09", "iter": 1, "sha": "92a7d211761c", "file": "/home/claude/icta2026/episodes/ep_r09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.41752, "ev": "packet", "episode": "ep_r10", "iter": 1, "sha": "467a24f5ca60", "file": "/home/claude/icta2026/episodes/ep_r10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4177852, "ev": "packet", "episode": "ep_r12", "iter": 1, "sha": "472436076eeb", "file": "/home/claude/icta2026/episodes/ep_r12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4180152, "ev": "packet", "episode": "ep_r13", "iter": 1, "sha": "42549c12fe20", "file": "/home/claude/icta2026/episodes/ep_r13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.4182847, "ev": "packet", "episode": "ep_r14", "iter": 1, "sha": "a011e648f1ae", "file": "/home/claude/icta2026/episodes/ep_r14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785500806.418683, "ev": "packet", "episode": "ep_r17", "iter": 1, "sha": "68d84ff61f78", "file": "/home/claude/icta2026/episodes/ep_r17/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500806.4191768, "ev": "packet", "episode": "ep_r19", "iter": 1, "sha": "1533172fe6fe", "file": "/home/claude/icta2026/episodes/ep_r19/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500806.4194334, "ev": "packet", "episode": "ep_r20", "iter": 1, "sha": "16f6ff7291e3", "file": "/home/claude/icta2026/episodes/ep_r20/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500806.4196975, "ev": "packet", "episode": "ep_rs01", "iter": 1, "sha": "a06bd88e81e3", "file": "/home/claude/icta2026/episodes/ep_rs01/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500806.4200215, "ev": "packet", "episode": "ep_rs02", "iter": 1, "sha": "57493a325590", "file": "/home/claude/icta2026/episodes/ep_rs02/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500806.4203157, "ev": "packet", "episode": "ep_rs03", "iter": 1, "sha": "f45e9f331edb", "file": "/home/claude/icta2026/episodes/ep_rs03/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500806.420629, "ev": "packet", "episode": "ep_rs04", "iter": 1, "sha": "19a7dff01ec8", "file": "/home/claude/icta2026/episodes/ep_rs04/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785500806.4208908, "ev": "packet", "episode": "ep_rs05", "iter": 1, "sha": "fb8892c39ed6", "file": "/home/claude/icta2026/episodes/ep_rs05/turn1_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501224.7170775, "ev": "ingest", "episode": "ep_f12", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785501224.9164224, "ev": "ingest", "episode": "ep_f10", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 9676, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501225.1161854, "ev": "ingest", "episode": "ep_f09", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9884, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501225.178211, "ev": "ingest", "episode": "ep_f11", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785501225.3705394, "ev": "ingest", "episode": "ep_f04", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9854, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501225.5631256, "ev": "ingest", "episode": "ep_f03", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9864, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501225.752096, "ev": "ingest", "episode": "ep_f01", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 12248, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501225.947209, "ev": "ingest", "episode": "ep_f02", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9866, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501226.0034208, "ev": "ingest", "episode": "ep_f07", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785501226.1906617, "ev": "ingest", "episode": "ep_f06", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9872, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501226.383586, "ev": "ingest", "episode": "ep_f05", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9848, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501226.4418921, "ev": "ingest", "episode": "ep_f08", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785501244.3586202, "ev": "packet", "episode": "ep_f01", "iter": 2, "sha": "cb6b75a5e18e", "file": "/home/claude/icta2026/episodes/ep_f01/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501244.3596563, "ev": "packet", "episode": "ep_f07", "iter": 2, "sha": "4e807953d2ad", "file": "/home/claude/icta2026/episodes/ep_f07/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501244.36041, "ev": "packet", "episode": "ep_f08", "iter": 2, "sha": "e77c2fc1a0bd", "file": "/home/claude/icta2026/episodes/ep_f08/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501244.3610497, "ev": "packet", "episode": "ep_f09", "iter": 2, "sha": "6a3c6d141462", "file": "/home/claude/icta2026/episodes/ep_f09/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501244.3614788, "ev": "packet", "episode": "ep_f11", "iter": 2, "sha": "106a0b09e465", "file": "/home/claude/icta2026/episodes/ep_f11/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501244.3617966, "ev": "packet", "episode": "ep_f12", "iter": 2, "sha": "ad81c836210d", "file": "/home/claude/icta2026/episodes/ep_f12/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501244.3620136, "ev": "packet", "episode": "ep_f13", "iter": 1, "sha": "2c23e6dd9efd", "file": "/home/claude/icta2026/episodes/ep_f13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3622935, "ev": "packet", "episode": "ep_f14", "iter": 1, "sha": "a8996a9b59c2", "file": "/home/claude/icta2026/episodes/ep_f14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3625185, "ev": "packet", "episode": "ep_f15", "iter": 1, "sha": "95e99ecafbc2", "file": "/home/claude/icta2026/episodes/ep_f15/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3628726, "ev": "packet", "episode": "ep_f18", "iter": 1, "sha": "b8fa4eda5cb8", "file": "/home/claude/icta2026/episodes/ep_f18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3630815, "ev": "packet", "episode": "ep_f19", "iter": 1, "sha": "9e052226fada", "file": "/home/claude/icta2026/episodes/ep_f19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3633301, "ev": "packet", "episode": "ep_f20", "iter": 1, "sha": "eecf015b834d", "file": "/home/claude/icta2026/episodes/ep_f20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3635397, "ev": "packet", "episode": "ep_fs01", "iter": 1, "sha": "f61fd5159e97", "file": "/home/claude/icta2026/episodes/ep_fs01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3637307, "ev": "packet", "episode": "ep_fs02", "iter": 1, "sha": "6a32a1c1130a", "file": "/home/claude/icta2026/episodes/ep_fs02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.363947, "ev": "packet", "episode": "ep_fs03", "iter": 1, "sha": "71a559aadfc0", "file": "/home/claude/icta2026/episodes/ep_fs03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3641648, "ev": "packet", "episode": "ep_fs04", "iter": 1, "sha": "ec5c4a342c77", "file": "/home/claude/icta2026/episodes/ep_fs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3644867, "ev": "packet", "episode": "ep_fs05", "iter": 1, "sha": "2373ff11707e", "file": "/home/claude/icta2026/episodes/ep_fs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3655508, "ev": "packet", "episode": "ep_p01", "iter": 1, "sha": "c3cca06ed47b", "file": "/home/claude/icta2026/episodes/ep_p01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3657427, "ev": "packet", "episode": "ep_p02", "iter": 1, "sha": "d5383d5ff85f", "file": "/home/claude/icta2026/episodes/ep_p02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3659527, "ev": "packet", "episode": "ep_p03", "iter": 1, "sha": "30458500cedc", "file": "/home/claude/icta2026/episodes/ep_p03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3661506, "ev": "packet", "episode": "ep_p04", "iter": 1, "sha": "a58e5becef03", "file": "/home/claude/icta2026/episodes/ep_p04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3663893, "ev": "packet", "episode": "ep_p05", "iter": 1, "sha": "8b09e3e0f3ae", "file": "/home/claude/icta2026/episodes/ep_p05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3666213, "ev": "packet", "episode": "ep_p06", "iter": 1, "sha": "c1acd4859d3d", "file": "/home/claude/icta2026/episodes/ep_p06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3668272, "ev": "packet", "episode": "ep_p07", "iter": 1, "sha": "0b5818d8a6fb", "file": "/home/claude/icta2026/episodes/ep_p07/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3670273, "ev": "packet", "episode": "ep_p08", "iter": 1, "sha": "83fec36ca336", "file": "/home/claude/icta2026/episodes/ep_p08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3672104, "ev": "packet", "episode": "ep_p09", "iter": 1, "sha": "344246e91d2a", "file": "/home/claude/icta2026/episodes/ep_p09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.367432, "ev": "packet", "episode": "ep_p10", "iter": 1, "sha": "fa931331e1e9", "file": "/home/claude/icta2026/episodes/ep_p10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3676052, "ev": "packet", "episode": "ep_p11", "iter": 1, "sha": "b4efa986d7d3", "file": "/home/claude/icta2026/episodes/ep_p11/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3677366, "ev": "packet", "episode": "ep_p12", "iter": 1, "sha": "a53f4347482e", "file": "/home/claude/icta2026/episodes/ep_p12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3679278, "ev": "packet", "episode": "ep_p13", "iter": 1, "sha": "f5a565a4de19", "file": "/home/claude/icta2026/episodes/ep_p13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.368113, "ev": "packet", "episode": "ep_p14", "iter": 1, "sha": "f68b9d5a14c5", "file": "/home/claude/icta2026/episodes/ep_p14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3684168, "ev": "packet", "episode": "ep_p15", "iter": 1, "sha": "2ab644f21841", "file": "/home/claude/icta2026/episodes/ep_p15/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3686852, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3689046, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3690906, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.369299, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.369489, "ev": "packet", "episode": "ep_r01", "iter": 1, "sha": "e804f9d92841", "file": "/home/claude/icta2026/episodes/ep_r01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3696606, "ev": "packet", "episode": "ep_r02", "iter": 1, "sha": "3d14c9df247d", "file": "/home/claude/icta2026/episodes/ep_r02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3699117, "ev": "packet", "episode": "ep_r04", "iter": 1, "sha": "ed09e84a5b57", "file": "/home/claude/icta2026/episodes/ep_r04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3701394, "ev": "packet", "episode": "ep_r05", "iter": 1, "sha": "4a79a0ee8a52", "file": "/home/claude/icta2026/episodes/ep_r05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3703842, "ev": "packet", "episode": "ep_r06", "iter": 1, "sha": "41e37797ef86", "file": "/home/claude/icta2026/episodes/ep_r06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3706238, "ev": "packet", "episode": "ep_r08", "iter": 1, "sha": "c516e59dd2ab", "file": "/home/claude/icta2026/episodes/ep_r08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.370868, "ev": "packet", "episode": "ep_r09", "iter": 1, "sha": "92a7d211761c", "file": "/home/claude/icta2026/episodes/ep_r09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3710794, "ev": "packet", "episode": "ep_r10", "iter": 1, "sha": "467a24f5ca60", "file": "/home/claude/icta2026/episodes/ep_r10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3713458, "ev": "packet", "episode": "ep_r12", "iter": 1, "sha": "472436076eeb", "file": "/home/claude/icta2026/episodes/ep_r12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3715374, "ev": "packet", "episode": "ep_r13", "iter": 1, "sha": "42549c12fe20", "file": "/home/claude/icta2026/episodes/ep_r13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.371743, "ev": "packet", "episode": "ep_r14", "iter": 1, "sha": "a011e648f1ae", "file": "/home/claude/icta2026/episodes/ep_r14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3720253, "ev": "packet", "episode": "ep_r17", "iter": 1, "sha": "68d84ff61f78", "file": "/home/claude/icta2026/episodes/ep_r17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3723047, "ev": "packet", "episode": "ep_r19", "iter": 1, "sha": "1533172fe6fe", "file": "/home/claude/icta2026/episodes/ep_r19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.372568, "ev": "packet", "episode": "ep_r20", "iter": 1, "sha": "16f6ff7291e3", "file": "/home/claude/icta2026/episodes/ep_r20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3728225, "ev": "packet", "episode": "ep_rs01", "iter": 1, "sha": "a06bd88e81e3", "file": "/home/claude/icta2026/episodes/ep_rs01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3730597, "ev": "packet", "episode": "ep_rs02", "iter": 1, "sha": "57493a325590", "file": "/home/claude/icta2026/episodes/ep_rs02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3733525, "ev": "packet", "episode": "ep_rs03", "iter": 1, "sha": "f45e9f331edb", "file": "/home/claude/icta2026/episodes/ep_rs03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.37359, "ev": "packet", "episode": "ep_rs04", "iter": 1, "sha": "19a7dff01ec8", "file": "/home/claude/icta2026/episodes/ep_rs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501244.3737965, "ev": "packet", "episode": "ep_rs05", "iter": 1, "sha": "fb8892c39ed6", "file": "/home/claude/icta2026/episodes/ep_rs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501773.5993552, "ev": "ingest", "episode": "ep_f12", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10086, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501773.808075, "ev": "ingest", "episode": "ep_f19", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9844, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501773.9207277, "ev": "ingest", "episode": "ep_f11", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 10074, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501774.1180377, "ev": "ingest", "episode": "ep_f18", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9702, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501774.183208, "ev": "ingest", "episode": "ep_f13", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785501774.247998, "ev": "ingest", "episode": "ep_f01", "iter": 2, "parse_error": true, "phase": "phase3"}
+{"t": 1785501774.45414, "ev": "ingest", "episode": "ep_f20", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9848, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501774.5633168, "ev": "ingest", "episode": "ep_f08", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 10132, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501774.7908452, "ev": "ingest", "episode": "ep_f15", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9862, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501775.0260978, "ev": "ingest", "episode": "ep_f09", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 11010, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501775.0914955, "ev": "ingest", "episode": "ep_f14", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785501775.199375, "ev": "ingest", "episode": "ep_f07", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9910, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785501786.7857423, "ev": "packet", "episode": "ep_f01", "iter": 3, "sha": "467393eede99", "file": "/home/claude/icta2026/episodes/ep_f01/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501786.7865686, "ev": "packet", "episode": "ep_f07", "iter": 3, "sha": "0aa194330982", "file": "/home/claude/icta2026/episodes/ep_f07/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501786.7869632, "ev": "packet", "episode": "ep_f08", "iter": 3, "sha": "204c71d17f35", "file": "/home/claude/icta2026/episodes/ep_f08/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501786.7876906, "ev": "packet", "episode": "ep_f11", "iter": 3, "sha": "cd4133bd3922", "file": "/home/claude/icta2026/episodes/ep_f11/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501786.7880895, "ev": "packet", "episode": "ep_f13", "iter": 2, "sha": "9fe08ed5de31", "file": "/home/claude/icta2026/episodes/ep_f13/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501786.7884424, "ev": "packet", "episode": "ep_f14", "iter": 2, "sha": "62e021bf281d", "file": "/home/claude/icta2026/episodes/ep_f14/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501786.7891476, "ev": "packet", "episode": "ep_f18", "iter": 2, "sha": "41c94e1efe75", "file": "/home/claude/icta2026/episodes/ep_f18/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501786.7896469, "ev": "packet", "episode": "ep_f19", "iter": 2, "sha": "96af9cebe732", "file": "/home/claude/icta2026/episodes/ep_f19/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501786.79006, "ev": "packet", "episode": "ep_f20", "iter": 2, "sha": "5234b3b5c41a", "file": "/home/claude/icta2026/episodes/ep_f20/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785501786.7902937, "ev": "packet", "episode": "ep_fs01", "iter": 1, "sha": "f61fd5159e97", "file": "/home/claude/icta2026/episodes/ep_fs01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7906616, "ev": "packet", "episode": "ep_fs02", "iter": 1, "sha": "6a32a1c1130a", "file": "/home/claude/icta2026/episodes/ep_fs02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7909276, "ev": "packet", "episode": "ep_fs03", "iter": 1, "sha": "71a559aadfc0", "file": "/home/claude/icta2026/episodes/ep_fs03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7911522, "ev": "packet", "episode": "ep_fs04", "iter": 1, "sha": "ec5c4a342c77", "file": "/home/claude/icta2026/episodes/ep_fs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7913556, "ev": "packet", "episode": "ep_fs05", "iter": 1, "sha": "2373ff11707e", "file": "/home/claude/icta2026/episodes/ep_fs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7926636, "ev": "packet", "episode": "ep_p01", "iter": 1, "sha": "c3cca06ed47b", "file": "/home/claude/icta2026/episodes/ep_p01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.792865, "ev": "packet", "episode": "ep_p02", "iter": 1, "sha": "d5383d5ff85f", "file": "/home/claude/icta2026/episodes/ep_p02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7930768, "ev": "packet", "episode": "ep_p03", "iter": 1, "sha": "30458500cedc", "file": "/home/claude/icta2026/episodes/ep_p03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7932618, "ev": "packet", "episode": "ep_p04", "iter": 1, "sha": "a58e5becef03", "file": "/home/claude/icta2026/episodes/ep_p04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7935166, "ev": "packet", "episode": "ep_p05", "iter": 1, "sha": "8b09e3e0f3ae", "file": "/home/claude/icta2026/episodes/ep_p05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7937124, "ev": "packet", "episode": "ep_p06", "iter": 1, "sha": "c1acd4859d3d", "file": "/home/claude/icta2026/episodes/ep_p06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7938921, "ev": "packet", "episode": "ep_p07", "iter": 1, "sha": "0b5818d8a6fb", "file": "/home/claude/icta2026/episodes/ep_p07/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7941542, "ev": "packet", "episode": "ep_p08", "iter": 1, "sha": "83fec36ca336", "file": "/home/claude/icta2026/episodes/ep_p08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.794526, "ev": "packet", "episode": "ep_p09", "iter": 1, "sha": "344246e91d2a", "file": "/home/claude/icta2026/episodes/ep_p09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7947192, "ev": "packet", "episode": "ep_p10", "iter": 1, "sha": "fa931331e1e9", "file": "/home/claude/icta2026/episodes/ep_p10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7948918, "ev": "packet", "episode": "ep_p11", "iter": 1, "sha": "b4efa986d7d3", "file": "/home/claude/icta2026/episodes/ep_p11/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7950351, "ev": "packet", "episode": "ep_p12", "iter": 1, "sha": "a53f4347482e", "file": "/home/claude/icta2026/episodes/ep_p12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7952108, "ev": "packet", "episode": "ep_p13", "iter": 1, "sha": "f5a565a4de19", "file": "/home/claude/icta2026/episodes/ep_p13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7953794, "ev": "packet", "episode": "ep_p14", "iter": 1, "sha": "f68b9d5a14c5", "file": "/home/claude/icta2026/episodes/ep_p14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7956114, "ev": "packet", "episode": "ep_p15", "iter": 1, "sha": "2ab644f21841", "file": "/home/claude/icta2026/episodes/ep_p15/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7958481, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7960699, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.796247, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7965164, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7967021, "ev": "packet", "episode": "ep_r01", "iter": 1, "sha": "e804f9d92841", "file": "/home/claude/icta2026/episodes/ep_r01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7969062, "ev": "packet", "episode": "ep_r02", "iter": 1, "sha": "3d14c9df247d", "file": "/home/claude/icta2026/episodes/ep_r02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.797338, "ev": "packet", "episode": "ep_r04", "iter": 1, "sha": "ed09e84a5b57", "file": "/home/claude/icta2026/episodes/ep_r04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7977295, "ev": "packet", "episode": "ep_r05", "iter": 1, "sha": "4a79a0ee8a52", "file": "/home/claude/icta2026/episodes/ep_r05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7979586, "ev": "packet", "episode": "ep_r06", "iter": 1, "sha": "41e37797ef86", "file": "/home/claude/icta2026/episodes/ep_r06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.79822, "ev": "packet", "episode": "ep_r08", "iter": 1, "sha": "c516e59dd2ab", "file": "/home/claude/icta2026/episodes/ep_r08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7984245, "ev": "packet", "episode": "ep_r09", "iter": 1, "sha": "92a7d211761c", "file": "/home/claude/icta2026/episodes/ep_r09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7986708, "ev": "packet", "episode": "ep_r10", "iter": 1, "sha": "467a24f5ca60", "file": "/home/claude/icta2026/episodes/ep_r10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7988923, "ev": "packet", "episode": "ep_r12", "iter": 1, "sha": "472436076eeb", "file": "/home/claude/icta2026/episodes/ep_r12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7991245, "ev": "packet", "episode": "ep_r13", "iter": 1, "sha": "42549c12fe20", "file": "/home/claude/icta2026/episodes/ep_r13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7993424, "ev": "packet", "episode": "ep_r14", "iter": 1, "sha": "a011e648f1ae", "file": "/home/claude/icta2026/episodes/ep_r14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7996624, "ev": "packet", "episode": "ep_r17", "iter": 1, "sha": "68d84ff61f78", "file": "/home/claude/icta2026/episodes/ep_r17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.7999218, "ev": "packet", "episode": "ep_r19", "iter": 1, "sha": "1533172fe6fe", "file": "/home/claude/icta2026/episodes/ep_r19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.800104, "ev": "packet", "episode": "ep_r20", "iter": 1, "sha": "16f6ff7291e3", "file": "/home/claude/icta2026/episodes/ep_r20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.8002868, "ev": "packet", "episode": "ep_rs01", "iter": 1, "sha": "a06bd88e81e3", "file": "/home/claude/icta2026/episodes/ep_rs01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.800709, "ev": "packet", "episode": "ep_rs02", "iter": 1, "sha": "57493a325590", "file": "/home/claude/icta2026/episodes/ep_rs02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.800972, "ev": "packet", "episode": "ep_rs03", "iter": 1, "sha": "f45e9f331edb", "file": "/home/claude/icta2026/episodes/ep_rs03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.8011563, "ev": "packet", "episode": "ep_rs04", "iter": 1, "sha": "19a7dff01ec8", "file": "/home/claude/icta2026/episodes/ep_rs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785501786.801332, "ev": "packet", "episode": "ep_rs05", "iter": 1, "sha": "fb8892c39ed6", "file": "/home/claude/icta2026/episodes/ep_rs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509403.1359708, "ev": "ingest", "episode": "ep_f13", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10086, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509403.2469532, "ev": "ingest", "episode": "ep_f01", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 46800, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509403.3659914, "ev": "ingest", "episode": "ep_f14", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10080, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509403.5852711, "ev": "ingest", "episode": "ep_f07", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 22817, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509403.6971493, "ev": "ingest", "episode": "ep_fs02", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9684, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509403.806327, "ev": "ingest", "episode": "ep_fs01", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9680, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509404.0099459, "ev": "ingest", "episode": "ep_f11", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 11026, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509404.074909, "ev": "ingest", "episode": "ep_f19", "iter": 2, "parse_error": true, "phase": "phase3"}
+{"t": 1785509404.136645, "ev": "ingest", "episode": "ep_f20", "iter": 2, "parse_error": true, "phase": "phase3"}
+{"t": 1785509404.342803, "ev": "ingest", "episode": "ep_f18", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10818, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509404.454394, "ev": "ingest", "episode": "ep_fs03", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9688, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509404.7152627, "ev": "ingest", "episode": "ep_f08", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 11238, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509423.3698003, "ev": "packet", "episode": "ep_f19", "iter": 3, "sha": "466cbf0da7a3", "file": "/home/claude/icta2026/episodes/ep_f19/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509423.3702083, "ev": "packet", "episode": "ep_f20", "iter": 3, "sha": "11b9fa209501", "file": "/home/claude/icta2026/episodes/ep_f20/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509423.3705199, "ev": "packet", "episode": "ep_fs01", "iter": 2, "sha": "6f2f15b5bd38", "file": "/home/claude/icta2026/episodes/ep_fs01/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509423.3707626, "ev": "packet", "episode": "ep_fs02", "iter": 2, "sha": "ca5e6a836aee", "file": "/home/claude/icta2026/episodes/ep_fs02/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509423.371029, "ev": "packet", "episode": "ep_fs03", "iter": 2, "sha": "fc9cdee4c08f", "file": "/home/claude/icta2026/episodes/ep_fs03/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509423.371194, "ev": "packet", "episode": "ep_fs04", "iter": 1, "sha": "ec5c4a342c77", "file": "/home/claude/icta2026/episodes/ep_fs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3713605, "ev": "packet", "episode": "ep_fs05", "iter": 1, "sha": "2373ff11707e", "file": "/home/claude/icta2026/episodes/ep_fs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.372272, "ev": "packet", "episode": "ep_p01", "iter": 1, "sha": "c3cca06ed47b", "file": "/home/claude/icta2026/episodes/ep_p01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.372442, "ev": "packet", "episode": "ep_p02", "iter": 1, "sha": "d5383d5ff85f", "file": "/home/claude/icta2026/episodes/ep_p02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3725798, "ev": "packet", "episode": "ep_p03", "iter": 1, "sha": "30458500cedc", "file": "/home/claude/icta2026/episodes/ep_p03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3727176, "ev": "packet", "episode": "ep_p04", "iter": 1, "sha": "a58e5becef03", "file": "/home/claude/icta2026/episodes/ep_p04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3729851, "ev": "packet", "episode": "ep_p05", "iter": 1, "sha": "8b09e3e0f3ae", "file": "/home/claude/icta2026/episodes/ep_p05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3731925, "ev": "packet", "episode": "ep_p06", "iter": 1, "sha": "c1acd4859d3d", "file": "/home/claude/icta2026/episodes/ep_p06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3733494, "ev": "packet", "episode": "ep_p07", "iter": 1, "sha": "0b5818d8a6fb", "file": "/home/claude/icta2026/episodes/ep_p07/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.373499, "ev": "packet", "episode": "ep_p08", "iter": 1, "sha": "83fec36ca336", "file": "/home/claude/icta2026/episodes/ep_p08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3736382, "ev": "packet", "episode": "ep_p09", "iter": 1, "sha": "344246e91d2a", "file": "/home/claude/icta2026/episodes/ep_p09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3737676, "ev": "packet", "episode": "ep_p10", "iter": 1, "sha": "fa931331e1e9", "file": "/home/claude/icta2026/episodes/ep_p10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3739457, "ev": "packet", "episode": "ep_p11", "iter": 1, "sha": "b4efa986d7d3", "file": "/home/claude/icta2026/episodes/ep_p11/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3740525, "ev": "packet", "episode": "ep_p12", "iter": 1, "sha": "a53f4347482e", "file": "/home/claude/icta2026/episodes/ep_p12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3741777, "ev": "packet", "episode": "ep_p13", "iter": 1, "sha": "f5a565a4de19", "file": "/home/claude/icta2026/episodes/ep_p13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.374306, "ev": "packet", "episode": "ep_p14", "iter": 1, "sha": "f68b9d5a14c5", "file": "/home/claude/icta2026/episodes/ep_p14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3744597, "ev": "packet", "episode": "ep_p15", "iter": 1, "sha": "2ab644f21841", "file": "/home/claude/icta2026/episodes/ep_p15/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3746362, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3747764, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3749363, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3750978, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3752263, "ev": "packet", "episode": "ep_r01", "iter": 1, "sha": "e804f9d92841", "file": "/home/claude/icta2026/episodes/ep_r01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3753664, "ev": "packet", "episode": "ep_r02", "iter": 1, "sha": "3d14c9df247d", "file": "/home/claude/icta2026/episodes/ep_r02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3755367, "ev": "packet", "episode": "ep_r04", "iter": 1, "sha": "ed09e84a5b57", "file": "/home/claude/icta2026/episodes/ep_r04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3756857, "ev": "packet", "episode": "ep_r05", "iter": 1, "sha": "4a79a0ee8a52", "file": "/home/claude/icta2026/episodes/ep_r05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3758154, "ev": "packet", "episode": "ep_r06", "iter": 1, "sha": "41e37797ef86", "file": "/home/claude/icta2026/episodes/ep_r06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3760335, "ev": "packet", "episode": "ep_r08", "iter": 1, "sha": "c516e59dd2ab", "file": "/home/claude/icta2026/episodes/ep_r08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.376163, "ev": "packet", "episode": "ep_r09", "iter": 1, "sha": "92a7d211761c", "file": "/home/claude/icta2026/episodes/ep_r09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3763065, "ev": "packet", "episode": "ep_r10", "iter": 1, "sha": "467a24f5ca60", "file": "/home/claude/icta2026/episodes/ep_r10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3764877, "ev": "packet", "episode": "ep_r12", "iter": 1, "sha": "472436076eeb", "file": "/home/claude/icta2026/episodes/ep_r12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.376632, "ev": "packet", "episode": "ep_r13", "iter": 1, "sha": "42549c12fe20", "file": "/home/claude/icta2026/episodes/ep_r13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3767614, "ev": "packet", "episode": "ep_r14", "iter": 1, "sha": "a011e648f1ae", "file": "/home/claude/icta2026/episodes/ep_r14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3772635, "ev": "packet", "episode": "ep_r17", "iter": 1, "sha": "68d84ff61f78", "file": "/home/claude/icta2026/episodes/ep_r17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3774977, "ev": "packet", "episode": "ep_r19", "iter": 1, "sha": "1533172fe6fe", "file": "/home/claude/icta2026/episodes/ep_r19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3776336, "ev": "packet", "episode": "ep_r20", "iter": 1, "sha": "16f6ff7291e3", "file": "/home/claude/icta2026/episodes/ep_r20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3777893, "ev": "packet", "episode": "ep_rs01", "iter": 1, "sha": "a06bd88e81e3", "file": "/home/claude/icta2026/episodes/ep_rs01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.377986, "ev": "packet", "episode": "ep_rs02", "iter": 1, "sha": "57493a325590", "file": "/home/claude/icta2026/episodes/ep_rs02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3781273, "ev": "packet", "episode": "ep_rs03", "iter": 1, "sha": "f45e9f331edb", "file": "/home/claude/icta2026/episodes/ep_rs03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3783221, "ev": "packet", "episode": "ep_rs04", "iter": 1, "sha": "19a7dff01ec8", "file": "/home/claude/icta2026/episodes/ep_rs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509423.3784955, "ev": "packet", "episode": "ep_rs05", "iter": 1, "sha": "fb8892c39ed6", "file": "/home/claude/icta2026/episodes/ep_rs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509892.0422206, "ev": "ingest", "episode": "ep_fs04", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9684, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509892.1032162, "ev": "ingest", "episode": "ep_fs03", "iter": 2, "parse_error": true, "phase": "phase3"}
+{"t": 1785509892.1624284, "ev": "ingest", "episode": "ep_p03", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785509892.3733273, "ev": "ingest", "episode": "ep_p05", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 9454, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509892.5641582, "ev": "ingest", "episode": "ep_p02", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9854, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509892.7804604, "ev": "ingest", "episode": "ep_p01", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9874, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509893.0096407, "ev": "ingest", "episode": "ep_fs01", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10816, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509893.1161473, "ev": "ingest", "episode": "ep_f19", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 46816, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509893.2933457, "ev": "ingest", "episode": "ep_fs02", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10820, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509893.3932333, "ev": "ingest", "episode": "ep_f20", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 11046, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509893.4521039, "ev": "ingest", "episode": "ep_p04", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785509893.5580878, "ev": "ingest", "episode": "ep_fs05", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 23054, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785509904.936249, "ev": "packet", "episode": "ep_fs03", "iter": 3, "sha": "eab3fcef86da", "file": "/home/claude/icta2026/episodes/ep_fs03/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509904.937145, "ev": "packet", "episode": "ep_fs04", "iter": 2, "sha": "f6329f636fde", "file": "/home/claude/icta2026/episodes/ep_fs04/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509904.937752, "ev": "packet", "episode": "ep_fs05", "iter": 2, "sha": "6949946e17d1", "file": "/home/claude/icta2026/episodes/ep_fs05/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509904.9418895, "ev": "packet", "episode": "ep_p02", "iter": 2, "sha": "63c578f83f11", "file": "/home/claude/icta2026/episodes/ep_p02/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509904.942414, "ev": "packet", "episode": "ep_p03", "iter": 2, "sha": "e8e72120e4b4", "file": "/home/claude/icta2026/episodes/ep_p03/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509904.942754, "ev": "packet", "episode": "ep_p04", "iter": 2, "sha": "f5afca379a10", "file": "/home/claude/icta2026/episodes/ep_p04/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509904.9432907, "ev": "packet", "episode": "ep_p05", "iter": 2, "sha": "3e71550255e2", "file": "/home/claude/icta2026/episodes/ep_p05/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785509904.9437249, "ev": "packet", "episode": "ep_p06", "iter": 1, "sha": "c1acd4859d3d", "file": "/home/claude/icta2026/episodes/ep_p06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9441895, "ev": "packet", "episode": "ep_p07", "iter": 1, "sha": "0b5818d8a6fb", "file": "/home/claude/icta2026/episodes/ep_p07/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9445615, "ev": "packet", "episode": "ep_p08", "iter": 1, "sha": "83fec36ca336", "file": "/home/claude/icta2026/episodes/ep_p08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.944993, "ev": "packet", "episode": "ep_p09", "iter": 1, "sha": "344246e91d2a", "file": "/home/claude/icta2026/episodes/ep_p09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.945409, "ev": "packet", "episode": "ep_p10", "iter": 1, "sha": "fa931331e1e9", "file": "/home/claude/icta2026/episodes/ep_p10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9457073, "ev": "packet", "episode": "ep_p11", "iter": 1, "sha": "b4efa986d7d3", "file": "/home/claude/icta2026/episodes/ep_p11/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9460678, "ev": "packet", "episode": "ep_p12", "iter": 1, "sha": "a53f4347482e", "file": "/home/claude/icta2026/episodes/ep_p12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9463878, "ev": "packet", "episode": "ep_p13", "iter": 1, "sha": "f5a565a4de19", "file": "/home/claude/icta2026/episodes/ep_p13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9468305, "ev": "packet", "episode": "ep_p14", "iter": 1, "sha": "f68b9d5a14c5", "file": "/home/claude/icta2026/episodes/ep_p14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9472792, "ev": "packet", "episode": "ep_p15", "iter": 1, "sha": "2ab644f21841", "file": "/home/claude/icta2026/episodes/ep_p15/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.947893, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.948401, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9488492, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.94935, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9497535, "ev": "packet", "episode": "ep_r01", "iter": 1, "sha": "e804f9d92841", "file": "/home/claude/icta2026/episodes/ep_r01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9501786, "ev": "packet", "episode": "ep_r02", "iter": 1, "sha": "3d14c9df247d", "file": "/home/claude/icta2026/episodes/ep_r02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9506876, "ev": "packet", "episode": "ep_r04", "iter": 1, "sha": "ed09e84a5b57", "file": "/home/claude/icta2026/episodes/ep_r04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9510624, "ev": "packet", "episode": "ep_r05", "iter": 1, "sha": "4a79a0ee8a52", "file": "/home/claude/icta2026/episodes/ep_r05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9514947, "ev": "packet", "episode": "ep_r06", "iter": 1, "sha": "41e37797ef86", "file": "/home/claude/icta2026/episodes/ep_r06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9524157, "ev": "packet", "episode": "ep_r08", "iter": 1, "sha": "c516e59dd2ab", "file": "/home/claude/icta2026/episodes/ep_r08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9528532, "ev": "packet", "episode": "ep_r09", "iter": 1, "sha": "92a7d211761c", "file": "/home/claude/icta2026/episodes/ep_r09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9532125, "ev": "packet", "episode": "ep_r10", "iter": 1, "sha": "467a24f5ca60", "file": "/home/claude/icta2026/episodes/ep_r10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9542496, "ev": "packet", "episode": "ep_r12", "iter": 1, "sha": "472436076eeb", "file": "/home/claude/icta2026/episodes/ep_r12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9547434, "ev": "packet", "episode": "ep_r13", "iter": 1, "sha": "42549c12fe20", "file": "/home/claude/icta2026/episodes/ep_r13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9551651, "ev": "packet", "episode": "ep_r14", "iter": 1, "sha": "a011e648f1ae", "file": "/home/claude/icta2026/episodes/ep_r14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9557436, "ev": "packet", "episode": "ep_r17", "iter": 1, "sha": "68d84ff61f78", "file": "/home/claude/icta2026/episodes/ep_r17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9562979, "ev": "packet", "episode": "ep_r19", "iter": 1, "sha": "1533172fe6fe", "file": "/home/claude/icta2026/episodes/ep_r19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9566555, "ev": "packet", "episode": "ep_r20", "iter": 1, "sha": "16f6ff7291e3", "file": "/home/claude/icta2026/episodes/ep_r20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9571607, "ev": "packet", "episode": "ep_rs01", "iter": 1, "sha": "a06bd88e81e3", "file": "/home/claude/icta2026/episodes/ep_rs01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9575558, "ev": "packet", "episode": "ep_rs02", "iter": 1, "sha": "57493a325590", "file": "/home/claude/icta2026/episodes/ep_rs02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9579904, "ev": "packet", "episode": "ep_rs03", "iter": 1, "sha": "f45e9f331edb", "file": "/home/claude/icta2026/episodes/ep_rs03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9582849, "ev": "packet", "episode": "ep_rs04", "iter": 1, "sha": "19a7dff01ec8", "file": "/home/claude/icta2026/episodes/ep_rs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785509904.9587228, "ev": "packet", "episode": "ep_rs05", "iter": 1, "sha": "fb8892c39ed6", "file": "/home/claude/icta2026/episodes/ep_rs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510340.51388, "ev": "ingest", "episode": "ep_p08", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9846, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510340.6190639, "ev": "ingest", "episode": "ep_p03", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10096, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510340.8037217, "ev": "ingest", "episode": "ep_p09", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 9444, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510340.8674047, "ev": "ingest", "episode": "ep_p06", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785510341.0694144, "ev": "ingest", "episode": "ep_fs05", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10796, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510341.331479, "ev": "ingest", "episode": "ep_p02", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 10570, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510341.5591493, "ev": "ingest", "episode": "ep_fs04", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 10796, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510341.6738195, "ev": "ingest", "episode": "ep_p04", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10082, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510341.9325113, "ev": "ingest", "episode": "ep_p05", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 10160, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510342.0534508, "ev": "ingest", "episode": "ep_fs03", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 13432, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510342.233783, "ev": "ingest", "episode": "ep_p07", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9892, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510342.4403446, "ev": "ingest", "episode": "ep_p10", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9856, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510342.5129776, "ev": "packet", "episode": "ep_fs04", "iter": 3, "sha": "0d0df8ceca56", "file": "/home/claude/icta2026/episodes/ep_fs04/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510342.5146775, "ev": "packet", "episode": "ep_p05", "iter": 3, "sha": "894684959773", "file": "/home/claude/icta2026/episodes/ep_p05/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510342.5150864, "ev": "packet", "episode": "ep_p06", "iter": 2, "sha": "1f77ace0201d", "file": "/home/claude/icta2026/episodes/ep_p06/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510342.5154445, "ev": "packet", "episode": "ep_p07", "iter": 2, "sha": "62d24a9f8a49", "file": "/home/claude/icta2026/episodes/ep_p07/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510342.5157235, "ev": "packet", "episode": "ep_p08", "iter": 2, "sha": "db7c8bb69109", "file": "/home/claude/icta2026/episodes/ep_p08/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510342.5159962, "ev": "packet", "episode": "ep_p09", "iter": 2, "sha": "74bc52d781a3", "file": "/home/claude/icta2026/episodes/ep_p09/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510342.5162842, "ev": "packet", "episode": "ep_p10", "iter": 2, "sha": "6404e5c0c562", "file": "/home/claude/icta2026/episodes/ep_p10/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510342.516465, "ev": "packet", "episode": "ep_p11", "iter": 1, "sha": "b4efa986d7d3", "file": "/home/claude/icta2026/episodes/ep_p11/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5165794, "ev": "packet", "episode": "ep_p12", "iter": 1, "sha": "a53f4347482e", "file": "/home/claude/icta2026/episodes/ep_p12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5167563, "ev": "packet", "episode": "ep_p13", "iter": 1, "sha": "f5a565a4de19", "file": "/home/claude/icta2026/episodes/ep_p13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5169861, "ev": "packet", "episode": "ep_p14", "iter": 1, "sha": "f68b9d5a14c5", "file": "/home/claude/icta2026/episodes/ep_p14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5171764, "ev": "packet", "episode": "ep_p15", "iter": 1, "sha": "2ab644f21841", "file": "/home/claude/icta2026/episodes/ep_p15/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5173812, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5175307, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5176847, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.517861, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5180116, "ev": "packet", "episode": "ep_r01", "iter": 1, "sha": "e804f9d92841", "file": "/home/claude/icta2026/episodes/ep_r01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5182278, "ev": "packet", "episode": "ep_r02", "iter": 1, "sha": "3d14c9df247d", "file": "/home/claude/icta2026/episodes/ep_r02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.518441, "ev": "packet", "episode": "ep_r04", "iter": 1, "sha": "ed09e84a5b57", "file": "/home/claude/icta2026/episodes/ep_r04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5186458, "ev": "packet", "episode": "ep_r05", "iter": 1, "sha": "4a79a0ee8a52", "file": "/home/claude/icta2026/episodes/ep_r05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5188, "ev": "packet", "episode": "ep_r06", "iter": 1, "sha": "41e37797ef86", "file": "/home/claude/icta2026/episodes/ep_r06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5190039, "ev": "packet", "episode": "ep_r08", "iter": 1, "sha": "c516e59dd2ab", "file": "/home/claude/icta2026/episodes/ep_r08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.519216, "ev": "packet", "episode": "ep_r09", "iter": 1, "sha": "92a7d211761c", "file": "/home/claude/icta2026/episodes/ep_r09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5194066, "ev": "packet", "episode": "ep_r10", "iter": 1, "sha": "467a24f5ca60", "file": "/home/claude/icta2026/episodes/ep_r10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.519617, "ev": "packet", "episode": "ep_r12", "iter": 1, "sha": "472436076eeb", "file": "/home/claude/icta2026/episodes/ep_r12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5197935, "ev": "packet", "episode": "ep_r13", "iter": 1, "sha": "42549c12fe20", "file": "/home/claude/icta2026/episodes/ep_r13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5199254, "ev": "packet", "episode": "ep_r14", "iter": 1, "sha": "a011e648f1ae", "file": "/home/claude/icta2026/episodes/ep_r14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.520214, "ev": "packet", "episode": "ep_r17", "iter": 1, "sha": "68d84ff61f78", "file": "/home/claude/icta2026/episodes/ep_r17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.520424, "ev": "packet", "episode": "ep_r19", "iter": 1, "sha": "1533172fe6fe", "file": "/home/claude/icta2026/episodes/ep_r19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5205624, "ev": "packet", "episode": "ep_r20", "iter": 1, "sha": "16f6ff7291e3", "file": "/home/claude/icta2026/episodes/ep_r20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5207522, "ev": "packet", "episode": "ep_rs01", "iter": 1, "sha": "a06bd88e81e3", "file": "/home/claude/icta2026/episodes/ep_rs01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5209935, "ev": "packet", "episode": "ep_rs02", "iter": 1, "sha": "57493a325590", "file": "/home/claude/icta2026/episodes/ep_rs02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5211828, "ev": "packet", "episode": "ep_rs03", "iter": 1, "sha": "f45e9f331edb", "file": "/home/claude/icta2026/episodes/ep_rs03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5213737, "ev": "packet", "episode": "ep_rs04", "iter": 1, "sha": "19a7dff01ec8", "file": "/home/claude/icta2026/episodes/ep_rs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510342.5215538, "ev": "packet", "episode": "ep_rs05", "iter": 1, "sha": "fb8892c39ed6", "file": "/home/claude/icta2026/episodes/ep_rs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510800.2581925, "ev": "ingest", "episode": "ep_p15", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 9490, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510800.3693945, "ev": "ingest", "episode": "ep_p06", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 10078, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510800.5487792, "ev": "ingest", "episode": "ep_fs04", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 14168, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510800.6059725, "ev": "ingest", "episode": "ep_p13", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785510800.8064053, "ev": "ingest", "episode": "ep_p09", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 10568, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510800.864619, "ev": "ingest", "episode": "ep_p05", "iter": 3, "parse_error": true, "phase": "phase3"}
+{"t": 1785510800.9590542, "ev": "ingest", "episode": "ep_p12", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 8956, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510801.1465812, "ev": "ingest", "episode": "ep_p07", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 11008, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510801.2118304, "ev": "ingest", "episode": "ep_p10", "iter": 2, "parse_error": true, "phase": "phase3"}
+{"t": 1785510801.4286513, "ev": "ingest", "episode": "ep_p14", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9870, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510801.6447062, "ev": "ingest", "episode": "ep_p11", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9854, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785510801.7047005, "ev": "ingest", "episode": "ep_p08", "iter": 2, "parse_error": true, "phase": "phase3"}
+{"t": 1785510801.7926874, "ev": "packet", "episode": "ep_p05", "iter": 4, "sha": "89390286bbdf", "file": "/home/claude/icta2026/episodes/ep_p05/turn4_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510801.7934105, "ev": "packet", "episode": "ep_p06", "iter": 3, "sha": "e5e4b16daaa4", "file": "/home/claude/icta2026/episodes/ep_p06/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510801.794061, "ev": "packet", "episode": "ep_p07", "iter": 3, "sha": "2169778f953a", "file": "/home/claude/icta2026/episodes/ep_p07/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510801.794579, "ev": "packet", "episode": "ep_p08", "iter": 3, "sha": "a8cf51abd638", "file": "/home/claude/icta2026/episodes/ep_p08/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510801.7952585, "ev": "packet", "episode": "ep_p09", "iter": 3, "sha": "0553d00b1531", "file": "/home/claude/icta2026/episodes/ep_p09/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510801.7959108, "ev": "packet", "episode": "ep_p10", "iter": 3, "sha": "941585af54b7", "file": "/home/claude/icta2026/episodes/ep_p10/turn3_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510801.7964697, "ev": "packet", "episode": "ep_p12", "iter": 2, "sha": "4939dba1eeb5", "file": "/home/claude/icta2026/episodes/ep_p12/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510801.7969544, "ev": "packet", "episode": "ep_p13", "iter": 2, "sha": "d0f1ee38e76a", "file": "/home/claude/icta2026/episodes/ep_p13/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510801.7974164, "ev": "packet", "episode": "ep_p14", "iter": 2, "sha": "35c591e785a5", "file": "/home/claude/icta2026/episodes/ep_p14/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510801.7979932, "ev": "packet", "episode": "ep_p15", "iter": 2, "sha": "579b67a56c84", "file": "/home/claude/icta2026/episodes/ep_p15/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785510801.7986627, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.7991364, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.7994432, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.799821, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8004901, "ev": "packet", "episode": "ep_r01", "iter": 1, "sha": "e804f9d92841", "file": "/home/claude/icta2026/episodes/ep_r01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8009923, "ev": "packet", "episode": "ep_r02", "iter": 1, "sha": "3d14c9df247d", "file": "/home/claude/icta2026/episodes/ep_r02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8015504, "ev": "packet", "episode": "ep_r04", "iter": 1, "sha": "ed09e84a5b57", "file": "/home/claude/icta2026/episodes/ep_r04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8019848, "ev": "packet", "episode": "ep_r05", "iter": 1, "sha": "4a79a0ee8a52", "file": "/home/claude/icta2026/episodes/ep_r05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8023348, "ev": "packet", "episode": "ep_r06", "iter": 1, "sha": "41e37797ef86", "file": "/home/claude/icta2026/episodes/ep_r06/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.80294, "ev": "packet", "episode": "ep_r08", "iter": 1, "sha": "c516e59dd2ab", "file": "/home/claude/icta2026/episodes/ep_r08/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8033054, "ev": "packet", "episode": "ep_r09", "iter": 1, "sha": "92a7d211761c", "file": "/home/claude/icta2026/episodes/ep_r09/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8035655, "ev": "packet", "episode": "ep_r10", "iter": 1, "sha": "467a24f5ca60", "file": "/home/claude/icta2026/episodes/ep_r10/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.804045, "ev": "packet", "episode": "ep_r12", "iter": 1, "sha": "472436076eeb", "file": "/home/claude/icta2026/episodes/ep_r12/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8043923, "ev": "packet", "episode": "ep_r13", "iter": 1, "sha": "42549c12fe20", "file": "/home/claude/icta2026/episodes/ep_r13/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8048775, "ev": "packet", "episode": "ep_r14", "iter": 1, "sha": "a011e648f1ae", "file": "/home/claude/icta2026/episodes/ep_r14/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8054738, "ev": "packet", "episode": "ep_r17", "iter": 1, "sha": "68d84ff61f78", "file": "/home/claude/icta2026/episodes/ep_r17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8058383, "ev": "packet", "episode": "ep_r19", "iter": 1, "sha": "1533172fe6fe", "file": "/home/claude/icta2026/episodes/ep_r19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8060284, "ev": "packet", "episode": "ep_r20", "iter": 1, "sha": "16f6ff7291e3", "file": "/home/claude/icta2026/episodes/ep_r20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8063388, "ev": "packet", "episode": "ep_rs01", "iter": 1, "sha": "a06bd88e81e3", "file": "/home/claude/icta2026/episodes/ep_rs01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.806588, "ev": "packet", "episode": "ep_rs02", "iter": 1, "sha": "57493a325590", "file": "/home/claude/icta2026/episodes/ep_rs02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8068042, "ev": "packet", "episode": "ep_rs03", "iter": 1, "sha": "f45e9f331edb", "file": "/home/claude/icta2026/episodes/ep_rs03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.80699, "ev": "packet", "episode": "ep_rs04", "iter": 1, "sha": "19a7dff01ec8", "file": "/home/claude/icta2026/episodes/ep_rs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785510801.8072639, "ev": "packet", "episode": "ep_rs05", "iter": 1, "sha": "fb8892c39ed6", "file": "/home/claude/icta2026/episodes/ep_rs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513789.66174, "ev": "ingest", "episode": "ep_r17", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9862, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785513789.7328236, "ev": "ingest", "episode": "ep_r13", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785513790.0256152, "ev": "ingest", "episode": "ep_r02", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9860, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785513790.2727783, "ev": "ingest", "episode": "ep_r12", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9844, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785513790.518275, "ev": "ingest", "episode": "ep_r08", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9864, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785513790.7491844, "ev": "ingest", "episode": "ep_r14", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9852, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785513790.9869082, "ev": "ingest", "episode": "ep_r01", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 12250, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785513791.215845, "ev": "ingest", "episode": "ep_r04", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9860, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785513791.4493947, "ev": "ingest", "episode": "ep_r09", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9854, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785513791.5159006, "ev": "ingest", "episode": "ep_r05", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785513791.5871797, "ev": "ingest", "episode": "ep_r06", "iter": 1, "parse_error": true, "phase": "phase3"}
+{"t": 1785513791.8315167, "ev": "ingest", "episode": "ep_r10", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 9682, "model": "claude-fable-5", "phase": "phase3"}
+{"t": 1785513792.0179918, "ev": "packet", "episode": "ep_p05", "iter": 4, "sha": "89390286bbdf", "file": "/home/claude/icta2026/episodes/ep_p05/turn4_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0188406, "ev": "packet", "episode": "ep_p06", "iter": 3, "sha": "e5e4b16daaa4", "file": "/home/claude/icta2026/episodes/ep_p06/turn3_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0196187, "ev": "packet", "episode": "ep_p07", "iter": 3, "sha": "2169778f953a", "file": "/home/claude/icta2026/episodes/ep_p07/turn3_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0205112, "ev": "packet", "episode": "ep_p08", "iter": 3, "sha": "a8cf51abd638", "file": "/home/claude/icta2026/episodes/ep_p08/turn3_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0212088, "ev": "packet", "episode": "ep_p09", "iter": 3, "sha": "0553d00b1531", "file": "/home/claude/icta2026/episodes/ep_p09/turn3_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.022004, "ev": "packet", "episode": "ep_p10", "iter": 3, "sha": "941585af54b7", "file": "/home/claude/icta2026/episodes/ep_p10/turn3_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.023028, "ev": "packet", "episode": "ep_p12", "iter": 2, "sha": "4939dba1eeb5", "file": "/home/claude/icta2026/episodes/ep_p12/turn2_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.023586, "ev": "packet", "episode": "ep_p13", "iter": 2, "sha": "d0f1ee38e76a", "file": "/home/claude/icta2026/episodes/ep_p13/turn2_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0241563, "ev": "packet", "episode": "ep_p14", "iter": 2, "sha": "35c591e785a5", "file": "/home/claude/icta2026/episodes/ep_p14/turn2_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0249531, "ev": "packet", "episode": "ep_p15", "iter": 2, "sha": "579b67a56c84", "file": "/home/claude/icta2026/episodes/ep_p15/turn2_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.025771, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0263486, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.026859, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0273504, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0278952, "ev": "packet", "episode": "ep_r01", "iter": 2, "sha": "533388d8a406", "file": "/home/claude/icta2026/episodes/ep_r01/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785513792.028835, "ev": "packet", "episode": "ep_r05", "iter": 2, "sha": "e41c76d70641", "file": "/home/claude/icta2026/episodes/ep_r05/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785513792.0291438, "ev": "packet", "episode": "ep_r06", "iter": 2, "sha": "7f10e7fe07a7", "file": "/home/claude/icta2026/episodes/ep_r06/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785513792.0300703, "ev": "packet", "episode": "ep_r08", "iter": 2, "sha": "32dc48e15a5e", "file": "/home/claude/icta2026/episodes/ep_r08/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785513792.0310848, "ev": "packet", "episode": "ep_r13", "iter": 2, "sha": "efb3fb567feb", "file": "/home/claude/icta2026/episodes/ep_r13/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785513792.0321887, "ev": "packet", "episode": "ep_r17", "iter": 2, "sha": "08fcc81c3d86", "file": "/home/claude/icta2026/episodes/ep_r17/turn2_prompt.txt", "resume": "fresh", "phase": "phase3"}
+{"t": 1785513792.0329287, "ev": "packet", "episode": "ep_r19", "iter": 1, "sha": "1533172fe6fe", "file": "/home/claude/icta2026/episodes/ep_r19/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0333977, "ev": "packet", "episode": "ep_r20", "iter": 1, "sha": "16f6ff7291e3", "file": "/home/claude/icta2026/episodes/ep_r20/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0338411, "ev": "packet", "episode": "ep_rs01", "iter": 1, "sha": "a06bd88e81e3", "file": "/home/claude/icta2026/episodes/ep_rs01/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0343206, "ev": "packet", "episode": "ep_rs02", "iter": 1, "sha": "57493a325590", "file": "/home/claude/icta2026/episodes/ep_rs02/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0347555, "ev": "packet", "episode": "ep_rs03", "iter": 1, "sha": "f45e9f331edb", "file": "/home/claude/icta2026/episodes/ep_rs03/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.035343, "ev": "packet", "episode": "ep_rs04", "iter": 1, "sha": "19a7dff01ec8", "file": "/home/claude/icta2026/episodes/ep_rs04/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785513792.0357964, "ev": "packet", "episode": "ep_rs05", "iter": 1, "sha": "fb8892c39ed6", "file": "/home/claude/icta2026/episodes/ep_rs05/turn1_prompt.txt", "resume": "verified-identical", "phase": "phase3"}
+{"t": 1785683484.552044, "ev": "packet", "episode": "ep_p05", "iter": 4, "sha": "89390286bbdf", "file": "/home/claude/icta2026/episodes/ep_p05/turn4_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.55266, "ev": "packet", "episode": "ep_p06", "iter": 3, "sha": "e5e4b16daaa4", "file": "/home/claude/icta2026/episodes/ep_p06/turn3_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5530186, "ev": "packet", "episode": "ep_p07", "iter": 3, "sha": "2169778f953a", "file": "/home/claude/icta2026/episodes/ep_p07/turn3_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.553267, "ev": "packet", "episode": "ep_p08", "iter": 3, "sha": "a8cf51abd638", "file": "/home/claude/icta2026/episodes/ep_p08/turn3_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.553589, "ev": "packet", "episode": "ep_p09", "iter": 3, "sha": "0553d00b1531", "file": "/home/claude/icta2026/episodes/ep_p09/turn3_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5538704, "ev": "packet", "episode": "ep_p10", "iter": 3, "sha": "941585af54b7", "file": "/home/claude/icta2026/episodes/ep_p10/turn3_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5541039, "ev": "packet", "episode": "ep_p12", "iter": 2, "sha": "4939dba1eeb5", "file": "/home/claude/icta2026/episodes/ep_p12/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5542953, "ev": "packet", "episode": "ep_p13", "iter": 2, "sha": "d0f1ee38e76a", "file": "/home/claude/icta2026/episodes/ep_p13/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.554515, "ev": "packet", "episode": "ep_p14", "iter": 2, "sha": "35c591e785a5", "file": "/home/claude/icta2026/episodes/ep_p14/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.55476, "ev": "packet", "episode": "ep_p15", "iter": 2, "sha": "579b67a56c84", "file": "/home/claude/icta2026/episodes/ep_p15/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5549507, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5550995, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5552356, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5553737, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5556467, "ev": "packet", "episode": "ep_r01", "iter": 2, "sha": "533388d8a406", "file": "/home/claude/icta2026/episodes/ep_r01/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5560658, "ev": "packet", "episode": "ep_r05", "iter": 2, "sha": "e41c76d70641", "file": "/home/claude/icta2026/episodes/ep_r05/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5563157, "ev": "packet", "episode": "ep_r06", "iter": 2, "sha": "7f10e7fe07a7", "file": "/home/claude/icta2026/episodes/ep_r06/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5566084, "ev": "packet", "episode": "ep_r08", "iter": 2, "sha": "32dc48e15a5e", "file": "/home/claude/icta2026/episodes/ep_r08/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5570645, "ev": "packet", "episode": "ep_r13", "iter": 2, "sha": "efb3fb567feb", "file": "/home/claude/icta2026/episodes/ep_r13/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5574067, "ev": "packet", "episode": "ep_r17", "iter": 2, "sha": "08fcc81c3d86", "file": "/home/claude/icta2026/episodes/ep_r17/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5576093, "ev": "packet", "episode": "ep_r19", "iter": 1, "sha": "1533172fe6fe", "file": "/home/claude/icta2026/episodes/ep_r19/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5578125, "ev": "packet", "episode": "ep_r20", "iter": 1, "sha": "16f6ff7291e3", "file": "/home/claude/icta2026/episodes/ep_r20/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.557994, "ev": "packet", "episode": "ep_rs01", "iter": 1, "sha": "a06bd88e81e3", "file": "/home/claude/icta2026/episodes/ep_rs01/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.558152, "ev": "packet", "episode": "ep_rs02", "iter": 1, "sha": "57493a325590", "file": "/home/claude/icta2026/episodes/ep_rs02/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5583184, "ev": "packet", "episode": "ep_rs03", "iter": 1, "sha": "f45e9f331edb", "file": "/home/claude/icta2026/episodes/ep_rs03/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.558469, "ev": "packet", "episode": "ep_rs04", "iter": 1, "sha": "19a7dff01ec8", "file": "/home/claude/icta2026/episodes/ep_rs04/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683484.5586586, "ev": "packet", "episode": "ep_rs05", "iter": 1, "sha": "fb8892c39ed6", "file": "/home/claude/icta2026/episodes/ep_rs05/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.413416, "ev": "packet", "episode": "ep_p05", "iter": 4, "sha": "89390286bbdf", "file": "/home/claude/icta2026/episodes/ep_p05/turn4_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.413868, "ev": "packet", "episode": "ep_p06", "iter": 3, "sha": "e5e4b16daaa4", "file": "/home/claude/icta2026/episodes/ep_p06/turn3_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.414231, "ev": "packet", "episode": "ep_p07", "iter": 3, "sha": "2169778f953a", "file": "/home/claude/icta2026/episodes/ep_p07/turn3_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.414462, "ev": "packet", "episode": "ep_p08", "iter": 3, "sha": "a8cf51abd638", "file": "/home/claude/icta2026/episodes/ep_p08/turn3_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4148083, "ev": "packet", "episode": "ep_p09", "iter": 3, "sha": "0553d00b1531", "file": "/home/claude/icta2026/episodes/ep_p09/turn3_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4150636, "ev": "packet", "episode": "ep_p10", "iter": 3, "sha": "941585af54b7", "file": "/home/claude/icta2026/episodes/ep_p10/turn3_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4153037, "ev": "packet", "episode": "ep_p12", "iter": 2, "sha": "4939dba1eeb5", "file": "/home/claude/icta2026/episodes/ep_p12/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4154658, "ev": "packet", "episode": "ep_p13", "iter": 2, "sha": "d0f1ee38e76a", "file": "/home/claude/icta2026/episodes/ep_p13/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4157274, "ev": "packet", "episode": "ep_p14", "iter": 2, "sha": "35c591e785a5", "file": "/home/claude/icta2026/episodes/ep_p14/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4160163, "ev": "packet", "episode": "ep_p15", "iter": 2, "sha": "579b67a56c84", "file": "/home/claude/icta2026/episodes/ep_p15/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4163818, "ev": "packet", "episode": "ep_p17", "iter": 1, "sha": "2ce79d2b95de", "file": "/home/claude/icta2026/episodes/ep_p17/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4165707, "ev": "packet", "episode": "ep_p18", "iter": 1, "sha": "90ed8dc59a60", "file": "/home/claude/icta2026/episodes/ep_p18/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.416766, "ev": "packet", "episode": "ep_p19", "iter": 1, "sha": "513f8de7c529", "file": "/home/claude/icta2026/episodes/ep_p19/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4169059, "ev": "packet", "episode": "ep_p20", "iter": 1, "sha": "73dd54493acc", "file": "/home/claude/icta2026/episodes/ep_p20/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4171593, "ev": "packet", "episode": "ep_r01", "iter": 2, "sha": "533388d8a406", "file": "/home/claude/icta2026/episodes/ep_r01/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4175177, "ev": "packet", "episode": "ep_r05", "iter": 2, "sha": "e41c76d70641", "file": "/home/claude/icta2026/episodes/ep_r05/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.417812, "ev": "packet", "episode": "ep_r06", "iter": 2, "sha": "7f10e7fe07a7", "file": "/home/claude/icta2026/episodes/ep_r06/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4182556, "ev": "packet", "episode": "ep_r08", "iter": 2, "sha": "32dc48e15a5e", "file": "/home/claude/icta2026/episodes/ep_r08/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4188297, "ev": "packet", "episode": "ep_r13", "iter": 2, "sha": "efb3fb567feb", "file": "/home/claude/icta2026/episodes/ep_r13/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4192874, "ev": "packet", "episode": "ep_r17", "iter": 2, "sha": "08fcc81c3d86", "file": "/home/claude/icta2026/episodes/ep_r17/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4195783, "ev": "packet", "episode": "ep_r19", "iter": 1, "sha": "1533172fe6fe", "file": "/home/claude/icta2026/episodes/ep_r19/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4197893, "ev": "packet", "episode": "ep_r20", "iter": 1, "sha": "16f6ff7291e3", "file": "/home/claude/icta2026/episodes/ep_r20/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4199526, "ev": "packet", "episode": "ep_rs01", "iter": 1, "sha": "a06bd88e81e3", "file": "/home/claude/icta2026/episodes/ep_rs01/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4201255, "ev": "packet", "episode": "ep_rs02", "iter": 1, "sha": "57493a325590", "file": "/home/claude/icta2026/episodes/ep_rs02/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4203267, "ev": "packet", "episode": "ep_rs03", "iter": 1, "sha": "f45e9f331edb", "file": "/home/claude/icta2026/episodes/ep_rs03/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4204724, "ev": "packet", "episode": "ep_rs04", "iter": 1, "sha": "19a7dff01ec8", "file": "/home/claude/icta2026/episodes/ep_rs04/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785683489.4206464, "ev": "packet", "episode": "ep_rs05", "iter": 1, "sha": "fb8892c39ed6", "file": "/home/claude/icta2026/episodes/ep_rs05/turn1_prompt.txt", "resume": "verified-identical"}
+{"t": 1785684175.699699, "ev": "ingest", "episode": "ep_p13", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 10084, "model": "claude-fable-5"}
+{"t": 1785684175.8939037, "ev": "ingest", "episode": "ep_p17", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9864, "model": "claude-fable-5"}
+{"t": 1785684176.0461807, "ev": "ingest", "episode": "ep_p05", "iter": 4, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 46860, "model": "claude-fable-5"}
+{"t": 1785684176.1125143, "ev": "ingest", "episode": "ep_p18", "iter": 1, "parse_error": true}
+{"t": 1785684176.1769953, "ev": "ingest", "episode": "ep_p09", "iter": 3, "parse_error": true}
+{"t": 1785684176.4144397, "ev": "ingest", "episode": "ep_p07", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 11750, "model": "claude-fable-5"}
+{"t": 1785684176.5139146, "ev": "ingest", "episode": "ep_p10", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10828, "model": "claude-fable-5"}
+{"t": 1785684176.6903813, "ev": "ingest", "episode": "ep_p20", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9852, "model": "claude-fable-5"}
+{"t": 1785684176.7484727, "ev": "ingest", "episode": "ep_p19", "iter": 1, "parse_error": true}
+{"t": 1785684176.9364955, "ev": "ingest", "episode": "ep_p14", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 11012, "model": "claude-fable-5"}
+{"t": 1785684177.0372221, "ev": "ingest", "episode": "ep_p08", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10822, "model": "claude-fable-5"}
+{"t": 1785684177.2077942, "ev": "ingest", "episode": "ep_p12", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10094, "model": "claude-fable-5"}
+{"t": 1785684177.3839133, "ev": "ingest", "episode": "ep_p15", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 10240, "model": "claude-fable-5"}
+{"t": 1785684177.6021972, "ev": "ingest", "episode": "ep_p06", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "negligible", "tokens": 10842, "model": "claude-fable-5"}
+{"t": 1785684229.398353, "ev": "packet", "episode": "ep_r01", "iter": 2, "sha": "533388d8a406", "file": "/home/claude/icta2026/episodes/ep_r01/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785684229.4698107, "ev": "packet", "episode": "ep_r05", "iter": 2, "sha": "e41c76d70641", "file": "/home/claude/icta2026/episodes/ep_r05/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785684229.54048, "ev": "packet", "episode": "ep_r06", "iter": 2, "sha": "7f10e7fe07a7", "file": "/home/claude/icta2026/episodes/ep_r06/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785684229.608539, "ev": "packet", "episode": "ep_r08", "iter": 2, "sha": "32dc48e15a5e", "file": "/home/claude/icta2026/episodes/ep_r08/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1785684733.2568846, "ev": "ingest", "episode": "ep_rs04", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 22211, "model": "claude-fable-5"}
+{"t": 1785684733.3576386, "ev": "ingest", "episode": "ep_r06", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10098, "model": "claude-fable-5"}
+{"t": 1785684733.5300179, "ev": "ingest", "episode": "ep_r19", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9852, "model": "claude-fable-5"}
+{"t": 1785684733.6330411, "ev": "ingest", "episode": "ep_rs01", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9514, "model": "claude-fable-5"}
+{"t": 1785684733.7488377, "ev": "ingest", "episode": "ep_r13", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9912, "model": "claude-fable-5"}
+{"t": 1785684733.8093567, "ev": "ingest", "episode": "ep_r08", "iter": 2, "parse_error": true}
+{"t": 1785684733.905701, "ev": "ingest", "episode": "ep_rs03", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9498, "model": "claude-fable-5"}
+{"t": 1785684734.1072476, "ev": "ingest", "episode": "ep_r01", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 53044, "model": "claude-fable-5"}
+{"t": 1785684734.1667142, "ev": "ingest", "episode": "ep_rs02", "iter": 1, "parse_error": true}
+{"t": 1785684734.2655418, "ev": "ingest", "episode": "ep_rs05", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9510, "model": "claude-fable-5"}
+{"t": 1785684734.3522637, "ev": "ingest", "episode": "ep_r17", "iter": 2, "parse_error": true}
+{"t": 1785684734.5806873, "ev": "ingest", "episode": "ep_r20", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9856, "model": "claude-fable-5"}
+{"t": 1785684734.7000086, "ev": "ingest", "episode": "ep_r05", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 9914, "model": "claude-fable-5"}
+{"t": 1785684755.8923235, "ev": "packet", "episode": "ep_p05", "iter": 5, "sha": "de1c31168455", "file": "/home/claude/icta2026/episodes/ep_p05/turn5_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8927917, "ev": "packet", "episode": "ep_p06", "iter": 4, "sha": "e03383e8db26", "file": "/home/claude/icta2026/episodes/ep_p06/turn4_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.893443, "ev": "packet", "episode": "ep_p09", "iter": 4, "sha": "d9a49c39c029", "file": "/home/claude/icta2026/episodes/ep_p09/turn4_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8941517, "ev": "packet", "episode": "ep_p13", "iter": 3, "sha": "fc68c470258f", "file": "/home/claude/icta2026/episodes/ep_p13/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8944647, "ev": "packet", "episode": "ep_p14", "iter": 3, "sha": "846267791656", "file": "/home/claude/icta2026/episodes/ep_p14/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8947954, "ev": "packet", "episode": "ep_p15", "iter": 3, "sha": "a669f01d2fbd", "file": "/home/claude/icta2026/episodes/ep_p15/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8951204, "ev": "packet", "episode": "ep_p17", "iter": 2, "sha": "add265812688", "file": "/home/claude/icta2026/episodes/ep_p17/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8953161, "ev": "packet", "episode": "ep_p18", "iter": 2, "sha": "2a15adc29e8e", "file": "/home/claude/icta2026/episodes/ep_p18/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8957334, "ev": "packet", "episode": "ep_p19", "iter": 2, "sha": "2aab209deb59", "file": "/home/claude/icta2026/episodes/ep_p19/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8961189, "ev": "packet", "episode": "ep_p20", "iter": 2, "sha": "c5ab75779bf8", "file": "/home/claude/icta2026/episodes/ep_p20/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8970282, "ev": "packet", "episode": "ep_r08", "iter": 3, "sha": "7500d7a7822b", "file": "/home/claude/icta2026/episodes/ep_r08/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8976755, "ev": "packet", "episode": "ep_r17", "iter": 3, "sha": "7628b4bb716a", "file": "/home/claude/icta2026/episodes/ep_r17/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8981688, "ev": "packet", "episode": "ep_rs02", "iter": 2, "sha": "74ce6da704fb", "file": "/home/claude/icta2026/episodes/ep_rs02/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8984153, "ev": "packet", "episode": "ep_rs03", "iter": 2, "sha": "69c0ddabc9cb", "file": "/home/claude/icta2026/episodes/ep_rs03/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.898723, "ev": "packet", "episode": "ep_rs04", "iter": 2, "sha": "d6effab76efa", "file": "/home/claude/icta2026/episodes/ep_rs04/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1785684755.8990433, "ev": "packet", "episode": "ep_rs05", "iter": 2, "sha": "8afb66d95d9a", "file": "/home/claude/icta2026/episodes/ep_rs05/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1785685429.2423983, "ev": "ingest", "episode": "ep_p15", "iter": 3, "parse_error": true}
+{"t": 1785685429.5210905, "ev": "ingest", "episode": "ep_p14", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 11722, "model": "claude-fable-5"}
+{"t": 1785685429.7466142, "ev": "ingest", "episode": "ep_p13", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 20264, "model": "claude-fable-5"}
+{"t": 1785685429.9474046, "ev": "ingest", "episode": "ep_rs05", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 10636, "model": "claude-fable-5"}
+{"t": 1785685430.0623152, "ev": "ingest", "episode": "ep_p09", "iter": 4, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 11542, "model": "claude-fable-5"}
+{"t": 1785685430.2584455, "ev": "ingest", "episode": "ep_p05", "iter": 5, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 47978, "model": "claude-fable-5"}
+{"t": 1785685430.3615916, "ev": "ingest", "episode": "ep_rs02", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9768, "model": "claude-fable-5"}
+{"t": 1785685430.5776858, "ev": "ingest", "episode": "ep_p17", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 10610, "model": "claude-fable-5"}
+{"t": 1785685430.768619, "ev": "ingest", "episode": "ep_rs04", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10614, "model": "claude-fable-5"}
+{"t": 1785685430.8679729, "ev": "ingest", "episode": "ep_p18", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 9720, "model": "claude-fable-5"}
+{"t": 1785685431.0655167, "ev": "ingest", "episode": "ep_p20", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 10588, "model": "claude-fable-5"}
+{"t": 1785685431.1644936, "ev": "ingest", "episode": "ep_p19", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 10068, "model": "claude-fable-5"}
+{"t": 1785685431.3561084, "ev": "ingest", "episode": "ep_p06", "iter": 4, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 11576, "model": "claude-fable-5"}
+{"t": 1785685431.5263631, "ev": "ingest", "episode": "ep_rs03", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10626, "model": "claude-fable-5"}
+{"t": 1785685431.6289122, "ev": "ingest", "episode": "ep_r17", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 11020, "model": "claude-fable-5"}
+{"t": 1785685431.7566373, "ev": "ingest", "episode": "ep_r08", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 16307, "model": "claude-fable-5"}
+{"t": 1785685457.3624966, "ev": "packet", "episode": "ep_p14", "iter": 4, "sha": "3dfbe6a82b46", "file": "/home/claude/icta2026/episodes/ep_p14/turn4_prompt.txt", "resume": "fresh"}
+{"t": 1785685457.3629897, "ev": "packet", "episode": "ep_p15", "iter": 4, "sha": "4d7b3ebd30d6", "file": "/home/claude/icta2026/episodes/ep_p15/turn4_prompt.txt", "resume": "fresh"}
+{"t": 1785685457.3634233, "ev": "packet", "episode": "ep_p17", "iter": 3, "sha": "015edda270fe", "file": "/home/claude/icta2026/episodes/ep_p17/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1785685457.363775, "ev": "packet", "episode": "ep_p18", "iter": 3, "sha": "c96b8e09901e", "file": "/home/claude/icta2026/episodes/ep_p18/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1785685457.3641117, "ev": "packet", "episode": "ep_p19", "iter": 3, "sha": "82b45b57bd05", "file": "/home/claude/icta2026/episodes/ep_p19/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1785685457.3658702, "ev": "packet", "episode": "ep_rs02", "iter": 3, "sha": "3c05fb1d2a04", "file": "/home/claude/icta2026/episodes/ep_rs02/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1785685457.3665226, "ev": "packet", "episode": "ep_rs05", "iter": 3, "sha": "d10d8883e3a4", "file": "/home/claude/icta2026/episodes/ep_rs05/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1785685854.962548, "ev": "ingest", "episode": "ep_p18", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 10874, "model": "claude-fable-5"}
+{"t": 1785685855.159417, "ev": "ingest", "episode": "ep_rs05", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 11614, "model": "claude-fable-5"}
+{"t": 1785685855.255202, "ev": "ingest", "episode": "ep_p15", "iter": 4, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 11648, "model": "claude-fable-5"}
+{"t": 1785685855.312422, "ev": "ingest", "episode": "ep_rs02", "iter": 3, "parse_error": true}
+{"t": 1785685855.4814255, "ev": "ingest", "episode": "ep_p14", "iter": 4, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 48234, "model": "claude-fable-5"}
+{"t": 1785685855.6935396, "ev": "ingest", "episode": "ep_p17", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 11380, "model": "claude-fable-5"}
+{"t": 1785685855.9303415, "ev": "ingest", "episode": "ep_p19", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 19690, "model": "claude-fable-5"}
+{"t": 1785685861.8953075, "ev": "packet", "episode": "ep_p15", "iter": 5, "sha": "fade595baed8", "file": "/home/claude/icta2026/episodes/ep_p15/turn5_prompt.txt", "resume": "fresh"}
+{"t": 1785685861.8959455, "ev": "packet", "episode": "ep_p19", "iter": 4, "sha": "f72b8f77e4b1", "file": "/home/claude/icta2026/episodes/ep_p19/turn4_prompt.txt", "resume": "fresh"}
+{"t": 1785685861.8976192, "ev": "packet", "episode": "ep_rs02", "iter": 4, "sha": "6c1229a7257a", "file": "/home/claude/icta2026/episodes/ep_rs02/turn4_prompt.txt", "resume": "fresh"}
+{"t": 1785686167.3193033, "ev": "ingest", "episode": "ep_rs02", "iter": 4, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 11114, "model": "claude-fable-5"}
+{"t": 1785686167.5176191, "ev": "ingest", "episode": "ep_p15", "iter": 5, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 14806, "model": "claude-fable-5"}
+{"t": 1785686167.7090757, "ev": "ingest", "episode": "ep_p19", "iter": 4, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 11626, "model": "claude-fable-5"}

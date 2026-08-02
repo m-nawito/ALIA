@@ -1,0 +1,42 @@
+{
+ "episode": "ep_o07",
+ "arm": "oneshot",
+ "seeded": false,
+ "status": "exhausted",
+ "spec": {
+  "dc_gain_db": [
+   ">=",
+   40.0
+  ],
+  "phase_margin_deg": [
+   ">=",
+   60.0
+  ],
+  "gbw_hz": [
+   ">=",
+   20000000.0
+  ],
+  "itail_ua": [
+   "<=",
+   100.0
+  ]
+ },
+ "k_budget": 0,
+ "iters": [
+  {
+   "k": 0,
+   "model": "claude-fable-5",
+   "tokens": 33827,
+   "t": "2026-07-31 11:56:48",
+   "parse_error": "Expecting ',' delimiter: line 1 column 852 (char 851)",
+   "fatal": true,
+   "echo_ok": false,
+   "circuit_emitted": null,
+   "vbias": null,
+   "repair_actions": [],
+   "eval": {},
+   "eval_ok": false
+  }
+ ],
+ "created": "2026-07-31 11:37:11"
+}

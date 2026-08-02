@@ -1,0 +1,15 @@
+{
+  "echo": "38bd0fddd65d",
+  "circuit": {
+    "name": "5t-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "150u", "L": "1u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["out", "inn", "ntail", "0"], "params": {"W": "150u", "L": "1u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n1", "vdd", "vdd"], "params": {"W": "60u", "L": "1u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "60u", "L": "1u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "12u", "L": "1u"}}
+    ]
+  },
+  "vbias": 0.95,
+  "rationale": "First cut by gm/Id: M5 12u/1u, vbias 0.95 V gives ~70 uA tail. Input pair 150u/1u in moderate inversion: gm~0.7 mS, GBW~22 MHz into 5 pF. L=1u everywhere for gain >40 dB; compact mirror keeps its pole ~5x GBW, PM~75 deg."
+}

@@ -1,0 +1,15 @@
+{
+  "echo": "38bd0fddd65d",
+  "circuit": {
+    "name": "5t-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "250u", "L": "1u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["out", "inn", "ntail", "0"], "params": {"W": "250u", "L": "1u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n1", "vdd", "vdd"], "params": {"W": "60u", "L": "1u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "60u", "L": "1u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "25u", "L": "2u"}}
+    ]
+  },
+  "vbias": 1.0,
+  "rationale": "Moderate-inversion pair (gm/Id~22, ~35uA/side) gives gm~0.75mS, GBW~24MHz into 5pF. L=1u keeps gm1(ro2||ro4) above 40dB. Small mirror devices push mirror pole ~80MHz for PM>70. Tail W/L=12.5 at vbias=1.0V targets 70-90uA, inside 100uA budget."
+}

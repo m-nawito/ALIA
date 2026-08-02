@@ -1,0 +1,15 @@
+{
+  "echo": "38bd0fddd65d",
+  "circuit": {
+    "name": "5t-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "60u", "L": "1u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["out", "inn", "ntail", "0"], "params": {"W": "60u", "L": "1u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n1", "vdd", "vdd"], "params": {"W": "30u", "L": "1.5u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "30u", "L": "1.5u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "30u", "L": "1u"}}
+    ]
+  },
+  "vbias": 0.85,
+  "rationale": "Target Itail about 80uA via M5 30/1 at vbias 0.85V. Wide pair 60/1 in moderate inversion gives gm about 0.75mS, GBW about 24MHz into 5pF. Long-L mirror 30/1.5 raises ro for about 45dB gain; mirror pole far above GBW keeps PM over 80 degrees."
+}

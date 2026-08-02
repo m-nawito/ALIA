@@ -1,0 +1,59 @@
+=== ALIA DESIGN TURN — FIXED TEMPLATE v1-pilot ===
+ECHO CONTRACT: the first key of your JSON reply MUST be "echo": "3e3a2778cc4a"
+
+[ROLE]
+You are the design reasoner inside a closed-loop analog design harness. This
+turn is stateless: everything you know about this episode is in this packet.
+Do not use any tools of any kind; do not browse, execute, or read files.
+Reply with EXACTLY ONE JSON object and no other text.
+
+[TASK]
+Design a five-transistor OTA (differential pair M1/M2, PMOS mirror load M3/M4
+diode side on M1's drain, NMOS tail source M5) on GF180MCU 3.3 V devices.
+Specification (all must pass):
+  dc_gain_db        >= 40.0        (differential DC gain, dB)
+  phase_margin_deg  >= 60.0
+  gbw_hz            >= 20e6        (unity-gain bandwidth, Hz)
+  itail_ua          <= 100.0       (total supply current, uA — power budget)
+
+[FIXED TESTBENCH — supplied by the harness, do NOT emit these]
+  VDD = 3.3 V rail node "vdd"; ground node "0".
+  Differential drive: v(inp) = 1.65 V DC + 0.5 AC, v(inn) = 1.65 V DC - 0.5 AC.
+  Load C_L = 5p at node "out". Bias rail: node "nbias" driven by an ideal
+  source whose DC value you choose via "vbias".
+
+[WHAT YOU EMIT — IR schema]
+JSON circuit with devices only for the OTA core (M1..M5). Node-order
+conventions: nmos/pmos = [drain, gate, source, bulk]; use node names
+inp, inn, out, vdd, nbias, 0, plus any internal nodes you need.
+Params: W, L (strings like "10u", "0.5u"), optional nf, m.
+Bulk convention on this PDK: NMOS bulk -> "0"; PMOS bulk -> its source or "vdd".
+Device kinds: "nmos", "pmos" (models nfet_03v3 / pfet_03v3 are applied by the
+renderer). Do not emit sources, the load, or simulation directives.
+
+[REPLY FORMAT — one JSON object, first key echo]
+{
+  "echo": "3e3a2778cc4a",
+  "circuit": {"name": "5t-ota", "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"],
+        "params": {"W": "…", "L": "…"}}, …
+  ]},
+  "vbias": <number, volts>,
+  "claim": {"device": "<id; comma-list for matched pairs, e.g. \"M1,M2\"; or VB>",
+             "param": "<W|L|value|dc>",
+             "new_value": "<the value you set this turn>",
+             "metric": "<one of dc_gain_db|gbw_hz|phase_margin_deg|itail_ua>",
+             "predicted": "<increase|decrease>"},
+  "rationale": "<= 50 words"
+}
+"claim" is REQUIRED on every revision turn (state the single causal claim
+behind your main change, relative to the previous design) and MUST be omitted
+on the initial turn. The claim is audited against the simulator.
+
+[EPISODE TRACE — full history, oldest first; the harness reconstructs this
+from disk every turn; there is no hidden state]
+--- iteration 0 ---
+emitted: {"name":"5t-ota","devices":[{"id":"M1","kind":"nmos","nodes":["n1","inp","ntail","0"],"params":{"W":"180u","L":"1u","nf":4}},{"id":"M2","kind":"nmos","nodes":["out","inn","ntail","0"],"params":{"W":"180u","L":"1u","nf":4}},{"id":"M3","kind":"pmos","nodes":["n1","n1","vdd","vdd"],"params":{"W":"30u","L":"1u","nf":2}},{"id":"M4","kind":"pmos","nodes":["out","n1","vdd","vdd"],"params":{"W":"30u","L":"1u","nf":2}},{"id":"M5","kind":"nmos","nodes":["ntail","nbias","0","0"],"params":{"W":"24u","L":"1u","nf":2}}]} | vbias=0.9
+simulator error (verbatim): Error on line:
+  m.xm1.m0 n1 inp ntail 0 nfet_03v3 w=    1.800000000000000e-04     l=    1.000000000000000e-06     as=    0.000000000000000e+00     ad=    0.000000000000000e+00     ps=    0.000000000000000e+00     pd=    0.000000000000000e+00     nrd=    0.000000000000000e+00     nrs=    0.000000000000000e+00     delvto=    0.000000000000000e+00     mulu0=    1.000000000000000e+00     sa=    0.000000000000000e+00     sb=    0.000000000000000e+00     nf=    4.000000000000000e+00     sd=    0.0000
+--- now produce iteration 1 (revision; include "claim") ---

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software or the released experimental record, please cite the paper below."
+title: "ALIA — Analog Loop with Integrated Audit"
+authors:
+  - family-names: Nawito
+    given-names: Moustafa
+    orcid: "https://orcid.org/0009-0005-5957-6463"
+license: AGPL-3.0-or-later
+repository-code: "REPO_URL_PLACEHOLDER"
+preferred-citation:
+  type: conference-paper
+  title: "Tier-Wise Recovery and Simulator-Audited Reasoning in an Un-Augmented LLM Analog Design Loop"
+  authors:
+    - family-names: Nawito
+      given-names: Moustafa
+      orcid: "https://orcid.org/0009-0005-5957-6463"
+  conference:
+    name: "IEEE International Conference on Technologies and Applications (ICTA)"
+  year: 2026

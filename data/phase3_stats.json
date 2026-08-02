@@ -1,0 +1,341 @@
+{
+ "arms": {
+  "full": {
+   "n": 20,
+   "converged": 20,
+   "exhausted": 0,
+   "censored": 0,
+   "terminal": 20,
+   "pass_rate_terminal": 1.0,
+   "pass_rate_lower": 1.0,
+   "median_iters_converging": 2.0,
+   "iters_converging": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "censored_episodes": [],
+   "median_metrics": {
+    "dc_gain_db": 49.956999999999994,
+    "gbw_hz": 23571882.96116742,
+    "phase_margin_deg": 81.89500000000001,
+    "itail_ua": 84.7445
+   }
+  },
+  "full/seeded": {
+   "n": 5,
+   "converged": 5,
+   "exhausted": 0,
+   "censored": 0,
+   "terminal": 5,
+   "pass_rate_terminal": 1.0,
+   "pass_rate_lower": 1.0,
+   "median_iters_converging": 2,
+   "iters_converging": [
+    2,
+    2,
+    2,
+    3,
+    3
+   ],
+   "censored_episodes": [],
+   "median_metrics": {
+    "dc_gain_db": 49.113,
+    "gbw_hz": 22635380.905134678,
+    "phase_margin_deg": 83.86,
+    "itail_ua": 76.68
+   }
+  },
+  "norepair": {
+   "n": 20,
+   "converged": 20,
+   "exhausted": 0,
+   "censored": 0,
+   "terminal": 20,
+   "pass_rate_terminal": 1.0,
+   "pass_rate_lower": 1.0,
+   "median_iters_converging": 1.0,
+   "iters_converging": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3
+   ],
+   "censored_episodes": [],
+   "median_metrics": {
+    "dc_gain_db": 48.942,
+    "gbw_hz": 23535731.72826522,
+    "phase_margin_deg": 83.595,
+    "itail_ua": 85.14699999999999
+   }
+  },
+  "norepair/seeded": {
+   "n": 5,
+   "converged": 5,
+   "exhausted": 0,
+   "censored": 0,
+   "terminal": 5,
+   "pass_rate_terminal": 1.0,
+   "pass_rate_lower": 1.0,
+   "median_iters_converging": 2,
+   "iters_converging": [
+    1,
+    2,
+    2,
+    3,
+    4
+   ],
+   "censored_episodes": [],
+   "median_metrics": {
+    "dc_gain_db": 50.375,
+    "gbw_hz": 25633213.59327283,
+    "phase_margin_deg": 76.74,
+    "itail_ua": 90.258
+   }
+  },
+  "oneshot": {
+   "n": 20,
+   "converged": 3,
+   "exhausted": 17,
+   "censored": 0,
+   "terminal": 20,
+   "pass_rate_terminal": 0.15,
+   "pass_rate_lower": 0.15,
+   "median_iters_converging": 0,
+   "iters_converging": [
+    0,
+    0,
+    0
+   ],
+   "censored_episodes": [],
+   "median_metrics": {
+    "dc_gain_db": 48.855,
+    "gbw_hz": 23756968.854419693,
+    "phase_margin_deg": 84.95,
+    "itail_ua": 99.354
+   }
+  },
+  "passfail": {
+   "n": 20,
+   "converged": 20,
+   "exhausted": 0,
+   "censored": 0,
+   "terminal": 20,
+   "pass_rate_terminal": 1.0,
+   "pass_rate_lower": 1.0,
+   "median_iters_converging": 3.0,
+   "iters_converging": [
+    0,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5
+   ],
+   "censored_episodes": [],
+   "median_metrics": {
+    "dc_gain_db": 49.071,
+    "gbw_hz": 24178547.072638318,
+    "phase_margin_deg": 80.53,
+    "itail_ua": 85.151
+   }
+  }
+ },
+ "audit": {
+  "totals_all_episodes": {
+   "unmeasurable": 86,
+   "confirmed": 22,
+   "negligible": 1
+  },
+  "adjudicable_all_episodes": 22,
+  "clean": {
+   "totals": {
+    "unmeasurable": 67,
+    "confirmed": 20,
+    "negligible": 1
+   },
+   "records": 88,
+   "adjudicable": 20,
+   "confirmed": 20,
+   "note": "THIS is the split reported in the paper (88 records, 20 of 20 clear verdicts)"
+  },
+  "seeded_segregated": {
+   "totals": {
+    "unmeasurable": 19,
+    "confirmed": 2
+   },
+   "records": 21
+  },
+  "by_arm": {
+   "full": {
+    "unmeasurable": 24,
+    "confirmed": 2
+   },
+   "full/seeded": {
+    "unmeasurable": 10,
+    "confirmed": 1
+   },
+   "passfail": {
+    "unmeasurable": 28,
+    "confirmed": 16,
+    "negligible": 1
+   },
+   "norepair": {
+    "unmeasurable": 15,
+    "confirmed": 2
+   },
+   "norepair/seeded": {
+    "unmeasurable": 9,
+    "confirmed": 1
+   }
+  }
+ },
+ "tiers": {
+  "full": {
+   "T3": 15,
+   "T2": 3,
+   "PASS@0": 2,
+   "recovery": {
+    "T2": [
+     3,
+     3
+    ],
+    "T3": [
+     15,
+     15
+    ]
+   }
+  },
+  "full/seeded": {
+   "T1": 5,
+   "recovery": {
+    "T1": [
+     5,
+     5
+    ]
+   }
+  },
+  "norepair": {
+   "T3": 11,
+   "PASS@0": 6,
+   "T2": 3,
+   "recovery": {
+    "T2": [
+     3,
+     3
+    ],
+    "T3": [
+     11,
+     11
+    ]
+   }
+  },
+  "norepair/seeded": {
+   "T3": 5,
+   "recovery": {
+    "T3": [
+     5,
+     5
+    ]
+   }
+  },
+  "oneshot": {
+   "T3": 13,
+   "T2": 4,
+   "PASS@0": 3,
+   "recovery": {
+    "T2": [
+     0,
+     4
+    ],
+    "T3": [
+     0,
+     13
+    ]
+   }
+  },
+  "passfail": {
+   "T3": 15,
+   "T2": 4,
+   "PASS@0": 1,
+   "recovery": {
+    "T2": [
+     4,
+     4
+    ],
+    "T3": [
+     15,
+     15
+    ]
+   }
+  }
+ },
+ "repair": {
+  "applied": {
+   "mos_missing_bulk|tier3": 5,
+   "missing_param|tier3": 5,
+   "unknown_kind|fatal": 5
+  },
+  "auto_fixed": {
+   "mos_missing_bulk": 5,
+   "missing_param": 5
+  },
+  "observed_only_norepair": {
+   "mos_missing_bulk|tier3": 5,
+   "missing_param|tier3": 5,
+   "unknown_kind|fatal": 5
+  }
+ },
+ "protocol": {
+  "turns": 227,
+  "parse_errors": 33,
+  "echo_ok": 194
+ }
+}

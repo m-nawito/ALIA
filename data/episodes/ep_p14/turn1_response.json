@@ -1,0 +1,22 @@
+{
+  "echo": "f68b9d5a14c5",
+  "circuit": {
+    "name": "5t-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "150u", "L": "1u", "nf": 30}},
+      {"id": "M2", "kind": "nmos", "nodes": ["out", "inn", "ntail", "0"], "params": {"W": "150u", "L": "1u", "nf": 30}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n1", "vdd", "vdd"], "params": {"W": "50u", "L": "1u", "nf": 10}},
+      {"id": "M4", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "50u", "L": "1u", "nf": 10}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "6u", "L": "1u", "nf": 1}}
+    ]
+  },
+  "vbias": 1.15,
+  "claim": {
+    "device": "VB",
+    "param": "dc",
+    "new_value": "1.15",
+    "metric": "itail_ua",
+    "predicted": "increase"
+  },
+  "rationale": "Sim error: W=250u exceeds model W-bin; split into 5u fingers (nf) and cut pair to 150u. Raised vbias to 1.15 V and W5 to 6u for ~80uA tail, boosting gm1 for 20MHz+ GBW; L=1u everywhere for 40dB gain."
+}

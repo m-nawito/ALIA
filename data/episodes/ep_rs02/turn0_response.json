@@ -1,0 +1,15 @@
+{
+  "echo": "38bd0fddd65d",
+  "circuit": {
+    "name": "5t-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "20u", "L": "1u", "m": 10}},
+      {"id": "M2", "kind": "nmos", "nodes": ["out", "inn", "ntail", "0"], "params": {"W": "20u", "L": "1u", "m": 10}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n1", "vdd", "vdd"], "params": {"W": "20u", "L": "1.5u", "m": 2}},
+      {"id": "M4", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "20u", "L": "1.5u", "m": 2}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "18u", "L": "2u"}}
+    ]
+  },
+  "vbias": 1.1,
+  "rationale": "Weak-moderate input pair (W/L=200/1, gm/Id~18) gives gm~0.75mS, GBW~24MHz into 5pF. Tail ~85uA stays under budget. L=1u pair and L=1.5u mirror target ~44dB gain; mirror pole ~80MHz preserves PM>70. vbias 1.1V sets ~0.4V overdrive on M5."
+}

@@ -1,0 +1,15 @@
+{
+  "echo": "38bd0fddd65d",
+  "circuit": {
+    "name": "5t-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "60u", "L": "1u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["out", "inn", "ntail", "0"], "params": {"W": "60u", "L": "1u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n1", "vdd", "vdd"], "params": {"W": "30u", "L": "1u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "30u", "L": "1u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "30u", "L": "1u"}}
+    ]
+  },
+  "vbias": 0.9,
+  "rationale": "Target ~85uA tail (M5 30u/1u, Vgs 0.9V), 42uA/side. M1/M2 60u/1u give gm/ID~16, gm1~0.7mS, GBW~22MHz into 5pF. L=1u everywhere for ro, gain~42dB. Mirror pole gm3/Cn1~200MHz keeps PM>80."
+}
