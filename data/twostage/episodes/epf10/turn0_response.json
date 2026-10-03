@@ -1,0 +1,19 @@
+{
+  "echo": "ae979a2a0e45",
+  "circuit": {
+    "name": "two-stage-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "2u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "2u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "8u", "L": "2u"}},
+      {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "60u", "L": "2u"}},
+      {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "24u", "L": "2u"}},
+      {"id": "Rz", "kind": "res", "nodes": ["n1", "nz"], "params": {"value": "4k"}},
+      {"id": "Cc", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "5p"}}
+    ]
+  },
+  "vbias": 1.0,
+  "rationale": "~20uA tail, ~60uA second stage (80uA total). gm1~130uS with Cc=5p gives GBW~4MHz; gm6~350uS puts p2~11MHz for PM>60. Rz~1/gm6 nulls the RHP zero. Long L (1-2u) for >70dB total gain; mirror ratios sized for zero systematic offset."
+}

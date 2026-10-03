@@ -1,0 +1,744 @@
+{
+ "episode": "epf05",
+ "arm": "full",
+ "task": "twostage",
+ "seeded": false,
+ "status": "passed",
+ "spec": {
+  "dc_gain_db": [
+   ">=",
+   70.0
+  ],
+  "phase_margin_deg": [
+   ">=",
+   60.0
+  ],
+  "gbw_hz": [
+   ">=",
+   3000000.0
+  ],
+  "itail_ua": [
+   "<=",
+   100.0
+  ]
+ },
+ "k_budget": 7,
+ "iters": [
+  {
+   "k": 0,
+   "model": "claude-fable-5",
+   "tokens": 46440,
+   "t": "2026-09-03 13:00:20",
+   "echo_ok": true,
+   "circuit_emitted": {
+    "name": "two-stage-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "5u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "n2",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "5u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n2",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "15u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "n2",
+       "n2",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "15u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "12u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M6",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "90u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M7",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "36u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "Rz",
+      "kind": "res",
+      "nodes": [
+       "n1",
+       "nz"
+      ],
+      "params": {
+       "value": "4.5k"
+      }
+     },
+     {
+      "id": "Cc",
+      "kind": "cap",
+      "nodes": [
+       "nz",
+       "out"
+      ],
+      "params": {
+       "value": "3p"
+      }
+     }
+    ]
+   },
+   "vbias": 0.85,
+   "rationale": "Tail ~20uA, stage-2 ~60uA (3x mirror ratio) keeps itail under 100uA. gm1~80-100uS with Cc=3p targets GBW 4-5MHz; Rz=(1/gm6)(1+CL/Cc)~4.5k nulls/cancels the RHP zero for PM>60. (W/L)6=2*(W7/W5)*(W/L)4 minimizes systematic offset; L=1u for 70dB+.",
+   "claim_stated": null,
+   "repair_actions": [],
+   "fatal": false,
+   "measured": {
+    "dc_gain_db": 91.728,
+    "f_3db_hz": 184.78498,
+    "gbw_hz": 7302759.579352437,
+    "phase_margin_deg": 89.57,
+    "n_points": 301,
+    "itail_ua": 125.533
+   },
+   "sim_error": null,
+   "eval": {
+    "dc_gain_db": [
+     "PASS",
+     91.728,
+     70.0
+    ],
+    "phase_margin_deg": [
+     "PASS",
+     89.57,
+     60.0
+    ],
+    "gbw_hz": [
+     "PASS",
+     7302759.579352437,
+     3000000.0
+    ],
+    "itail_ua": [
+     "FAIL",
+     125.533,
+     100.0
+    ]
+   },
+   "eval_ok": false,
+   "circuit_repaired": {
+    "name": "two-stage-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "5u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "n2",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "5u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n2",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "15u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "n2",
+       "n2",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "15u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "12u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M6",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "90u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M7",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "36u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "Rz",
+      "kind": "res",
+      "nodes": [
+       "n1",
+       "nz"
+      ],
+      "params": {
+       "value": "4.5k"
+      }
+     },
+     {
+      "id": "Cc",
+      "kind": "cap",
+      "nodes": [
+       "nz",
+       "out"
+      ],
+      "params": {
+       "value": "3p"
+      }
+     },
+     {
+      "id": "Vdd",
+      "kind": "vsource",
+      "nodes": [
+       "vdd",
+       "0"
+      ],
+      "params": {
+       "dc": 3.3
+      }
+     },
+     {
+      "id": "Vinp",
+      "kind": "vsource",
+      "nodes": [
+       "inp",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": 0.5
+      }
+     },
+     {
+      "id": "Vinn",
+      "kind": "vsource",
+      "nodes": [
+       "inn",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": -0.5
+      }
+     },
+     {
+      "id": "Vb",
+      "kind": "vsource",
+      "nodes": [
+       "nbias",
+       "0"
+      ],
+      "params": {
+       "dc": 0.85
+      }
+     },
+     {
+      "id": "CL",
+      "kind": "cap",
+      "nodes": [
+       "out",
+       "0"
+      ],
+      "params": {
+       "value": "5p"
+      }
+     }
+    ],
+    "params": {}
+   }
+  },
+  {
+   "k": 1,
+   "model": "claude-fable-5",
+   "tokens": 45060,
+   "t": "2026-09-03 13:15:43",
+   "echo_ok": true,
+   "circuit_emitted": {
+    "name": "two-stage-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "5u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "n2",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "5u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n2",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "15u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "n2",
+       "n2",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "15u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "8u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M6",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "90u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M7",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "24u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "Rz",
+      "kind": "res",
+      "nodes": [
+       "n1",
+       "nz"
+      ],
+      "params": {
+       "value": "4.5k"
+      }
+     },
+     {
+      "id": "Cc",
+      "kind": "cap",
+      "nodes": [
+       "nz",
+       "out"
+      ],
+      "params": {
+       "value": "3p"
+      }
+     }
+    ]
+   },
+   "vbias": 0.85,
+   "rationale": "Only itail fails (125.5 uA > 100). Shrinking both current-sink widths by 1/3 at fixed vbias cuts total current to ~84 uA; gm1 falls only as sqrt(I), so GBW ~6 MHz and gain/PM margins remain comfortable.",
+   "claim_stated": {
+    "device": "M5,M7",
+    "param": "W",
+    "new_value": "8u,24u",
+    "metric": "itail_ua",
+    "predicted": "decrease"
+   },
+   "repair_actions": [],
+   "fatal": false,
+   "measured": {
+    "dc_gain_db": 93.928,
+    "f_3db_hz": 116.59144,
+    "gbw_hz": 5542791.717942277,
+    "phase_margin_deg": 83.98,
+    "n_points": 301,
+    "itail_ua": 83.586
+   },
+   "sim_error": null,
+   "eval": {
+    "dc_gain_db": [
+     "PASS",
+     93.928,
+     70.0
+    ],
+    "phase_margin_deg": [
+     "PASS",
+     83.98,
+     60.0
+    ],
+    "gbw_hz": [
+     "PASS",
+     5542791.717942277,
+     3000000.0
+    ],
+    "itail_ua": [
+     "PASS",
+     83.586,
+     100.0
+    ]
+   },
+   "eval_ok": true,
+   "audit": {
+    "verdict": "unmeasurable",
+    "before": 125.533,
+    "after": null
+   },
+   "circuit_repaired": {
+    "name": "two-stage-ota",
+    "devices": [
+     {
+      "id": "M1",
+      "kind": "nmos",
+      "nodes": [
+       "n1",
+       "inp",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "5u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M2",
+      "kind": "nmos",
+      "nodes": [
+       "n2",
+       "inn",
+       "ntail",
+       "0"
+      ],
+      "params": {
+       "W": "5u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M3",
+      "kind": "pmos",
+      "nodes": [
+       "n1",
+       "n2",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "15u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M4",
+      "kind": "pmos",
+      "nodes": [
+       "n2",
+       "n2",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "15u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M5",
+      "kind": "nmos",
+      "nodes": [
+       "ntail",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "8u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M6",
+      "kind": "pmos",
+      "nodes": [
+       "out",
+       "n1",
+       "vdd",
+       "vdd"
+      ],
+      "params": {
+       "W": "90u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "M7",
+      "kind": "nmos",
+      "nodes": [
+       "out",
+       "nbias",
+       "0",
+       "0"
+      ],
+      "params": {
+       "W": "24u",
+       "L": "1u"
+      }
+     },
+     {
+      "id": "Rz",
+      "kind": "res",
+      "nodes": [
+       "n1",
+       "nz"
+      ],
+      "params": {
+       "value": "4.5k"
+      }
+     },
+     {
+      "id": "Cc",
+      "kind": "cap",
+      "nodes": [
+       "nz",
+       "out"
+      ],
+      "params": {
+       "value": "3p"
+      }
+     },
+     {
+      "id": "Vdd",
+      "kind": "vsource",
+      "nodes": [
+       "vdd",
+       "0"
+      ],
+      "params": {
+       "dc": 3.3
+      }
+     },
+     {
+      "id": "Vinp",
+      "kind": "vsource",
+      "nodes": [
+       "inp",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": 0.5
+      }
+     },
+     {
+      "id": "Vinn",
+      "kind": "vsource",
+      "nodes": [
+       "inn",
+       "0"
+      ],
+      "params": {
+       "dc": 1.65,
+       "ac": -0.5
+      }
+     },
+     {
+      "id": "Vb",
+      "kind": "vsource",
+      "nodes": [
+       "nbias",
+       "0"
+      ],
+      "params": {
+       "dc": 0.85
+      }
+     },
+     {
+      "id": "CL",
+      "kind": "cap",
+      "nodes": [
+       "out",
+       "0"
+      ],
+      "params": {
+       "value": "5p"
+      }
+     }
+    ],
+    "params": {}
+   }
+  }
+ ],
+ "created": "2026-09-03 12:57:48"
+}

@@ -1,0 +1,17 @@
+{
+  "echo": "7a57d1b308ae",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "60u", "L": "2u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "60u", "L": "2u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "30u", "L": "3u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "30u", "L": "3u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "20u", "L": "2u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "60u", "L": "3u", "m": "2"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "60u", "L": "3u"}},
+    {"id": "Rz", "kind": "res", "nodes": ["n1", "nz"], "params": {"value": "6.5k"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "4.5p"}}
+  ]},
+  "vbias": 0.8,
+  "claim": {"device": "Cc", "param": "value", "new_value": "4.5p", "metric": "phase_margin_deg", "predicted": "increase"},
+  "rationale": "Iteration 3 passed everything but PM; iteration 4 proved M6/M7 resizing wrecks the DC point. Revert to iteration 3 devices, enlarge Cc 3p->4.5p to lower GBW toward ~3.7MHz, and raise Rz to ~(1/gm6)(1+CL/Cc) for LHP-zero cancellation of the output pole."
+}

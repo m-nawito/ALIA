@@ -1,0 +1,68 @@
+=== ALIA DESIGN TURN — FIXED TEMPLATE v2-twostage ===
+ECHO CONTRACT: the first key of your JSON reply MUST be "echo": "b60d7a3759d7"
+
+[ROLE]
+You are the design reasoner inside a closed-loop analog design harness. This
+turn is stateless: everything you know about this episode is in this packet.
+Do not use any tools of any kind; do not browse, execute, or read files.
+Reply with EXACTLY ONE JSON object and no other text.
+
+[TASK]
+Design a two-stage Miller-compensated OTA on GF180MCU 3.3 V devices.
+Stage 1: five-transistor OTA — NMOS differential pair M1 (gate "inp") / M2
+(gate "inn"), PMOS mirror load M3/M4 with the DIODE-CONNECTED side on M2's
+drain, NMOS tail source M5 (gate "nbias"). The first-stage output is M1's
+drain. Stage 2: PMOS common-source M6 (gate = first-stage output) with NMOS
+current-sink load M7 (gate "nbias"), output node "out". Compensation: Miller
+capacitor Cc from the first-stage output to "out"; an optional series
+zero-nulling resistor Rz in that path is allowed.
+Specification (all must pass):
+  dc_gain_db        >= 70.0        (differential DC gain, dB)
+  phase_margin_deg  >= 60.0
+  gbw_hz            >= 3e6         (unity-gain bandwidth, Hz)
+  itail_ua          <= 100.0       (total supply current, uA — power budget)
+
+[FIXED TESTBENCH — supplied by the harness, do NOT emit these]
+  VDD = 3.3 V rail node "vdd"; ground node "0".
+  Differential drive: v(inp) = 1.65 V DC + 0.5 AC, v(inn) = 1.65 V DC - 0.5 AC.
+  Load C_L = 5p at node "out". Bias rail: node "nbias" driven by an ideal
+  source whose DC value you choose via "vbias".
+
+[WHAT YOU EMIT — IR schema]
+JSON circuit with devices only for the OTA core (M1..M7, Cc, optional Rz).
+Node-order conventions: nmos/pmos = [drain, gate, source, bulk];
+res/cap = [n1, n2]. Use node names inp, inn, out, vdd, nbias, 0, plus any
+internal nodes you need.
+Params: MOS W, L (strings like "10u", "0.5u"), optional nf, m;
+res/cap "value" (strings like "1k", "1p").
+Bulk convention on this PDK: NMOS bulk -> "0"; PMOS bulk -> its source or "vdd".
+Device kinds: "nmos", "pmos", "cap", "res" (models nfet_03v3 / pfet_03v3 are
+applied by the renderer). Do not emit sources, the load, or simulation
+directives.
+
+[REPLY FORMAT — one JSON object, first key echo]
+{
+  "echo": "b60d7a3759d7",
+  "circuit": {"name": "two-stage-ota", "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"],
+        "params": {"W": "…", "L": "…"}}, …
+  ]},
+  "vbias": <number, volts>,
+  "claim": {"device": "<id; comma-list for matched pairs, e.g. \"M1,M2\"; or VB>",
+             "param": "<W|L|value|dc>",
+             "new_value": "<the value you set this turn>",
+             "metric": "<one of dc_gain_db|gbw_hz|phase_margin_deg|itail_ua>",
+             "predicted": "<increase|decrease>"},
+  "rationale": "<= 50 words"
+}
+"claim" is REQUIRED on every revision turn (state the single causal claim
+behind your main change, relative to the previous design) and MUST be omitted
+on the initial turn. The claim is audited against the simulator.
+
+[EPISODE TRACE — full history, oldest first; the harness reconstructs this
+from disk every turn; there is no hidden state]
+--- iteration 0 ---
+emitted: {"name":"two-stage-ota","devices":[{"id":"M1","kind":"nmos","nodes":["n1","inp","ntail","0"],"params":{"W":"10u","L":"1u"}},{"id":"M2","kind":"nmos","nodes":["n2","inn","ntail","0"],"params":{"W":"10u","L":"1u"}},{"id":"M3","kind":"pmos","nodes":["n1","n2","vdd","vdd"],"params":{"W":"10u","L":"1u"}},{"id":"M4","kind":"pmos","nodes":["n2","n2","vdd","vdd"],"params":{"W":"10u","L":"1u"}},{"id":"M5","kind":"nmos","nodes":["ntail","nbias","0","0"],"params":{"W":"10u","L":"2u"}},{"id":"M6","kind":"pmos","nodes":["out","n1","vdd","vdd"],"params":{"W":"80u","L":"1u"}},{"id":"M7","kind":"nmos","nodes":["out","nbias","0","0"],"params":{"W":"40u","L":"2u"}},{"id":"Rz","kind":"res","nodes":["n1","nz"],"params":{"value":"2k"}},{"id":"Cc","kind":"cap","nodes":["nz","out"],"params":{"value":"2p"}}]} | vbias=0.9
+measured: dc_gain_db=96.806, gbw_hz=9639512.486558387, phase_margin_deg=59.78, itail_ua=106.749
+spec: dc_gain_db:PASS (got 96.806, need >=70.0), phase_margin_deg:FAIL (got 59.78, need >=60.0), gbw_hz:PASS (got 9639512.486558387, need >=3000000.0), itail_ua:FAIL (got 106.749, need <=100.0)
+--- now produce iteration 1 (revision; include "claim") ---

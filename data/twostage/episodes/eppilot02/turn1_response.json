@@ -1,0 +1,17 @@
+{
+  "echo": "32d16e196cb4",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "60u", "L": "2u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "60u", "L": "2u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "20u", "L": "2u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "20u", "L": "2u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "10u", "L": "2u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "120u", "L": "2u"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "20u", "L": "2u"}},
+    {"id": "Rz", "kind": "res", "nodes": ["n1", "nz"], "params": {"value": "3k"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "1.5p"}}
+  ]},
+  "vbias": 0.8,
+  "claim": {"device": "M1,M2", "param": "L", "new_value": "2u", "metric": "dc_gain_db", "predicted": "increase"},
+  "rationale": "Gain 21 dB short: doubled L everywhere (higher ro, both stages) and lowered vbias to cut current, boosting intrinsic gain. Widened M1/M2 and M6 to preserve gm. Raised Cc to 1.5p and Rz to ~1/gm6 for phase margin; GBW margin absorbs the reduction."
+}

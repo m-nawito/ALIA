@@ -1,0 +1,26 @@
+{
+  "echo": "06bdce4bb6bd",
+  "circuit": {
+    "name": "two-stage-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "10u", "L": "2u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "10u", "L": "2u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "2u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "2u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "8u", "L": "2u"}},
+      {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "60u", "L": "2u"}},
+      {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "24u", "L": "2u"}},
+      {"id": "Rz", "kind": "res", "nodes": ["n1", "nx"], "params": {"value": "5k"}},
+      {"id": "Cc", "kind": "cap", "nodes": ["nx", "out"], "params": {"value": "3p"}}
+    ]
+  },
+  "vbias": 0.9,
+  "claim": {
+    "device": "Rz",
+    "param": "value",
+    "new_value": "5k",
+    "metric": "phase_margin_deg",
+    "predicted": "increase"
+  },
+  "rationale": "PM is the only failure. Raising Rz from 2.2k past 1/gm6 (~3k) moves the Miller zero from RHP to LHP, cancelling second-pole phase lag; GBW (gm1/Cc) and power are untouched, so gain, GBW, and current specs stay passing."
+}

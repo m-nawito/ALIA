@@ -1,0 +1,17 @@
+{
+  "echo": "6b4cffda9f4c",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "10u", "L": "2u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "68u", "L": "1u"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "34u", "L": "2u"}},
+    {"id": "Rz", "kind": "res", "nodes": ["n1", "nz"], "params": {"value": "2k"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "3p"}}
+  ]},
+  "vbias": 0.9,
+  "claim": {"device": "M6", "param": "W", "new_value": "68u", "metric": "dc_gain_db", "predicted": "increase"},
+  "rationale": "Iteration 1 shrank M7 without M6, unbalancing stage-2 quiescent currents and pushing M6 out of saturation (gain fell to 59.6 dB). Scaling M6 to 68u restores the 2:1 ratio to M7's sink current, recovering gain; Cc=3p keeps PM above 60; total current about 94 uA."
+}

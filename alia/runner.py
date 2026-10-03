@@ -30,6 +30,10 @@ MASTER = os.path.join(EPD, "episodes.jsonl")
 # ---- SPEC FROZEN 2026-07-31 (author decision; exactly as pilot-validated) ----
 SPEC = {"dc_gain_db": (">=", 40.0), "phase_margin_deg": (">=", 60.0),
         "gbw_hz": (">=", 20e6), "itail_ua": ("<=", 100.0)}
+# ---- TWO-STAGE SPEC FROZEN 2026-09-03 (author decision; fixture-validated:
+#      reference design 93.8 dB / 4.96 MHz / 62.5 deg / 65.4 uA) ----
+SPEC_2S = {"dc_gain_db": (">=", 70.0), "phase_margin_deg": (">=", 60.0),
+           "gbw_hz": (">=", 3e6), "itail_ua": ("<=", 100.0)}
 K_BUDGET = 7
 # Phase-3 arms (2026-07-31): identical fixed template everywhere; arms differ
 # ONLY in pipeline/feedback mechanics. k_budget per arm; oneshot = budget 0.
@@ -96,6 +100,86 @@ from disk every turn; there is no hidden state]
 {trace}
 """
 
+TEMPLATE_2S = """=== ALIA DESIGN TURN — FIXED TEMPLATE v2-twostage ===
+ECHO CONTRACT: the first key of your JSON reply MUST be "echo": "{sha}"
+
+[ROLE]
+You are the design reasoner inside a closed-loop analog design harness. This
+turn is stateless: everything you know about this episode is in this packet.
+Do not use any tools of any kind; do not browse, execute, or read files.
+Reply with EXACTLY ONE JSON object and no other text.
+
+[TASK]
+Design a two-stage Miller-compensated OTA on GF180MCU 3.3 V devices.
+Stage 1: five-transistor OTA — NMOS differential pair M1 (gate "inp") / M2
+(gate "inn"), PMOS mirror load M3/M4 with the DIODE-CONNECTED side on M2's
+drain, NMOS tail source M5 (gate "nbias"). The first-stage output is M1's
+drain. Stage 2: PMOS common-source M6 (gate = first-stage output) with NMOS
+current-sink load M7 (gate "nbias"), output node "out". Compensation: Miller
+capacitor Cc from the first-stage output to "out"; an optional series
+zero-nulling resistor Rz in that path is allowed.
+Specification (all must pass):
+  dc_gain_db        >= 70.0        (differential DC gain, dB)
+  phase_margin_deg  >= 60.0
+  gbw_hz            >= 3e6         (unity-gain bandwidth, Hz)
+  itail_ua          <= 100.0       (total supply current, uA — power budget)
+
+[FIXED TESTBENCH — supplied by the harness, do NOT emit these]
+  VDD = 3.3 V rail node "vdd"; ground node "0".
+  Differential drive: v(inp) = {vicm} V DC + 0.5 AC, v(inn) = {vicm} V DC - 0.5 AC.
+  Load C_L = {cl} at node "out". Bias rail: node "nbias" driven by an ideal
+  source whose DC value you choose via "vbias".
+
+[WHAT YOU EMIT — IR schema]
+JSON circuit with devices only for the OTA core (M1..M7, Cc, optional Rz).
+Node-order conventions: nmos/pmos = [drain, gate, source, bulk];
+res/cap = [n1, n2]. Use node names inp, inn, out, vdd, nbias, 0, plus any
+internal nodes you need.
+Params: MOS W, L (strings like "10u", "0.5u"), optional nf, m;
+res/cap "value" (strings like "1k", "1p").
+Bulk convention on this PDK: NMOS bulk -> "0"; PMOS bulk -> its source or "vdd".
+Device kinds: "nmos", "pmos", "cap", "res" (models nfet_03v3 / pfet_03v3 are
+applied by the renderer). Do not emit sources, the load, or simulation
+directives.
+
+[REPLY FORMAT — one JSON object, first key echo]
+{{
+  "echo": "{sha}",
+  "circuit": {{"name": "two-stage-ota", "devices": [
+      {{"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"],
+        "params": {{"W": "…", "L": "…"}}}}, …
+  ]}},
+  "vbias": <number, volts>,
+  "claim": {{"device": "<id; comma-list for matched pairs, e.g. \\"M1,M2\\"; or VB>",
+             "param": "<W|L|value|dc>",
+             "new_value": "<the value you set this turn>",
+             "metric": "<one of dc_gain_db|gbw_hz|phase_margin_deg|itail_ua>",
+             "predicted": "<increase|decrease>"}},
+  "rationale": "<= 50 words"
+}}
+"claim" is REQUIRED on every revision turn (state the single causal claim
+behind your main change, relative to the previous design) and MUST be omitted
+on the initial turn. The claim is audited against the simulator.
+
+[EPISODE TRACE — full history, oldest first; the harness reconstructs this
+from disk every turn; there is no hidden state]
+{trace}
+"""
+
+# task registry: template + spec per task; episode state records its task at
+# init, and every later step reads spec/template from the episode state.
+TASKS = {"5t": {"template_name": "TEMPLATE", "spec": SPEC},
+         "twostage": {"template_name": "TEMPLATE_2S", "spec": SPEC_2S}}
+
+
+def _task_template(st) -> str:
+    name = TASKS[st.get("task", "5t")]["template_name"]
+    return globals()[name]
+
+
+def _st_spec(st) -> dict:
+    return {k: tuple(v) for k, v in st["spec"].items()}
+
 
 def _sha(text: str) -> str:
     return hashlib.sha256(text.encode()).hexdigest()[:12]
@@ -154,8 +238,9 @@ def _trace_text(st) -> str:
             else:
                 e.append("measured: " + ", ".join(
                     f"{k}={m.get(k)}" for k in METRICS))
+                stspec = _st_spec(st)
                 e.append("spec: " + ", ".join(
-                    f"{k}:{v[0]} (got {v[1]}, need {SPEC[k][0]}{SPEC[k][1]})"
+                    f"{k}:{v[0]} (got {v[1]}, need {stspec[k][0]}{stspec[k][1]})"
                     for k, v in it["eval"].items()))
         out.append("\n".join(e))
     out.append(f"--- now produce iteration {len(st['iters'])} (revision; include \"claim\") ---")
@@ -164,7 +249,8 @@ def _trace_text(st) -> str:
 
 def build_packet(ep) -> tuple:
     st = _load(ep)
-    body = TEMPLATE.format(sha="{SHA}", vicm=VICM, cl=CL, trace=_trace_text(st))
+    body = _task_template(st).format(sha="{SHA}", vicm=VICM, cl=CL,
+                                     trace=_trace_text(st))
     # echo hash covers everything below the contract line, with SHA slot blanked
     below = body.split("\n", 2)[2]
     sha = _sha(below)
@@ -263,6 +349,7 @@ def cmd_init(a):
     os.makedirs(EPD, exist_ok=True)
     arm = getattr(a, "arm", "full") or "full"
     prefix = getattr(a, "prefix", "ep") or "ep"
+    task = getattr(a, "task", "5t") or "5t"
     made = []
     for i in range(1, a.episodes + 1):
         ep = f"{prefix}{i:02d}"
@@ -271,14 +358,16 @@ def cmd_init(a):
             continue
         os.makedirs(d, exist_ok=True)
         seeded = bool(getattr(a, "all_seeded", False)) or (i == a.seed_ep)
-        st = {"episode": ep, "arm": arm, "seeded": seeded, "status": "pending",
-              "spec": {k: list(v) for k, v in SPEC.items()},
+        st = {"episode": ep, "arm": arm, "task": task, "seeded": seeded,
+              "status": "pending",
+              "spec": {k: list(v) for k, v in TASKS[task]["spec"].items()},
               "k_budget": ARM_K[arm],
               "iters": [], "created": time.strftime("%Y-%m-%d %H:%M:%S")}
         _save(ep, st)
         made.append(ep)
-        _mlog({"ev": "init", "episode": ep, "arm": arm, "seeded": st["seeded"]})
-    print(json.dumps({"ok": True, "created": made, "arm": arm}))
+        _mlog({"ev": "init", "episode": ep, "arm": arm, "task": task,
+               "seeded": st["seeded"]})
+    print(json.dumps({"ok": True, "created": made, "arm": arm, "task": task}))
 
 
 def _pending_eps():
@@ -395,7 +484,7 @@ def cmd_ingest(a):
         except Exception as ex:
             meas, err = {}, f"render/simulation failed (verbatim): {ex}"
         rec["measured"], rec["sim_error"] = meas, err
-        ok, ev = evaluate(meas, SPEC) if meas else (False, {})
+        ok, ev = evaluate(meas, _st_spec(st)) if meas else (False, {})
         rec["eval"], rec["eval_ok"] = ev, ok
         repaired = full
     else:
@@ -408,7 +497,7 @@ def cmd_ingest(a):
         else:
             meas, err, _deck = _simulate_full(ep, repaired, f"iter{k}")
             rec["measured"], rec["sim_error"] = meas, err
-            ok, ev = evaluate(meas, SPEC) if meas else (False, {})
+            ok, ev = evaluate(meas, _st_spec(st)) if meas else (False, {})
             rec["eval"], rec["eval_ok"] = ev, ok
     # audit (revisions only, needs a previous non-fatal design) — WITHHELD from packets
     if k > 0 and j.get("claim") and st["iters"][k - 1].get("circuit_repaired") \
@@ -525,6 +614,7 @@ if __name__ == "__main__":
     i.add_argument("--episodes", type=int, default=2)
     i.add_argument("--seed-ep", type=int, default=0)
     i.add_argument("--arm", choices=ARMS, default="full")
+    i.add_argument("--task", choices=sorted(TASKS), default="5t")
     i.add_argument("--prefix", default="ep")
     i.add_argument("--all-seeded", action="store_true")
     n = sub.add_parser("next")

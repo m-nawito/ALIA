@@ -1,0 +1,17 @@
+{
+  "echo": "e13c545684f4",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "90u", "L": "3u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "90u", "L": "3u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "40u", "L": "5u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "40u", "L": "5u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "16u", "L": "2u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "100u", "L": "4u", "m": "2"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "60u", "L": "4u"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["n1", "nz"], "params": {"value": "4p"}},
+    {"id": "Rz", "kind": "res", "nodes": ["nz", "out"], "params": {"value": "2.5k"}}
+  ]},
+  "vbias": 0.85,
+  "claim": {"device": "M6,M7", "param": "L", "new_value": "4u", "metric": "dc_gain_db", "predicted": "increase"},
+  "rationale": "Iter2 failed: single-finger W=200u exceeds PDK limit, so M6 is now W=100u with m=2. Longer L on M6/M7 and load M3/M4 raises output resistances for >12 dB gain; Cc=4p halves GBW to ~3.5 MHz, restoring phase margin above 60."
+}

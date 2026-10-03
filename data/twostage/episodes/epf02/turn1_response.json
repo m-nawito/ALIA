@@ -1,0 +1,17 @@
+{
+  "echo": "b60d7a3759d7",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "10u", "L": "2u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "80u", "L": "1u"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "34u", "L": "2u"}},
+    {"id": "Rz", "kind": "res", "nodes": ["n1", "nz"], "params": {"value": "2k"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "3p"}}
+  ]},
+  "vbias": 0.9,
+  "claim": {"device": "Cc", "param": "value", "new_value": "3p", "metric": "phase_margin_deg", "predicted": "increase"},
+  "rationale": "PM missed by 0.2 deg and current by 7 uA. Raising Cc to 3p lowers GBW (~6.4 MHz, still passing) well below the output pole, boosting phase margin. Shrinking M7 to 34u trims stage-2 current ~13 uA to meet the 100 uA budget; gm6 drop is covered by the lower GBW."
+}

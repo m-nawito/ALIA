@@ -1,0 +1,13 @@
+{"echo": "ae979a2a0e45", "circuit": {"name": "two-stage-ota", "devices": [
+  {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "15u", "L": "1u"}},
+  {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "15u", "L": "1u"}},
+  {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "8u", "L": "2u"}},
+  {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "8u", "L": "2u"}},
+  {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "6u", "L": "1u"}},
+  {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "48u", "L": "1u"}},
+  {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "36u", "L": "1u"}},
+  {"id": "Rz", "kind": "res", "nodes": ["n1", "nz"], "params": {"value": "2k"}},
+  {"id": "Cc", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "2p"}}
+]},
+"vbias": 0.9,
+"rationale": "Target GBW ~6 MHz: gm1~75uS with 5uA/side, Cc=2p. M7 mirrors 6x tail (10uA -> 60uA) for gm6~540uS, putting p2 ~17 MHz well beyond GBW; Rz~1/gm6 nulls the RHP zero. M6/M3 ratioed 12:1 to match stage-2 bias. Total ~70uA under budget."}

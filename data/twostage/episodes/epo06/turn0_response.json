@@ -1,0 +1,13 @@
+{"echo": "ae979a2a0e45", "circuit": {"name": "two-stage-ota", "devices": [
+  {"id": "M1", "kind": "nmos", "nodes": ["n1o", "inp", "ntail", "0"], "params": {"W": "20u", "L": "1u"}},
+  {"id": "M2", "kind": "nmos", "nodes": ["n2d", "inn", "ntail", "0"], "params": {"W": "20u", "L": "1u"}},
+  {"id": "M3", "kind": "pmos", "nodes": ["n1o", "n2d", "vdd", "vdd"], "params": {"W": "10u", "L": "2u"}},
+  {"id": "M4", "kind": "pmos", "nodes": ["n2d", "n2d", "vdd", "vdd"], "params": {"W": "10u", "L": "2u"}},
+  {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "10u", "L": "2u"}},
+  {"id": "M6", "kind": "pmos", "nodes": ["out", "n1o", "vdd", "vdd"], "params": {"W": "40u", "L": "1u"}},
+  {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "40u", "L": "2u"}},
+  {"id": "Rz", "kind": "res", "nodes": ["n1o", "nz"], "params": {"value": "3k"}},
+  {"id": "Cc", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "2.5p"}}
+]},
+"vbias": 0.9,
+"rationale": "Tail ~12uA, stage-2 ~48uA (balanced: (W/L)6 = 2*(W/L)7/(W/L)5*(W/L)4 for zero systematic offset). gm1~90uS with Cc=2.5p gives GBW~5MHz; gm6~0.5mS puts p2~16MHz for PM>60; Rz=3k>1/gm6 moves the RHP zero to LHP. Long L for 70dB+ gain."}

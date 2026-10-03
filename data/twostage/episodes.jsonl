@@ -1,0 +1,192 @@
+{"t": 1788439096.9987483, "ev": "init", "episode": "eppilot01", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788439096.9988866, "ev": "init", "episode": "eppilot02", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788439097.0550168, "ev": "packet", "episode": "eppilot01", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/eppilot01/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788439168.8760858, "ev": "ingest", "episode": "eppilot01", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45629, "model": "claude-fable-5"}
+{"t": 1788439175.1271784, "ev": "packet", "episode": "eppilot01", "iter": 1, "sha": "c0516ecc9843", "file": "/home/claude/alia/episodes/eppilot01/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788439251.6341987, "ev": "ingest", "episode": "eppilot01", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 46225, "model": "claude-fable-5"}
+{"t": 1788439259.7866976, "ev": "packet", "episode": "eppilot01", "iter": 2, "sha": "201b2cd3f43e", "file": "/home/claude/alia/episodes/eppilot01/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788439351.1206574, "ev": "ingest", "episode": "eppilot01", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 48075, "model": "claude-fable-5"}
+{"t": 1788439365.3602116, "ev": "packet", "episode": "eppilot01", "iter": 3, "sha": "9131456c90fa", "file": "/home/claude/alia/episodes/eppilot01/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1788439457.6702168, "ev": "ingest", "episode": "eppilot01", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 48430, "model": "claude-fable-5"}
+{"t": 1788439522.1368067, "ev": "packet", "episode": "eppilot02", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/eppilot02/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788439522.2316046, "ev": "ingest", "episode": "eppilot02", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 44523, "model": "claude-fable-5"}
+{"t": 1788439526.0997322, "ev": "packet", "episode": "eppilot02", "iter": 1, "sha": "32d16e196cb4", "file": "/home/claude/alia/episodes/eppilot02/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788439622.532953, "ev": "ingest", "episode": "eppilot02", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 48307, "model": "claude-fable-5"}
+{"t": 1788439629.043146, "ev": "packet", "episode": "eppilot02", "iter": 2, "sha": "14cdaa83f90d", "file": "/home/claude/alia/episodes/eppilot02/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788439691.001247, "ev": "ingest", "episode": "eppilot02", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 45593, "model": "claude-fable-5"}
+{"t": 1788439697.496662, "ev": "packet", "episode": "eppilot02", "iter": 3, "sha": "2ce96de55669", "file": "/home/claude/alia/episodes/eppilot02/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1788439885.3555248, "ev": "ingest", "episode": "eppilot02", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 55649, "model": "claude-fable-5"}
+{"t": 1788439890.5441973, "ev": "packet", "episode": "eppilot02", "iter": 4, "sha": "f919c19a02dd", "file": "/home/claude/alia/episodes/eppilot02/turn4_prompt.txt", "resume": "fresh"}
+{"t": 1788439983.3765626, "ev": "ingest", "episode": "eppilot02", "iter": 4, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 48515, "model": "claude-fable-5"}
+{"t": 1788439989.2872643, "ev": "packet", "episode": "eppilot02", "iter": 5, "sha": "7a57d1b308ae", "file": "/home/claude/alia/episodes/eppilot02/turn5_prompt.txt", "resume": "fresh"}
+{"t": 1788440089.750679, "ev": "ingest", "episode": "eppilot02", "iter": 5, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "negligible", "tokens": 49628, "model": "claude-fable-5"}
+{"t": 1788440096.4784777, "ev": "packet", "episode": "eppilot02", "iter": 6, "sha": "59428338f817", "file": "/home/claude/alia/episodes/eppilot02/turn6_prompt.txt", "resume": "fresh"}
+{"t": 1788440176.2775888, "ev": "ingest", "episode": "eppilot02", "iter": 6, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 48278, "model": "claude-fable-5"}
+{"t": 1788440268.6581707, "ev": "init", "episode": "epf01", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.6583703, "ev": "init", "episode": "epf02", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.6584687, "ev": "init", "episode": "epf03", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.6586614, "ev": "init", "episode": "epf04", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.6587539, "ev": "init", "episode": "epf05", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.6589255, "ev": "init", "episode": "epf06", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.659011, "ev": "init", "episode": "epf07", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.6591613, "ev": "init", "episode": "epf08", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.659299, "ev": "init", "episode": "epf09", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.6594098, "ev": "init", "episode": "epf10", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.659566, "ev": "init", "episode": "epf11", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.6596725, "ev": "init", "episode": "epf12", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.6597435, "ev": "init", "episode": "epf13", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.6598222, "ev": "init", "episode": "epf14", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.659904, "ev": "init", "episode": "epf15", "arm": "full", "task": "twostage", "seeded": false}
+{"t": 1788440268.7088203, "ev": "init", "episode": "epo01", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7089508, "ev": "init", "episode": "epo02", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7092876, "ev": "init", "episode": "epo03", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7094197, "ev": "init", "episode": "epo04", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7095022, "ev": "init", "episode": "epo05", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7096531, "ev": "init", "episode": "epo06", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.709731, "ev": "init", "episode": "epo07", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7098079, "ev": "init", "episode": "epo08", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7099204, "ev": "init", "episode": "epo09", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.710139, "ev": "init", "episode": "epo10", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7102203, "ev": "init", "episode": "epo11", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7102897, "ev": "init", "episode": "epo12", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7103608, "ev": "init", "episode": "epo13", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7104352, "ev": "init", "episode": "epo14", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7105463, "ev": "init", "episode": "epo15", "arm": "oneshot", "task": "twostage", "seeded": false}
+{"t": 1788440268.7601569, "ev": "packet", "episode": "epf01", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf01/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7602975, "ev": "packet", "episode": "epf02", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf02/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7604225, "ev": "packet", "episode": "epf03", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf03/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7605264, "ev": "packet", "episode": "epf04", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf04/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7606213, "ev": "packet", "episode": "epf05", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf05/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.760706, "ev": "packet", "episode": "epf06", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf06/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7608318, "ev": "packet", "episode": "epf07", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf07/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.760965, "ev": "packet", "episode": "epf08", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf08/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.761154, "ev": "packet", "episode": "epf09", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf09/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7612517, "ev": "packet", "episode": "epf10", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf10/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7613497, "ev": "packet", "episode": "epf11", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf11/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7614365, "ev": "packet", "episode": "epf12", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf12/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7616248, "ev": "packet", "episode": "epf13", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf13/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.761722, "ev": "packet", "episode": "epf14", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf14/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7620928, "ev": "packet", "episode": "epf15", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epf15/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7622018, "ev": "packet", "episode": "epo01", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo01/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7622836, "ev": "packet", "episode": "epo02", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo02/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7623804, "ev": "packet", "episode": "epo03", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo03/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7624586, "ev": "packet", "episode": "epo04", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo04/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7626128, "ev": "packet", "episode": "epo05", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo05/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7627041, "ev": "packet", "episode": "epo06", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo06/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7627833, "ev": "packet", "episode": "epo07", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo07/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7628613, "ev": "packet", "episode": "epo08", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo08/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7629383, "ev": "packet", "episode": "epo09", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo09/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7630122, "ev": "packet", "episode": "epo10", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo10/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.763152, "ev": "packet", "episode": "epo11", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo11/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7633364, "ev": "packet", "episode": "epo12", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo12/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7634306, "ev": "packet", "episode": "epo13", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo13/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.763513, "ev": "packet", "episode": "epo14", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo14/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440268.7635953, "ev": "packet", "episode": "epo15", "iter": 0, "sha": "ae979a2a0e45", "file": "/home/claude/alia/episodes/epo15/turn0_prompt.txt", "resume": "fresh"}
+{"t": 1788440420.3342826, "ev": "ingest", "episode": "epf01", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 46400, "model": "claude-fable-5"}
+{"t": 1788440420.4161565, "ev": "ingest", "episode": "epf02", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45226, "model": "claude-fable-5"}
+{"t": 1788440420.518015, "ev": "ingest", "episode": "epf03", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 47940, "model": "claude-fable-5"}
+{"t": 1788440420.6041782, "ev": "ingest", "episode": "epf04", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 47096, "model": "claude-fable-5"}
+{"t": 1788440420.6905434, "ev": "ingest", "episode": "epf05", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 46440, "model": "claude-fable-5"}
+{"t": 1788440601.3740375, "ev": "ingest", "episode": "epf06", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45961, "model": "claude-fable-5"}
+{"t": 1788440601.4586182, "ev": "ingest", "episode": "epf07", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45764, "model": "claude-fable-5"}
+{"t": 1788440601.5449004, "ev": "ingest", "episode": "epf08", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45360, "model": "claude-fable-5"}
+{"t": 1788440601.6261606, "ev": "ingest", "episode": "epf09", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 44913, "model": "claude-fable-5"}
+{"t": 1788440601.7117555, "ev": "ingest", "episode": "epf10", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 47769, "model": "claude-fable-5"}
+{"t": 1788440737.1287107, "ev": "ingest", "episode": "epf11", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45844, "model": "claude-fable-5"}
+{"t": 1788440737.221483, "ev": "ingest", "episode": "epf12", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 47116, "model": "claude-fable-5"}
+{"t": 1788440737.3211174, "ev": "ingest", "episode": "epf13", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45741, "model": "claude-fable-5"}
+{"t": 1788440737.4291031, "ev": "ingest", "episode": "epf14", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 46611, "model": "claude-fable-5"}
+{"t": 1788440737.5217335, "ev": "ingest", "episode": "epf15", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45204, "model": "claude-fable-5"}
+{"t": 1788440874.2805233, "ev": "ingest", "episode": "epo01", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 48498, "model": "claude-fable-5"}
+{"t": 1788440874.3717706, "ev": "ingest", "episode": "epo02", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 44639, "model": "claude-fable-5"}
+{"t": 1788440874.4571884, "ev": "ingest", "episode": "epo03", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 46207, "model": "claude-fable-5"}
+{"t": 1788440874.5497918, "ev": "ingest", "episode": "epo04", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45426, "model": "claude-fable-5"}
+{"t": 1788440874.6359704, "ev": "ingest", "episode": "epo05", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45394, "model": "claude-fable-5"}
+{"t": 1788441026.5072289, "ev": "ingest", "episode": "epo06", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 46695, "model": "claude-fable-5"}
+{"t": 1788441026.592321, "ev": "ingest", "episode": "epo07", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 48548, "model": "claude-fable-5"}
+{"t": 1788441026.6832187, "ev": "ingest", "episode": "epo08", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 46405, "model": "claude-fable-5"}
+{"t": 1788441026.7813675, "ev": "ingest", "episode": "epo09", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": null, "tokens": 47987, "model": "claude-fable-5"}
+{"t": 1788441026.8654196, "ev": "ingest", "episode": "epo10", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45908, "model": "claude-fable-5"}
+{"t": 1788441163.9226172, "ev": "ingest", "episode": "epo11", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45983, "model": "claude-fable-5"}
+{"t": 1788441164.0114257, "ev": "ingest", "episode": "epo12", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45377, "model": "claude-fable-5"}
+{"t": 1788441164.1205862, "ev": "ingest", "episode": "epo13", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 46677, "model": "claude-fable-5"}
+{"t": 1788441164.2109327, "ev": "ingest", "episode": "epo14", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45780, "model": "claude-fable-5"}
+{"t": 1788441164.3109858, "ev": "ingest", "episode": "epo15", "iter": 0, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": null, "tokens": 45710, "model": "claude-fable-5"}
+{"t": 1788441191.780675, "ev": "packet", "episode": "epf01", "iter": 1, "sha": "ab8e581a15cd", "file": "/home/claude/alia/episodes/epf01/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441191.8326855, "ev": "packet", "episode": "epf02", "iter": 1, "sha": "b60d7a3759d7", "file": "/home/claude/alia/episodes/epf02/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441191.882262, "ev": "packet", "episode": "epf03", "iter": 1, "sha": "06bdce4bb6bd", "file": "/home/claude/alia/episodes/epf03/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441191.9312692, "ev": "packet", "episode": "epf04", "iter": 1, "sha": "5887a399e06d", "file": "/home/claude/alia/episodes/epf04/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441191.9769878, "ev": "packet", "episode": "epf05", "iter": 1, "sha": "4f5cb6114f89", "file": "/home/claude/alia/episodes/epf05/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441343.296995, "ev": "ingest", "episode": "epf01", "iter": 1, "parse_error": true}
+{"t": 1788441343.4642777, "ev": "ingest", "episode": "epf02", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 44977, "model": "claude-fable-5"}
+{"t": 1788441343.6449986, "ev": "ingest", "episode": "epf03", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 45536, "model": "claude-fable-5"}
+{"t": 1788441343.8045883, "ev": "ingest", "episode": "epf04", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 45038, "model": "claude-fable-5"}
+{"t": 1788441343.955493, "ev": "ingest", "episode": "epf05", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 45060, "model": "claude-fable-5"}
+{"t": 1788441356.7023575, "ev": "packet", "episode": "epf01", "iter": 2, "sha": "ca1d50bc9233", "file": "/home/claude/alia/episodes/epf01/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788441356.7619307, "ev": "packet", "episode": "epf02", "iter": 2, "sha": "6b4cffda9f4c", "file": "/home/claude/alia/episodes/epf02/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788441356.8144233, "ev": "packet", "episode": "epf04", "iter": 2, "sha": "283e00c9da71", "file": "/home/claude/alia/episodes/epf04/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788441356.8648515, "ev": "packet", "episode": "epf06", "iter": 1, "sha": "557506f65338", "file": "/home/claude/alia/episodes/epf06/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441356.9149559, "ev": "packet", "episode": "epf07", "iter": 1, "sha": "3a34dbe7a120", "file": "/home/claude/alia/episodes/epf07/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441543.2991512, "ev": "ingest", "episode": "epf01", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 45625, "model": "claude-fable-5"}
+{"t": 1788441543.474715, "ev": "ingest", "episode": "epf02", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 46203, "model": "claude-fable-5"}
+{"t": 1788441543.641391, "ev": "ingest", "episode": "epf04", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 45148, "model": "claude-fable-5"}
+{"t": 1788441543.8483117, "ev": "ingest", "episode": "epf06", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 45441, "model": "claude-fable-5"}
+{"t": 1788441544.0305717, "ev": "ingest", "episode": "epf07", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "refuted", "tokens": 46698, "model": "claude-fable-5"}
+{"t": 1788441560.9582107, "ev": "packet", "episode": "epf06", "iter": 2, "sha": "93b754554fbf", "file": "/home/claude/alia/episodes/epf06/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788441561.0160744, "ev": "packet", "episode": "epf07", "iter": 2, "sha": "e37ead96a46e", "file": "/home/claude/alia/episodes/epf07/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788441561.0672622, "ev": "packet", "episode": "epf08", "iter": 1, "sha": "e233c7234e22", "file": "/home/claude/alia/episodes/epf08/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441561.1190739, "ev": "packet", "episode": "epf09", "iter": 1, "sha": "911672cad683", "file": "/home/claude/alia/episodes/epf09/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441561.1706645, "ev": "packet", "episode": "epf10", "iter": 1, "sha": "f8535861331c", "file": "/home/claude/alia/episodes/epf10/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441716.7486186, "ev": "ingest", "episode": "epf06", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 48622, "model": "claude-fable-5"}
+{"t": 1788441716.930808, "ev": "ingest", "episode": "epf07", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 49167, "model": "claude-fable-5"}
+{"t": 1788441717.1079488, "ev": "ingest", "episode": "epf08", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 44818, "model": "claude-fable-5"}
+{"t": 1788441717.2805848, "ev": "ingest", "episode": "epf09", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 45602, "model": "claude-fable-5"}
+{"t": 1788441717.4604867, "ev": "ingest", "episode": "epf10", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "unmeasurable", "tokens": 44944, "model": "claude-fable-5"}
+{"t": 1788441723.7955961, "ev": "packet", "episode": "epf11", "iter": 1, "sha": "27da38a636be", "file": "/home/claude/alia/episodes/epf11/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441723.8468766, "ev": "packet", "episode": "epf12", "iter": 1, "sha": "ecbec6c7a634", "file": "/home/claude/alia/episodes/epf12/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441723.897785, "ev": "packet", "episode": "epf13", "iter": 1, "sha": "774270dba6c4", "file": "/home/claude/alia/episodes/epf13/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441723.9470315, "ev": "packet", "episode": "epf14", "iter": 1, "sha": "692b73ec295c", "file": "/home/claude/alia/episodes/epf14/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441723.997762, "ev": "packet", "episode": "epf15", "iter": 1, "sha": "c6f6c8561b3e", "file": "/home/claude/alia/episodes/epf15/turn1_prompt.txt", "resume": "fresh"}
+{"t": 1788441869.4994624, "ev": "ingest", "episode": "epf11", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 45082, "model": "claude-fable-5"}
+{"t": 1788441869.6982706, "ev": "ingest", "episode": "epf12", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 45732, "model": "claude-fable-5"}
+{"t": 1788441869.8871608, "ev": "ingest", "episode": "epf13", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 46334, "model": "claude-fable-5"}
+{"t": 1788441870.0637367, "ev": "ingest", "episode": "epf14", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 45835, "model": "claude-fable-5"}
+{"t": 1788441870.2611911, "ev": "ingest", "episode": "epf15", "iter": 1, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 44189, "model": "claude-fable-5"}
+{"t": 1788441892.9774923, "ev": "packet", "episode": "epf01", "iter": 3, "sha": "7bd7cadf7b56", "file": "/home/claude/alia/episodes/epf01/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1788441893.0337596, "ev": "packet", "episode": "epf06", "iter": 3, "sha": "5238f9bf9020", "file": "/home/claude/alia/episodes/epf06/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1788441893.087799, "ev": "packet", "episode": "epf07", "iter": 3, "sha": "5adae385293d", "file": "/home/claude/alia/episodes/epf07/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1788441893.1394067, "ev": "packet", "episode": "epf08", "iter": 2, "sha": "97127c3d703f", "file": "/home/claude/alia/episodes/epf08/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788441893.189378, "ev": "packet", "episode": "epf09", "iter": 2, "sha": "0c95157abc4f", "file": "/home/claude/alia/episodes/epf09/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788450558.7516222, "ev": "ingest", "episode": "epf09", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 45440, "model": "claude-fable-5"}
+{"t": 1788450558.952269, "ev": "ingest", "episode": "epf01", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 46736, "model": "claude-fable-5"}
+{"t": 1788450701.7693894, "ev": "ingest", "episode": "epf06", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 46322, "model": "claude-fable-5"}
+{"t": 1788450701.964113, "ev": "ingest", "episode": "epf07", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 45791, "model": "claude-fable-5"}
+{"t": 1788450702.172833, "ev": "ingest", "episode": "epf08", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 45897, "model": "claude-fable-5"}
+{"t": 1788450722.8820128, "ev": "packet", "episode": "epf11", "iter": 2, "sha": "a3aa5101b1ff", "file": "/home/claude/alia/episodes/epf11/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788450722.942016, "ev": "packet", "episode": "epf12", "iter": 2, "sha": "cee06c9958bb", "file": "/home/claude/alia/episodes/epf12/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788450722.9970183, "ev": "packet", "episode": "epf13", "iter": 2, "sha": "5554417c1b81", "file": "/home/claude/alia/episodes/epf13/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788450723.049636, "ev": "packet", "episode": "epf14", "iter": 2, "sha": "5bee23a47345", "file": "/home/claude/alia/episodes/epf14/turn2_prompt.txt", "resume": "fresh"}
+{"t": 1788450873.0648487, "ev": "ingest", "episode": "epf11", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "negligible", "tokens": 47289, "model": "claude-fable-5"}
+{"t": 1788450873.2567382, "ev": "ingest", "episode": "epf13", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 47780, "model": "claude-fable-5"}
+{"t": 1788450873.4461188, "ev": "ingest", "episode": "epf14", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 47220, "model": "claude-fable-5"}
+{"t": 1788450882.1036208, "ev": "packet", "episode": "epf11", "iter": 3, "sha": "5d8a136b63ca", "file": "/home/claude/alia/episodes/epf11/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1788450882.1559787, "ev": "packet", "episode": "epf12", "iter": 2, "sha": "cee06c9958bb", "file": "/home/claude/alia/episodes/epf12/turn2_prompt.txt", "resume": "verified-identical"}
+{"t": 1788450882.2099574, "ev": "packet", "episode": "epf13", "iter": 3, "sha": "e13c545684f4", "file": "/home/claude/alia/episodes/epf13/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1788450882.2615752, "ev": "packet", "episode": "epf14", "iter": 3, "sha": "263cc1e0324f", "file": "/home/claude/alia/episodes/epf14/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1788451056.2744236, "ev": "ingest", "episode": "epf11", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 47340, "model": "claude-fable-5"}
+{"t": 1788451056.435871, "ev": "ingest", "episode": "epf13", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 50785, "model": "claude-fable-5"}
+{"t": 1788451176.1441038, "ev": "ingest", "episode": "epf12", "iter": 2, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 49153, "model": "claude-fable-5"}
+{"t": 1788451176.3188138, "ev": "ingest", "episode": "epf14", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 47533, "model": "claude-fable-5"}
+{"t": 1788451183.8203208, "ev": "packet", "episode": "epf11", "iter": 4, "sha": "2e52963d730c", "file": "/home/claude/alia/episodes/epf11/turn4_prompt.txt", "resume": "fresh"}
+{"t": 1788451183.8743331, "ev": "packet", "episode": "epf12", "iter": 3, "sha": "7f97cf7b85b9", "file": "/home/claude/alia/episodes/epf12/turn3_prompt.txt", "resume": "fresh"}
+{"t": 1788451183.9295857, "ev": "packet", "episode": "epf13", "iter": 4, "sha": "d26b50e0d1ec", "file": "/home/claude/alia/episodes/epf13/turn4_prompt.txt", "resume": "fresh"}
+{"t": 1788451376.1903088, "ev": "ingest", "episode": "epf11", "iter": 4, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "unmeasurable", "tokens": 54291, "model": "claude-fable-5"}
+{"t": 1788451376.4042618, "ev": "ingest", "episode": "epf12", "iter": 3, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 45570, "model": "claude-fable-5"}
+{"t": 1788451386.9449775, "ev": "packet", "episode": "epf11", "iter": 5, "sha": "6f953166fb9c", "file": "/home/claude/alia/episodes/epf11/turn5_prompt.txt", "resume": "fresh"}
+{"t": 1788451386.9995685, "ev": "packet", "episode": "epf13", "iter": 4, "sha": "d26b50e0d1ec", "file": "/home/claude/alia/episodes/epf13/turn4_prompt.txt", "resume": "verified-identical"}
+{"t": 1788451553.7735379, "ev": "ingest", "episode": "epf11", "iter": 5, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 47524, "model": "claude-fable-5"}
+{"t": 1788451553.9806736, "ev": "ingest", "episode": "epf13", "iter": 4, "echo_ok": true, "fatal": false, "eval_ok": false, "audit": "confirmed", "tokens": 50247, "model": "claude-fable-5"}
+{"t": 1788451560.7330842, "ev": "packet", "episode": "epf11", "iter": 6, "sha": "b7ee06bb17f3", "file": "/home/claude/alia/episodes/epf11/turn6_prompt.txt", "resume": "fresh"}
+{"t": 1788451560.7883017, "ev": "packet", "episode": "epf13", "iter": 5, "sha": "f3fb24b45d7b", "file": "/home/claude/alia/episodes/epf13/turn5_prompt.txt", "resume": "fresh"}
+{"t": 1788451731.7541265, "ev": "ingest", "episode": "epf11", "iter": 6, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 47932, "model": "claude-fable-5"}
+{"t": 1788451731.973322, "ev": "ingest", "episode": "epf13", "iter": 5, "echo_ok": true, "fatal": false, "eval_ok": true, "audit": "confirmed", "tokens": 48654, "model": "claude-fable-5"}

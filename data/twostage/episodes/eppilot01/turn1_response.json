@@ -1,0 +1,17 @@
+{
+  "echo": "c0516ecc9843",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "12u", "L": "1u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["nd", "inn", "ntail", "0"], "params": {"W": "12u", "L": "1u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "nd", "vdd", "vdd"], "params": {"W": "6u", "L": "1u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["nd", "nd", "vdd", "vdd"], "params": {"W": "6u", "L": "1u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "14u", "L": "1u"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "12u", "L": "1u"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["n1", "nz"], "params": {"value": "6p"}},
+    {"id": "Rz", "kind": "res", "nodes": ["nz", "out"], "params": {"value": "3k"}}
+  ]},
+  "vbias": 0.9,
+  "claim": {"device": "M7", "param": "W", "new_value": "12u", "metric": "itail_ua", "predicted": "decrease"},
+  "rationale": "Second stage burned ~160uA (M7 W=40u mirrors 16x M5's unit current). Shrink M7 to 12u and M6 to 14u, cutting stage-2 current to ~48uA (total ~88uA). Doubled Cc to 6p to keep phase margin since gm6 drops; GBW ~5.4MHz still exceeds spec."
+}

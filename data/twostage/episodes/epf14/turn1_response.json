@@ -1,0 +1,26 @@
+{
+  "echo": "692b73ec295c",
+  "circuit": {
+    "name": "two-stage-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "1u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "1u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "10u", "L": "1u"}},
+      {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "24u", "L": "1u"}},
+      {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "12u", "L": "1u"}},
+      {"id": "Rz", "kind": "res", "nodes": ["n1", "nz"], "params": {"value": "3.3k"}},
+      {"id": "Cc", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "6p"}}
+    ]
+  },
+  "vbias": 0.9,
+  "claim": {
+    "device": "M7",
+    "param": "W",
+    "new_value": "12u",
+    "metric": "itail_ua",
+    "predicted": "decrease"
+  },
+  "rationale": "Only power fails; stage 2 (M7 W=35u) draws most of the 180 uA. Scaling M7 to 12u (M6 to 24u to keep mirror-node balance) cuts supply current to ~88 uA. Larger Cc=6p and Rz=3.3k preserve PM>=60 despite lower gm6; GBW ~6 MHz still clears 3 MHz."
+}

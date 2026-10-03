@@ -1,0 +1,19 @@
+{
+  "echo": "ae979a2a0e45",
+  "circuit": {
+    "name": "two-stage-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["st1o", "inp", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["ndio", "inn", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["st1o", "ndio", "vdd", "vdd"], "params": {"W": "15u", "L": "1u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["ndio", "ndio", "vdd", "vdd"], "params": {"W": "15u", "L": "1u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "20u", "L": "1u"}},
+      {"id": "M6", "kind": "pmos", "nodes": ["out", "st1o", "vdd", "vdd"], "params": {"W": "90u", "L": "1u"}},
+      {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "60u", "L": "1u"}},
+      {"id": "Cc", "kind": "cap", "nodes": ["st1o", "nz"], "params": {"value": "3p"}},
+      {"id": "Rz", "kind": "res", "nodes": ["nz", "out"], "params": {"value": "2k"}}
+    ]
+  },
+  "vbias": 0.9,
+  "rationale": "Budget: 20uA tail, ~60uA stage 2 (mirror ratios off M5). gm1~160uS with Cc=3p gives GBW~8MHz; gm6~0.7mS puts p2 well beyond GBW, Rz=2k~1/gm6 nulls the RHP zero for PM>60. L=1u everywhere for ~40dB/stage."
+}

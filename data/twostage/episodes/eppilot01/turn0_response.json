@@ -1,0 +1,19 @@
+{
+  "echo": "ae979a2a0e45",
+  "circuit": {
+    "name": "two-stage-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "12u", "L": "1u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["nd", "inn", "ntail", "0"], "params": {"W": "12u", "L": "1u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "nd", "vdd", "vdd"], "params": {"W": "6u", "L": "1u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["nd", "nd", "vdd", "vdd"], "params": {"W": "6u", "L": "1u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "10u", "L": "1u"}},
+      {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "48u", "L": "1u"}},
+      {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "40u", "L": "1u"}},
+      {"id": "Cc", "kind": "cap", "nodes": ["n1", "nz"], "params": {"value": "3p"}},
+      {"id": "Rz", "kind": "res", "nodes": ["nz", "out"], "params": {"value": "3k"}}
+    ]
+  },
+  "vbias": 0.9,
+  "rationale": "Tail ~10uA, stage-2 ~40uA (mirror ratios 8x/4x keep out near midrail), total ~50uA. gm1~100uS with Cc=3p gives ~5MHz GBW; gm6~400uS puts p2~12MHz for PM>60, Rz=3k~1/gm6 nulls RHP zero. L=1u everywhere for >70dB gain."
+}

@@ -1,0 +1,17 @@
+{
+  "echo": "201b2cd3f43e",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "12u", "L": "1u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["nd", "inn", "ntail", "0"], "params": {"W": "12u", "L": "1u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "nd", "vdd", "vdd"], "params": {"W": "6u", "L": "1u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["nd", "nd", "vdd", "vdd"], "params": {"W": "6u", "L": "1u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "40u", "L": "1u"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "12u", "L": "1u"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["n1", "nz"], "params": {"value": "8p"}},
+    {"id": "Rz", "kind": "res", "nodes": ["nz", "out"], "params": {"value": "3k"}}
+  ]},
+  "vbias": 0.9,
+  "claim": {"device": "M6", "param": "W", "new_value": "40u", "metric": "phase_margin_deg", "predicted": "increase"},
+  "rationale": "Iter1 shrank M6 too far: gm6 fell ~3x, dragging the output pole onto GBW (PM 27.8). Widen M6 to 40u at unchanged M7-set current (gm6 up ~1.7x, power flat) and raise Cc to 8p to trim GBW toward 3.7MHz, restoring pole separation and PM > 60."
+}

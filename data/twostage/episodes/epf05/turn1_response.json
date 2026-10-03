@@ -1,0 +1,17 @@
+{
+  "echo": "4f5cb6114f89",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "5u", "L": "1u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "5u", "L": "1u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "15u", "L": "1u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "15u", "L": "1u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "8u", "L": "1u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "90u", "L": "1u"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "24u", "L": "1u"}},
+    {"id": "Rz", "kind": "res", "nodes": ["n1", "nz"], "params": {"value": "4.5k"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "3p"}}
+  ]},
+  "vbias": 0.85,
+  "claim": {"device": "M5,M7", "param": "W", "new_value": "8u,24u", "metric": "itail_ua", "predicted": "decrease"},
+  "rationale": "Only itail fails (125.5 uA > 100). Shrinking both current-sink widths by 1/3 at fixed vbias cuts total current to ~84 uA; gm1 falls only as sqrt(I), so GBW ~6 MHz and gain/PM margins remain comfortable."
+}

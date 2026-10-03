@@ -1,0 +1,19 @@
+{
+  "echo": "ae979a2a0e45",
+  "circuit": {
+    "name": "two-stage-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "6u", "L": "1u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "6u", "L": "1u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "6u", "L": "1u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "6u", "L": "1u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "5u", "L": "1u"}},
+      {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "40u", "L": "1u"}},
+      {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "15u", "L": "1u"}},
+      {"id": "RZ", "kind": "res", "nodes": ["n1", "nz"], "params": {"value": "3k"}},
+      {"id": "CC", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "3p"}}
+    ]
+  },
+  "vbias": 0.9,
+  "rationale": "Tail ~16uA, stage2 ~48uA (3x mirror) keeps total under 100uA. gm1~150uS with Cc=3p gives GBW~8MHz; gm6~550uS puts p2~18MHz for PM>60 with Rz~3k pushing the zero to LHP. L=1u everywhere for ~90dB two-stage gain."
+}

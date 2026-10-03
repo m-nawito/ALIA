@@ -1,0 +1,17 @@
+{
+  "echo": "5adae385293d",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "2u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "2u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "20u", "L": "2u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "60u", "L": "2u"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "60u", "L": "2u"}},
+    {"id": "RZ", "kind": "res", "nodes": ["n1", "nz"], "params": {"value": "3.9k"}},
+    {"id": "CC", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "5p"}}
+  ]},
+  "vbias": 0.8,
+  "claim": {"device": "RZ", "param": "value", "new_value": "3.9k", "metric": "phase_margin_deg", "predicted": "increase"},
+  "rationale": "Iteration 2 misses only PM by 0.27 deg. Raising Rz from 3k to 3.9k moves the LHP zero down toward the second pole, adding phase lead near the 3.5 MHz crossover without altering bias currents, DC gain, or GBW."
+}

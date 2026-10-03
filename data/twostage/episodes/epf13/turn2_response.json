@@ -1,0 +1,17 @@
+{
+  "echo": "5554417c1b81",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "90u", "L": "3u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "90u", "L": "3u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "32u", "L": "4u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "32u", "L": "4u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "16u", "L": "2u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "200u", "L": "4u"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "80u", "L": "4u"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["n1", "nz"], "params": {"value": "4p"}},
+    {"id": "Rz", "kind": "res", "nodes": ["nz", "out"], "params": {"value": "2.5k"}}
+  ]},
+  "vbias": 0.85,
+  "claim": {"device": "Cc", "param": "value", "new_value": "4p", "metric": "phase_margin_deg", "predicted": "increase"},
+  "rationale": "Doubling Cc to 4p lowers GBW toward ~3.5MHz, pulling unity-gain below the output pole to recover phase margin. Longer channels everywhere (constant W/L, so gm and currents hold) roughly double intrinsic gain per stage for the missing 12dB; Rz~1/gm6 nulls the RHP zero."
+}

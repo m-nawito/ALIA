@@ -99,6 +99,33 @@ disk, that the turn contains zero tool-use blocks, and that the model string is 
 single pinned reasoner. Replies were extracted from the transcripts rather than
 transcribed, so the transcript is the authoritative record.
 
+## ICM 2026 extension: the two-stage OTA task
+
+Reference record for:
+
+> M. Nawito, "Fulfilling Competing Analog Design Constraints in an
+> Un-Augmented LLM Design Loop," IEEE ICM 2026 (invited paper, to appear).
+
+The harness above is unchanged. A task registry makes the task definition and its
+frozen specification selectable per episode: `--task 5t` reproduces every behaviour
+described above, and `--task twostage` selects the new task. The two-stage task
+prescribes the classical two-stage Miller-compensated OTA on the same PDK with a
+gain-dominated specification (DC gain >= 70 dB, GBW >= 3 MHz, phase margin >= 60
+degrees, supply current <= 100 uA).
+
+`data/twostage/` contains:
+
+| file | contents |
+|---|---|
+| `episodes/` | all 30 campaign episodes (`epf01`-`epf15` closed loop, `epo01`-`epo15` one-shot) and the two pilot episodes (`eppilot01`/`eppilot02`, excluded from every published count): per-turn prompts, extracted replies, state files and simulation decks |
+| `episodes.jsonl` | every harness event of the campaign, one JSON object per line |
+| `campaign_summary.json` | the aggregate the paper's tables and figures are drawn from |
+| `fixture_twostage.py` | the manually designed reference amplifier that confirmed feasibility through the identical evaluation path before any runs |
+
+The per-turn prompts embed the same body hash that the reply must echo, so the
+pairing of every recorded reply with its recorded prompt can be checked exactly as
+for the 5T record.
+
 ## Licence
 
 Released under the GNU Affero General Public License v3.0 (see `LICENSE`).

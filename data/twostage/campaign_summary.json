@@ -1,0 +1,426 @@
+{
+ "date": "2026-09-03",
+ "task": "twostage",
+ "spec": {
+  "dc_gain_db": ">=70",
+  "gbw_hz": ">=3e6",
+  "phase_margin_deg": ">=60",
+  "itail_ua": "<=100"
+ },
+ "full_arm": {
+  "n": 15,
+  "passed": 15,
+  "revisions_to_pass": [
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   3,
+   3,
+   3,
+   3,
+   3,
+   5,
+   6
+  ],
+  "median_revisions": 2
+ },
+ "oneshot_arm": {
+  "n": 15,
+  "passed": 2
+ },
+ "audits": {
+  "confirmed": 28,
+  "refuted": 1,
+  "negligible": 1,
+  "unmeasurable": 7
+ },
+ "binning_violation_events": 5,
+ "parse_errors": 1,
+ "converged_medians": {
+  "dc_gain_db": 97.4,
+  "gbw_mhz": 4.33,
+  "pm_deg": 66.9,
+  "itail_ua": 78.9
+ },
+ "episodes": {
+  "epf01": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 4,
+   "final": {
+    "dc_gain_db": 99.953,
+    "f_3db_hz": 73.5642254,
+    "gbw_hz": 8031272.3244475,
+    "phase_margin_deg": 83.3,
+    "n_points": 301,
+    "itail_ua": 89.706
+   }
+  },
+  "epf02": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 3,
+   "final": {
+    "dc_gain_db": 96.803,
+    "f_3db_hz": 107.977516,
+    "gbw_hz": 6747291.64504598,
+    "phase_margin_deg": 64.73,
+    "n_points": 301,
+    "itail_ua": 93.905
+   }
+  },
+  "epf03": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 2,
+   "final": {
+    "dc_gain_db": 99.659,
+    "f_3db_hz": 54.1169527,
+    "gbw_hz": 4334670.411330599,
+    "phase_margin_deg": 62.44,
+    "n_points": 301,
+    "itail_ua": 67.7
+   }
+  },
+  "epf04": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 3,
+   "final": {
+    "dc_gain_db": 100.473,
+    "f_3db_hz": 54.1169527,
+    "gbw_hz": 5159682.523089652,
+    "phase_margin_deg": 69.54,
+    "n_points": 301,
+    "itail_ua": 74.399
+   }
+  },
+  "epf05": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 2,
+   "final": {
+    "dc_gain_db": 93.928,
+    "f_3db_hz": 116.59144,
+    "gbw_hz": 5542791.717942277,
+    "phase_margin_deg": 83.98,
+    "n_points": 301,
+    "itail_ua": 83.586
+   }
+  },
+  "epf06": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 4,
+   "final": {
+    "dc_gain_db": 88.789,
+    "f_3db_hz": 135.935639,
+    "gbw_hz": 3341799.104737057,
+    "phase_margin_deg": 63.75,
+    "n_points": 301,
+    "itail_ua": 69.973
+   }
+  },
+  "epf07": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 4,
+   "final": {
+    "dc_gain_db": 96.712,
+    "f_3db_hz": 58.4341413,
+    "gbw_hz": 3553672.7415393107,
+    "phase_margin_deg": 65.33,
+    "n_points": 301,
+    "itail_ua": 69.583
+   }
+  },
+  "epf08": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 3,
+   "final": {
+    "dc_gain_db": 97.429,
+    "f_3db_hz": 79.4328235,
+    "gbw_hz": 5518235.823655568,
+    "phase_margin_deg": 83.23,
+    "n_points": 301,
+    "itail_ua": 63.975
+   }
+  },
+  "epf09": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 3,
+   "final": {
+    "dc_gain_db": 97.833,
+    "f_3db_hz": 58.4341413,
+    "gbw_hz": 4129096.371299794,
+    "phase_margin_deg": 64.47,
+    "n_points": 301,
+    "itail_ua": 84.993
+   }
+  },
+  "epf10": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 2,
+   "final": {
+    "dc_gain_db": 86.893,
+    "f_3db_hz": 199.526231,
+    "gbw_hz": 3843878.7711608023,
+    "phase_margin_deg": 67.57,
+    "n_points": 301,
+    "itail_ua": 78.914
+   }
+  },
+  "epf11": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 7,
+   "final": {
+    "dc_gain_db": 107.859,
+    "f_3db_hz": 15.8489319,
+    "gbw_hz": 3441599.5200163913,
+    "phase_margin_deg": 64.16,
+    "n_points": 301,
+    "itail_ua": 59.778
+   }
+  },
+  "epf12": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 4,
+   "final": {
+    "dc_gain_db": 98.098,
+    "f_3db_hz": 54.1169527,
+    "gbw_hz": 3842820.870573461,
+    "phase_margin_deg": 66.29,
+    "n_points": 301,
+    "itail_ua": 84.992
+   }
+  },
+  "epf13": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 6,
+   "final": {
+    "dc_gain_db": 101.473,
+    "f_3db_hz": 42.9866235,
+    "gbw_hz": 4839711.73795744,
+    "phase_margin_deg": 74.48,
+    "n_points": 301,
+    "itail_ua": 68.104
+   }
+  },
+  "epf14": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 4,
+   "final": {
+    "dc_gain_db": 91.117,
+    "f_3db_hz": 107.977516,
+    "gbw_hz": 3412325.688278348,
+    "phase_margin_deg": 74.76,
+    "n_points": 301,
+    "itail_ua": 87.844
+   }
+  },
+  "epf15": {
+   "arm": "full",
+   "status": "passed",
+   "iters": 2,
+   "final": {
+    "dc_gain_db": 94.666,
+    "f_3db_hz": 100.0,
+    "gbw_hz": 4797807.409681128,
+    "phase_margin_deg": 66.92,
+    "n_points": 301,
+    "itail_ua": 79.437
+   }
+  },
+  "epo01": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 94.941,
+    "f_3db_hz": 184.78498,
+    "gbw_hz": 8772812.405716034,
+    "phase_margin_deg": 64.04,
+    "n_points": 301,
+    "itail_ua": 197.994
+   }
+  },
+  "epo02": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 85.276,
+    "f_3db_hz": 2326.30507,
+    "gbw_hz": 67884444.26593299,
+    "phase_margin_deg": 60.25,
+    "n_points": 301,
+    "itail_ua": 359.272
+   }
+  },
+  "epo03": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1
+  },
+  "epo04": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 88.323,
+    "f_3db_hz": 630.957344,
+    "gbw_hz": 15453175.97514883,
+    "phase_margin_deg": 77.12,
+    "n_points": 301,
+    "itail_ua": 320.007
+   }
+  },
+  "epo05": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 93.64,
+    "f_3db_hz": 232.630507,
+    "gbw_hz": 9389066.097670328,
+    "phase_margin_deg": 55.46,
+    "n_points": 301,
+    "itail_ua": 111.832
+   }
+  },
+  "epo06": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 84.163,
+    "f_3db_hz": 681.292069,
+    "gbw_hz": 8806746.380186595,
+    "phase_margin_deg": 55.76,
+    "n_points": 301,
+    "itail_ua": 109.099
+   }
+  },
+  "epo07": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1
+  },
+  "epo08": {
+   "arm": "oneshot",
+   "status": "passed",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 92.774,
+    "f_3db_hz": 125.892541,
+    "gbw_hz": 5075408.501019639,
+    "phase_margin_deg": 62.4,
+    "n_points": 301,
+    "itail_ua": 79.269
+   }
+  },
+  "epo09": {
+   "arm": "oneshot",
+   "status": "passed",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 73.959,
+    "f_3db_hz": 1165.9144,
+    "gbw_hz": 5080561.407831274,
+    "phase_margin_deg": 65.61,
+    "n_points": 301,
+    "itail_ua": 82.514
+   }
+  },
+  "epo10": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 93.788,
+    "f_3db_hz": 232.630507,
+    "gbw_hz": 10077640.667429755,
+    "phase_margin_deg": 68.0,
+    "n_points": 301,
+    "itail_ua": 140.315
+   }
+  },
+  "epo11": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 93.337,
+    "f_3db_hz": 341.454887,
+    "gbw_hz": 12098028.030356074,
+    "phase_margin_deg": 46.99,
+    "n_points": 301,
+    "itail_ua": 104.8
+   }
+  },
+  "epo12": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 25.497,
+    "f_3db_hz": 135935.639,
+    "gbw_hz": 2466299.20641438,
+    "phase_margin_deg": 86.22,
+    "n_points": 301,
+    "itail_ua": 207.173
+   }
+  },
+  "epo13": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 92.236,
+    "f_3db_hz": 184.78498,
+    "gbw_hz": 6693073.4786202265,
+    "phase_margin_deg": 69.18,
+    "n_points": 301,
+    "itail_ua": 127.882
+   }
+  },
+  "epo14": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 27.285,
+    "f_3db_hz": 42986.6235,
+    "gbw_hz": 943108.6772244289,
+    "phase_margin_deg": 88.77,
+    "n_points": 301,
+    "itail_ua": 117.353
+   }
+  },
+  "epo15": {
+   "arm": "oneshot",
+   "status": "exhausted",
+   "iters": 1,
+   "final": {
+    "dc_gain_db": 45.814,
+    "f_3db_hz": 12589.2541,
+    "gbw_hz": 2310460.686254453,
+    "phase_margin_deg": 82.3,
+    "n_points": 301,
+    "itail_ua": 58.396
+   }
+  }
+ }
+}

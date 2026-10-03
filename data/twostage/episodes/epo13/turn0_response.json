@@ -1,0 +1,13 @@
+{"echo": "ae979a2a0e45", "circuit": {"name": "two-stage-ota", "devices": [
+{"id": "M1", "kind": "nmos", "nodes": ["vo1", "inp", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+{"id": "M2", "kind": "nmos", "nodes": ["ndm", "inn", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+{"id": "M3", "kind": "pmos", "nodes": ["vo1", "ndm", "vdd", "vdd"], "params": {"W": "10u", "L": "1u"}},
+{"id": "M4", "kind": "pmos", "nodes": ["ndm", "ndm", "vdd", "vdd"], "params": {"W": "10u", "L": "1u"}},
+{"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "8u", "L": "1u"}},
+{"id": "M6", "kind": "pmos", "nodes": ["out", "vo1", "vdd", "vdd"], "params": {"W": "60u", "L": "1u"}},
+{"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "24u", "L": "1u"}},
+{"id": "Rz", "kind": "res", "nodes": ["vo1", "nrz"], "params": {"value": "2k"}},
+{"id": "Cc", "kind": "cap", "nodes": ["nrz", "out"], "params": {"value": "4p"}}
+]},
+"vbias": 0.9,
+"rationale": "~18uA tail, ~55uA stage 2 (72uA total). gm1~145uS with Cc=4p gives GBW~5.8MHz; gm6~480uS puts p2~2.6x GBW, Rz~1/gm6 nulls RHP zero for PM>60. L=1u everywhere for gain ~74dB; M6/M3 and M7/M5 ratios matched at 6x/3x."}

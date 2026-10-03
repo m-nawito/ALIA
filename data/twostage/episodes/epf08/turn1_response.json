@@ -1,0 +1,17 @@
+{
+  "echo": "e233c7234e22",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "25u", "L": "1u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "25u", "L": "1u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "10u", "L": "2u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "40u", "L": "1u"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "20u", "L": "2u"}},
+    {"id": "Rz", "kind": "res", "nodes": ["n1", "nc"], "params": {"value": "2k"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["nc", "out"], "params": {"value": "5p"}}
+  ]},
+  "vbias": 0.9,
+  "claim": {"device": "Cc", "param": "value", "new_value": "5p", "metric": "phase_margin_deg", "predicted": "increase"},
+  "rationale": "PM fails at 31 deg while GBW has 3x headroom. Increasing Cc from 2p to 5p lowers the dominant pole and GBW to ~3.9 MHz, moving crossover well inside the output pole gm6/CL, so phase margin rises toward 60 deg. Rz~1/gm6 kept for zero nulling."
+}

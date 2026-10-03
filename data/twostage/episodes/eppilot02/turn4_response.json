@@ -1,0 +1,17 @@
+{
+  "echo": "f919c19a02dd",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "60u", "L": "2u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "60u", "L": "2u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "30u", "L": "3u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "30u", "L": "3u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "20u", "L": "2u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "60u", "L": "3u", "m": "3"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "60u", "L": "3u", "m": "2"}},
+    {"id": "Rz", "kind": "res", "nodes": ["n1", "nz"], "params": {"value": "2k"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["nz", "out"], "params": {"value": "4.5p"}}
+  ]},
+  "vbias": 0.8,
+  "claim": {"device": "Cc", "param": "value", "new_value": "4.5p", "metric": "phase_margin_deg", "predicted": "increase"},
+  "rationale": "Larger Cc (3p to 4.5p) lowers GBW to about 3.7 MHz while doubled second-stage current and wider M6 raise gm6, pushing the output pole up; Rz retuned near 1/gm6*(1+CL/Cc) cancels the RHP zero. Together these should lift PM past 60 degrees."
+}

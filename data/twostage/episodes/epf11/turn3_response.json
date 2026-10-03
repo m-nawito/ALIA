@@ -1,0 +1,17 @@
+{
+  "echo": "5d8a136b63ca",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "80u", "L": "4u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "80u", "L": "4u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "60u", "L": "4u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "60u", "L": "4u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "16u", "L": "4u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "60u", "L": "4u", "m": "4"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "40u", "L": "4u"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["n1", "nz"], "params": {"value": "4p"}},
+    {"id": "Rz", "kind": "res", "nodes": ["nz", "out"], "params": {"value": "2k"}}
+  ]},
+  "vbias": 0.9,
+  "claim": {"device": "M1,M2", "param": "L", "new_value": "4u", "metric": "dc_gain_db", "predicted": "increase"},
+  "rationale": "Doubled L to 4u on all MOS with W scaled to hold W/L, so bias currents and gm stay put while ro doubles per stage, adding ~12 dB gain. Rz raised to 2k (past 1/gm6) to push the LHP zero in and recover the marginal phase margin."
+}

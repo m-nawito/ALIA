@@ -1,0 +1,19 @@
+{
+  "echo": "ae979a2a0e45",
+  "circuit": {
+    "name": "two-stage-ota",
+    "devices": [
+      {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "10u", "L": "2u"}},
+      {"id": "M2", "kind": "nmos", "nodes": ["n2", "inn", "ntail", "0"], "params": {"W": "10u", "L": "2u"}},
+      {"id": "M3", "kind": "pmos", "nodes": ["n1", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "2u"}},
+      {"id": "M4", "kind": "pmos", "nodes": ["n2", "n2", "vdd", "vdd"], "params": {"W": "10u", "L": "2u"}},
+      {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "8u", "L": "2u"}},
+      {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "60u", "L": "2u"}},
+      {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "24u", "L": "2u"}},
+      {"id": "Rz", "kind": "res", "nodes": ["n1", "nx"], "params": {"value": "2.2k"}},
+      {"id": "Cc", "kind": "cap", "nodes": ["nx", "out"], "params": {"value": "3p"}}
+    ]
+  },
+  "vbias": 0.9,
+  "rationale": "Tail ~15uA, stage-2 ~45uA (3x mirror) keeps itail under budget. gm1~130uS with Cc=3p gives GBW~7MHz; gm6~450uS puts p2~15MHz (~2x GBW) and Rz~1/gm6 nulls the RHP zero for PM>60. L=2u everywhere and M6 sized 6x M4 for gain and low systematic offset."
+}

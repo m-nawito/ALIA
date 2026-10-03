@@ -1,0 +1,17 @@
+{
+  "echo": "9131456c90fa",
+  "circuit": {"name": "two-stage-ota", "devices": [
+    {"id": "M1", "kind": "nmos", "nodes": ["n1", "inp", "ntail", "0"], "params": {"W": "12u", "L": "1u"}},
+    {"id": "M2", "kind": "nmos", "nodes": ["nd", "inn", "ntail", "0"], "params": {"W": "12u", "L": "1u"}},
+    {"id": "M3", "kind": "pmos", "nodes": ["n1", "nd", "vdd", "vdd"], "params": {"W": "6u", "L": "1u"}},
+    {"id": "M4", "kind": "pmos", "nodes": ["nd", "nd", "vdd", "vdd"], "params": {"W": "6u", "L": "1u"}},
+    {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "10u", "L": "1u"}},
+    {"id": "M6", "kind": "pmos", "nodes": ["out", "n1", "vdd", "vdd"], "params": {"W": "14u", "L": "1u"}},
+    {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "12u", "L": "1u"}},
+    {"id": "Cc", "kind": "cap", "nodes": ["n1", "nz"], "params": {"value": "6p"}},
+    {"id": "Rz", "kind": "res", "nodes": ["nz", "out"], "params": {"value": "10k"}}
+  ]},
+  "vbias": 0.9,
+  "claim": {"device": "Rz", "param": "value", "new_value": "10k", "metric": "phase_margin_deg", "predicted": "increase"},
+  "rationale": "Iteration 1 biased correctly (86 dB, 87 uA) but its reduced gm6 left the Miller RHP zero near GBW, killing PM. Raising Rz above 1/gm6 (~10k = (1+CL/Cc)/gm6) flips the zero to the LHP, canceling the output pole. Iteration 2's oversized M6 unbalanced stage-2 bias, so revert it."
+}

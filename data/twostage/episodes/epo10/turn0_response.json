@@ -1,0 +1,13 @@
+{"echo": "ae979a2a0e45", "circuit": {"name": "two-stage-ota", "devices": [
+  {"id": "M1", "kind": "nmos", "nodes": ["n1out", "inp", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+  {"id": "M2", "kind": "nmos", "nodes": ["ndiode", "inn", "ntail", "0"], "params": {"W": "10u", "L": "1u"}},
+  {"id": "M3", "kind": "pmos", "nodes": ["n1out", "ndiode", "vdd", "vdd"], "params": {"W": "20u", "L": "1u"}},
+  {"id": "M4", "kind": "pmos", "nodes": ["ndiode", "ndiode", "vdd", "vdd"], "params": {"W": "20u", "L": "1u"}},
+  {"id": "M5", "kind": "nmos", "nodes": ["ntail", "nbias", "0", "0"], "params": {"W": "10u", "L": "1u"}},
+  {"id": "M6", "kind": "pmos", "nodes": ["out", "n1out", "vdd", "vdd"], "params": {"W": "100u", "L": "1u"}},
+  {"id": "M7", "kind": "nmos", "nodes": ["out", "nbias", "0", "0"], "params": {"W": "25u", "L": "1u"}},
+  {"id": "Cc", "kind": "cap", "nodes": ["n1out", "nz"], "params": {"value": "3p"}},
+  {"id": "Rz", "kind": "res", "nodes": ["nz", "out"], "params": {"value": "2k"}}
+]},
+"vbias": 0.9,
+"rationale": "Tail ~20uA (10uA/side), stage2 ~50uA (M6/M4 ratio 5, M7 sized 2.5x M5), total ~70uA. gm1~130uS with Cc=3p gives GBW~7MHz; gm6~500uS puts p2~16MHz for PM>60; Rz=1/gm6 nulls RHP zero. L=1u everywhere for ~75-80dB gain."}
